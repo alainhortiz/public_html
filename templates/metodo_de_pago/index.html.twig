@@ -1,0 +1,457 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Método de Pago{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <div class="content-wrapper" style="min-height: 1517.4px;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>M&eacute;todos de Pago</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <!-- Default box -->
+            <div class="card card-solid">
+                <div class="card-body pb-0">
+                    <div class="row d-flex align-items-stretch">
+                        <div class="col-12 col-sm-6 col-md-4 align-items-stretch">
+                            <div class="card bg-light">
+                                <div class="card-body pt-0">
+                                    <div class="row" style="padding-top: 10px">
+                                        <div class="col-7">
+                                            <h2 class="lead"><b>Wester Union</b></h2>
+                                            <p class="text-muted text-sm">
+                                                <b>Destinatario: </b> {{ westerUnion ? westerUnion.nombre ~ ' ' ~ westerUnion.primerApellido ~ ' ' ~ westerUnion.segundoApellido : '' }} </p>
+                                            <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                <li class="small"><span class="fa-li"><i
+                                                                class="fas fa-lg fa-mail-bulk"></i></span> Correo:
+                                                    {{ westerUnion ? westerUnion.email: '' }}
+                                                </li>
+                                                <li class="small"><span class="fa-li"><i
+                                                                class="fas fa-lg fa-building"></i></span> Ciudad: {{ westerUnion ? westerUnion.ciudad: '' }}
+                                                </li>
+                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span>
+                                                    Phone #: {{ westerUnion ? westerUnion.numeromovil: '' }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-5 text-center">
+                                            <img src="{{ asset('dist/img/credit/westerunion.png') }}" alt="Westerunion"
+                                                 class="img-circle img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    {% if is_granted('ROLE_USER') %}
+                                        <div class="text-right">
+                                            <a href="#" class="btn btn-sm btn-primary" type="button" id="editWester"
+                                               data-toggle="tooltip"
+                                               data-placement="top" title="Registrar WesterUnion">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 align-items-stretch">
+                            <div class="card bg-light">
+                                <div class="card-body pt-0">
+                                    <div class="row" style="padding-top: 10px">
+                                        <div class="col-7">
+                                            <h2 class="lead"><b>Paypal</b></h2>
+                                            <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                <li class="small"><span class="fa-li"><i
+                                                                class="fas fa-lg fa-mail-bulk"></i></span> Correo:
+                                                    {{ paypal ? paypal.email: '' }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-5 text-center">
+                                            <img src="{{ asset('dist/img/credit/paypal.png') }}" alt="Paypal"
+                                                 class="img-circle img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    {% if is_granted('ROLE_USER') %}
+                                        <div class="text-right">
+                                            <a href="#" class="btn btn-sm btn-primary" type="button" id="editPaypal"
+                                               data-toggle="tooltip"
+                                               data-placement="top" title="Registrar WesterUnion">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2 align-items-stretch">
+                            <div class="card bg-light">
+                                <div class="card-body pt-0">
+                                    <div class="row" style="padding-top: 10px">
+                                        <div class="col-7">
+                                            <h2 class="lead"><b>Bizum</b></h2>
+                                            <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span>
+                                                    Phone #: {{ bizum ? bizum.telefono: '' }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-5 text-center">
+                                            <img src="{{ asset('dist/img/credit/bizum.png') }}" alt="Bizum"
+                                                 class="img-circle img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    {% if is_granted('ROLE_USER') %}
+                                        <div class="text-right">
+                                            <a href="#" class="btn btn-sm btn-primary" type="button" id="editBizum"
+                                               data-toggle="tooltip"
+                                               data-placement="top" title="Registrar WesterUnion">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 align-items-stretch">
+                            <div class="card bg-light">
+                                <div class="card-body pt-0">
+                                    <div class="row" style="padding-top: 10px">
+                                        <div class="col-7">
+                                            <h2 class="lead"><b>Transferencia</b></h2>
+                                            <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                <li class="small"><span class="fa-li"><i
+                                                                class="fas fa-lg fa-bank"></i></span> No.Cuenta (IBAN):
+                                                    {{ transferencia ? transferencia.numerocuenta: '' }}
+                                                </li>
+                                                <li class="small"><span class="fa-li"><i
+                                                                class="fas fa-lg fa-user"></i></span> Titular:
+                                                    {{ transferencia ? transferencia.titular: '' }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-5 text-center">
+                                            <img src="{{ asset('dist/img/credit/transferenciaban.png') }}"
+                                                 alt="Transferencia"
+                                                 class="img-circle img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    {% if is_granted('ROLE_USER') %}
+                                        <div class="text-right">
+                                            <a href="#" class="btn btn-sm btn-primary" type="button" id="editTrans"
+                                               data-toggle="tooltip"
+                                               data-placement="top" title="Registrar WesterUnion">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            {{ include('metodo_de_pago/modalAddWesterUnion.html.twig') }}
+            {{ include('metodo_de_pago/modalAddPaypal.html.twig') }}
+            {{ include('metodo_de_pago/modalAddBizum.html.twig') }}
+            {{ include('metodo_de_pago/modalAddTransferencia.html.twig') }}
+            <!-- /.card -->
+        </section>
+        <!-- /.content -->
+    </div>
+{% endblock %}
+
+ {% block javascripts %}
+     {{ parent() }}
+     <!-- Acceso a Rutas del Controller -->
+     <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+     <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+     <script>
+         $(document).ready(function () {
+
+             //Declaracion de variables
+             let reg = new RegExp(/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/);
+
+             toastr.options = {
+                 "closeButton": false,
+                 "debug": false,
+                 "newestOnTop": false,
+                 "progressBar": true,
+                 "positionClass": "toast-top-right",
+                 "preventDuplicates": true,
+                 "onclick": null,
+                 "showDuration": "300",
+                 "hideDuration": "1000",
+                 "timeOut": "5000",
+                 "extendedTimeOut": "1000",
+                 "showEasing": "swing",
+                 "hideEasing": "linear",
+                 "showMethod": "fadeIn",
+                 "hideMethod": "fadeOut"
+             }
+
+             {% if mensaje is not null %}
+             {% if mensaje != 0 %}
+             toastr["error"]('{{ mensaje }}', "Notificación")
+             {% endif %}
+             {% endif %}
+
+             //Si existe el método de pago cargo los valores en el formulario
+             {% if westerUnion %}
+             $("#addWesterNombre").val('{{ westerUnion.nombre }}');
+             $("#addWesterPrimerApellido").val('{{ westerUnion.primerApellido }}');
+             $("#addWesterSegundoApellido").val('{{ westerUnion.segundoApellido }}');
+             $("#addWesterCorreo").val('{{ westerUnion.email }}');
+             $("#addWesterCiudad").val('{{ westerUnion.ciudad }}');
+             $("#addWesterTelefono").val('{{ westerUnion.numeroMovil }}');
+             {% endif %}
+
+             //Si existe el método de pago cargo los valores en el formulario
+             {% if paypal %}
+             $("#addPaypalCorreo").val('{{ paypal.email }}');
+             {% endif %}
+
+             //Si existe el método de pago cargo los valores en el formulario
+             {% if bizum %}
+             $("#addBizumTelef").val('{{ bizum.telefono }}');
+             {% endif %}
+
+             //Si existe el método de pago cargo los valores en el formulario
+             {% if transferencia %}
+             $("#addCuenta").val('{{ transferencia.numerocuenta }}');
+             $("#addTitular").val('{{ transferencia.titular }}');
+             {% endif %}
+
+             //Función que valida la dirección de correo
+             function validarEmail(valor) {
+                 return reg.test(valor.toLowerCase().trim());
+             }
+
+             $('#editWester').on('click', function () {
+                 $('#modalAddWesterUnion').modal('show');
+             });
+
+             $('#editPaypal').on('click', function () {
+                 $('#modalAddPaypal').modal('show');
+             });
+
+             $('#editBizum').on('click', function () {
+                 $('#modalAddBizum').modal('show');
+             });
+
+             $('#editTrans').on('click', function () {
+                 $('#modalAddTransferencia').modal('show');
+             });
+
+             $('#btnAddWesterGuardar').on('click', function () {
+
+                 //Validaciones
+
+                 if ($("#addWesterNombre").val() === '') {
+                     toastr["error"]('Teclee el nombre del destinatario', "Advertencia")
+                     return false;
+                 }
+
+                 if ($("#addWesterPrimerApellido").val() === '') {
+                     toastr["error"]('Teclee el primer apellido del destinatario', "Advertencia")
+                     return false;
+                 }
+
+                 if ($("#addWesterCorreo").val() === '') {
+                     toastr["error"]('Teclee la dirección de correo del destinatario', "Advertencia")
+                     return false;
+                 } else {
+                     if (!validarEmail($("#addWesterCorreo").val())) {
+                         toastr["error"]('Teclee una dirección de correo válida', "Advertencia")
+                         return false;
+                     }
+                 }
+
+                 if ($("#addWesterCiudad").val() === '') {
+                     toastr["error"]('Teclee la ciudad o el pueblo', "Advertencia")
+                     return false;
+                 }
+
+                 if ($("#addWesterTelefono").val() === '') {
+                     toastr["error"]('Teclee el no. de telefóno', "Advertencia")
+                     return false;
+                 }
+
+                 let Ruta = Routing.generate('app_metodo_de_pago_westerunion');
+
+                 $('#modalAddWesterUnion').modal('hide');
+
+                 let mat_datos = {
+                     nombre: $("#addWesterNombre").val(),
+                     primerApellido: $("#addWesterPrimerApellido").val(),
+                     segundoApellido: $("#addWesterSegundoApellido").val(),
+                     correo: $("#addWesterCorreo").val(),
+                     ciudad: $("#addWesterCiudad").val(),
+                     movil: $("#addWesterTelefono").val()
+                 };
+
+                 $(".preload").removeClass('hidden');
+
+                 $.ajax({
+                     url: Ruta,
+                     type: "post",
+                     dataType: "html",
+                     data: mat_datos,
+                 }).done(function (data) {
+                     if (data === 'ok') {
+                         $(".preload").addClass('hidden');
+                         $('#modalAddWesterUnion input').each(function () {
+                             $(this).val('');
+                         });
+                         toastr["success"]('Información de Wester Union registrada', "Notificación")
+                         window.location.href = "{{ path('app_metodo_de_pago_user') }}";
+                     } else {
+                         toastr["error"](data, "Notificación")
+                     }
+                 });
+             });
+
+             $('#btnAddPaypalGuardar').on('click', function () {
+
+                 //Validaciones
+
+                 if ($("#addPaypalCorreo").val() === '') {
+                     toastr["error"]('Teclee la dirección de correo', "Advertencia")
+                     return false;
+                 } else {
+                     if (!validarEmail($("#addPaypalCorreo").val())) {
+                         toastr["error"]('Teclee una dirección de correo válida', "Advertencia")
+                         return false;
+                     }
+                 }
+
+                 let Ruta = Routing.generate('app_metodo_de_pago_paypal');
+
+                 $('#modalAddPaypal').modal('hide');
+
+                 let mat_datos = {
+                     correo: $("#addPaypalCorreo").val()
+                 };
+
+                 $(".preload").removeClass('hidden');
+
+                 $.ajax({
+                     url: Ruta,
+                     type: "post",
+                     dataType: "html",
+                     data: mat_datos,
+                 }).done(function (data) {
+                     $(".preload").addClass('hidden');
+                     if (data === 'ok') {
+                         $('#modalAddPaypal input').each(function () {
+                             $(this).val('');
+                         });
+                         toastr["success"]('Información de Paypal registrada', "Notificación")
+                         window.location.href = "{{ path('app_metodo_de_pago_user') }}";
+                     } else {
+                         toastr["error"](data, "Notificación")
+                     }
+                 });
+             });
+
+             $('#btnAddBizumGuardar').on('click', function () {
+
+                 //Validaciones
+
+                 if ($("#addBizumTelef").val() === '') {
+                     toastr["error"]('Teclee el no. de telefóno', "Advertencia")
+                     return false;
+                 }
+
+                 let Ruta = Routing.generate('app_metodo_de_pago_bizum');
+
+                 $('#modalAddBizum').modal('hide');
+
+                 let mat_datos = {
+                     movil: $("#addBizumTelef").val()
+                 };
+
+                 $(".preload").removeClass('hidden');
+
+                 $.ajax({
+                     url: Ruta,
+                     type: "post",
+                     dataType: "html",
+                     data: mat_datos,
+                 }).done(function (data) {
+                     $(".preload").addClass('hidden');
+                     if (data === 'ok') {
+                         $('#modalAddBizum input').each(function () {
+                             $(this).val('');
+                         });
+                         toastr["success"]('Información de Bizum registrada', "Notificación")
+                         window.location.href = "{{ path('app_metodo_de_pago_user') }}";
+                     } else {
+                         toastr["error"](data, "Notificación")
+                     }
+                 });
+             });
+
+             $('#btnAddTransferenciaGuardar').on('click', function () {
+
+                 //Validaciones
+
+                 if ($("#addCuenta").val() === '') {
+                     toastr["error"]('Teclee el no. de cuenta', "Advertencia")
+                     return false;
+                 }
+
+                 let Ruta = Routing.generate('app_metodo_de_pago_transferencia');
+
+                 $('#modalAddTransferencia').modal('hide');
+
+                 $(".preload").removeClass('hidden');
+
+                 let mat_datos = {
+                     cuenta: $("#addCuenta").val(),
+                     titular: $("#addTitular").val()
+                 };
+
+                 $.ajax({
+                     url: Ruta,
+                     type: "post",
+                     dataType: "html",
+                     data: mat_datos,
+                 }).done(function (data) {
+                     $(".preload").addClass('hidden');
+                     if (data === 'ok') {
+                         $('#modalAddTransferencia input').each(function () {
+                             $(this).val('');
+                         });
+                         toastr["success"]('Información de la transferencia registrada', "Notificación")
+                         window.location.href = "{{ path('app_metodo_de_pago_user') }}";
+                     } else {
+                         toastr["error"](data, "Notificación")
+                     }
+                 });
+             });
+
+         });
+     </script>
+ {% endblock %}

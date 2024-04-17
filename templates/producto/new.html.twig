@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nuevo Producto{% endblock %}
+
+{#{% block pagecss %}#}
+{#    <!-- Select2 -->#}
+{#    <link rel="stylesheet" href="{{ asset('plugins/select2/css/select2.min.css') }}">#}
+{#    <link rel="stylesheet" href="{{ asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">#}
+{#{% endblock %}#}
+
+{% block body %}
+    <body class="hold-transition register-page">
+    <div class="register-box text-center">
+        <div class="card" style="width: 435px;">
+            <div class="card-body">
+                <h3>Registro de Nuevo Producto</h3>
+                <br>
+                {{ include('producto/_form.html.twig') }}
+            </div>
+        </div>
+    </div>
+    </body>
+{% endblock %}
+
+{#{% block pagescript %}#}
+{#    <!-- Select2 -->#}
+{#    <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>#}
+{#    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>#}
+{#    <script src="{{ path('fos_js_routing_js',{callback: 'fos.Router.setData'}) }}"></script>#}
+{#    <script src="{{ asset('dist/js/ajaxcall.js') }}"></script>#}
+{#{% endblock %}#}

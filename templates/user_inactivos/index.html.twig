@@ -1,0 +1,221 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de Usuarios Inactivos{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Alerta -->
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Usuarios Inactivos</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataUser">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Avatar</th>
+                                        <th>Nombre</th>
+                                        <th>Empresa</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for user in usersI %}
+                                        <tr data-id="{{ user.id }}">
+                                            {% if user.avatar %}
+                                                <td><img width="80" height="80"
+                                                         src="{{ asset('uploads/' ~ user.avatar) }}"
+                                                         alt="Avatar Usuario"></td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                            <td>{{ user.nombre ~ ' ' ~ user.apellidos }}</td>
+                                            <td>{{ user.empresa }}</td>
+                                            <td style="margin: 0 auto;">
+                                                <div class="row" style="margin-left: 35px;">
+                                                    {% if user.isActive == false %}
+                                                        <button class="btn btn-primary activar"
+                                                                data-toggle="tooltip"
+                                                                title="Activar Usuario"><i
+                                                                    class="fas fa-check"></i>
+                                                        </button>
+                                                    {% endif %}
+                                                    {% if user.emitirfactura == false %}
+                                                        <button style="margin-left: 10px;"
+                                                                class="btn btn-secondary emitir"
+                                                                data-toggle="tooltip"
+                                                                title="Emitir factura"><i
+                                                                    class="fas fa-address-card"></i>
+                                                        </button>
+                                                    {% endif %}
+                                                    <a href="{{ path('app_user_show', {'id': user.id}) }}">
+                                                        <button style="margin-left: 10px;"
+                                                                class="btn btn-info" data-toggle="tooltip"
+                                                                title="ver"><i
+                                                                    class="fas fa-info"></i>
+                                                        </button>
+                                                    </a>
+                                                    <form method="post"
+                                                          action="{{ path('app_user_delete', {'id': user.id}) }}"
+                                                          onsubmit="return confirm('Está seguro que desea eliminar este usuario?');">
+                                                        <input type="hidden" name="_method" value="DELETE">
+                                                        <input type="hidden" name="_token"
+                                                               value="{{ csrf_token('delete' ~ user.id) }}">
+                                                        <button style="margin-left: 10px;"
+                                                                class="btn btn-danger"
+                                                                data-toggle="tooltip"
+                                                                title="Eliminar"><i
+                                                                    class="fas fa-trash"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="15">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataUser').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[8], [8]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "500",
+                "timeOut": "3000",
+                "extendedTimeOut": "500",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            let idUsuario;
+
+            $('#dataUser tbody').on('click', '.activar', function () {
+
+                let row = $(this).parents('tr');
+                idUsuario = row.data('id');
+
+                let Ruta = Routing.generate('app_user_activar', {'id': idUsuario});
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    idUsuario: idUsuario
+                };
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "html",
+                    data: mat_datos,
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+
+                    if (data === 'ok') {
+                        toastr["success"]('Se activo el usuario', "Notificación")
+                        window.location.href = "{{ path('app_user_inactivos') }}";
+                    } else {
+                        toastr["error"](data, "Notificación")
+                    }
+                });
+
+            });
+
+            $('#dataUser tbody').on('click', '.emitir', function () {
+
+                let row = $(this).parents('tr');
+                idUsuario = row.data('id');
+
+                let Ruta = Routing.generate('app_user_emitir', {'id': idUsuario});
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    idUsuario: idUsuario
+                };
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "html",
+                    data: mat_datos,
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+
+                    if (data === 'ok') {
+                        toastr["success"]('Se autorizo al usuario a emitir factura', "Notificación")
+                        window.location.href = "{{ path('app_user_inactivos') }}";
+                    } else {
+                        toastr["error"](data, "Notificación")
+                    }
+                });
+
+            });
+
+
+        });
+    </script>
+{% endblock %}

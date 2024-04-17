@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}Bienvenidos{% endblock %}</title>
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    {% block stylesheets %}
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Ionicons -->
+{#        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">#}
+        <!-- daterange picker -->
+        {# <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}"> #}
+        <link href="{{ asset('dist/css/estilos.css') }}" rel="stylesheet">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
+        <!-- overlayScrollbars -->
+        <link rel="stylesheet" href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
+        <!-- Toastr -->
+        <link rel="stylesheet" href="{{ asset('plugins/toastr/toastr.min.css') }}">
+
+        <!-- iCheck for checkboxes and radio inputs -->
+        <link rel="stylesheet" href="{{ asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+
+
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        {% block pagecss %}
+        {% endblock %}
+    {% endblock %}
+
+    {% block javascripts %}
+        <!-- REQUIRED SCRIPTS -->
+        <!-- jQuery -->
+        <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
+        <!-- Bootstrap -->
+        <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <!-- overlayScrollbars -->
+        <script src="{{ asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+        <!-- AdminLTE App -->
+        <script src="{{ asset('dist/js/adminlte.js') }}"></script>
+        {# <!-- date-range-picker --> #}
+        {# <script src="{{ asset('plugins/daterangepicker/daterangepicker.js') }}"></script> #}
+
+        <!-- InputMask -->
+        <script src="{{ asset('plugins/moment/moment.min.js') }}"></script>
+        <script src="{{ asset('plugins/inputmask/min/jquery.inputmask.bundle.min.js') }}"></script>
+        <!-- Tempusdominus Bootstrap 4 -->
+        <script src="{{ asset('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+        <!-- OPTIONAL SCRIPTS -->
+        <script src="{{ asset('dist/js/demo.js') }}"></script>
+
+        <!-- PAGE PLUGINS -->
+        <!-- jQuery Mapael -->
+        <script src="{{ asset('plugins/jquery-mousewheel/jquery.mousewheel.js') }}"></script>
+        <script src="{{ asset('plugins/raphael/raphael.min.js') }}"></script>
+        <script src="{{ asset('plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
+        <script src="{{ asset('plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
+        <!-- ChartJS -->
+        <script src="{{ asset('plugins/chart.js/Chart.min.js') }}"></script>
+
+        <!-- Toastr -->
+        <script src="{{ asset('plugins/toastr/toastr.min.js') }}"></script>
+
+        <!-- PAGE SCRIPTS -->
+        <script src="{{ asset('dist/js/pages/dashboard2.js') }}"></script>
+
+        <!-- NOTIFICACIONES -->
+        <script src="{{ asset('plugins/notificacion/jquery.pulsate.min.js') }}"></script>
+        <script src="{{ asset('plugins/notificacion/ui-general.js') }}"></script>
+        <script>
+            jQuery(document).ready(function () {
+                {% if is_granted('ROLE_ADMIN') %}
+                {% if (totalNotificacionesAdmin > 0) %}
+                UIGeneral.init();
+                {% endif %}
+                {% else %}
+                {% if (totalNotificacionesUser > 0) %}
+                UIGeneral.init();
+                {% endif %}
+                {% endif %}
+            });
+        </script>
+
+        {% block pagescript %}
+        {% endblock %}
+    {% endblock %}
+</head>
+
+
+{% block body %}
+    <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+                <li>
+                    <a href="#" class="brand-link">
+                        <img src="{{ asset('dist/img/MagosArtesanos.png') }}" alt="Logo Sitio"
+                             class="brand-image">
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <!-- Notifications Dropdown Menu -->
+                {% if is_granted('ROLE_ADMIN') %}
+                    {% if totalNotificacionesAdmin > 0 %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="#">
+                                <i id="pulsate-regular" class="far fa-bell"></i>
+                                <span class="badge badge-dark navbar-badge">{{ totalNotificacionesAdmin }}</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                                {% if totalNotificacionesAdmin == 1 %}
+                                    <span class="dropdown-item dropdown-header">{{ totalNotificacionesAdmin }} Notificación</span>
+                                {% else %}
+                                    <span class="dropdown-item dropdown-header">{{ totalNotificacionesAdmin }} Notificaciones</span>
+                                {% endif %}
+                                <div class="dropdown-divider"></div>
+                                {% for notificacion in notificacionesAdmin %}
+                                    {% if notificacion.tipo == 1 %}
+                                        <a href="{{ path('app_notificaciones_user_inactivos', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-users mr-2"></i>Usuarios inactivos
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 2 %}
+                                        <a href="{{ path('app_notificaciones_producto_agotado', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-copy mr-2"></i>Productos agotados
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 6 %}
+                                        <a href="{{ path('app_notificaciones_solicitar_recogida', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-paperclip mr-2"></i>Solicitudes de recogida
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 3 %}
+                                        <a href="{{ path('app_notificaciones_solicitar_pago_royal_acumulado', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-tree mr-2"></i>Solicitudes de pago
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </li>
+                    {% endif %}
+                {% else %}
+                    {% if totalNotificacionesUser > 0 %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="#">
+                                <i id="pulsate-regular" class="far fa-bell"></i>
+                                <span class="badge badge-dark navbar-badge">{{ totalNotificacionesUser }}</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                                {% if totalNotificacionesUser == 1 %}
+                                    <span class="dropdown-item dropdown-header">{{ totalNotificacionesUser }} Notificación</span>
+                                {% else %}
+                                    <span class="dropdown-item dropdown-header">{{ totalNotificacionesUser }} Notificaciones</span>
+                                {% endif %}
+                                <div class="dropdown-divider"></div>
+                                {% for notificacion in notificacionesUser %}
+                                    {% if notificacion.tipo == 4 %}
+                                        <a href="{{ path('app_notificaciones_solicitar_pago_royal_acumulado', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-tree mr-2"></i>Pagos realizados
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 5 %}
+                                        <a href="{{ path('app_notificaciones_solicitar_pago_royal_acumulado', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-times-circle mr-2"></i>Pagos rechazados
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 7 %}
+                                        <a href="{{ path('app_notificaciones_asignar_producto', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-copy mr-2"></i>Productos asignados
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 8 %}
+                                        <a href="{{ path('app_notificaciones_servicios_asignados', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-wrench mr-2"></i>Servicios asignados
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 9 %}
+                                        <a href="{{ path('app_notificaciones_solicitar_recogida', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-paperclip mr-2"></i>Solicitudes aprobadas
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 10 %}
+                                        <a href="{{ path('app_notificaciones_retiros_saldos_acumulados', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-paperclip mr-2"></i>Retiros saldos
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 11 %}
+                                        <a href="{{ path('app_notificaciones_solicitar_recogida', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-paperclip mr-2"></i>Solicitudes rechazadas
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 12 %}
+                                        <a href="{{ path('app_notificaciones_producto_agotado_user', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-paperclip mr-2"></i>Productos agotados
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% elseif notificacion.tipo == 13 %}
+                                        <a href="{{ path('app_notificaciones_ingresos_saldos_acumulados', {'tipo': notificacion.tipo}) }}"
+                                           class="dropdown-item">
+                                            <i class="fas fa-paperclip mr-2"></i>Ingresos saldos
+                                            <span class="float-right text-muted text-sm">{{ notificacion.cant }}</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <div class="media align-items-center text-dark">
+                            <div class="media-body  ml-2  d-none d-lg-block">
+                                <i class="fa fa-cog"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu  dropdown-menu-right ">
+                        <div class="dropdown-divider"></div>
+                        <a href="{{ path('app_user_form_edit', {'id': app.user.id}) }}" class="dropdown-item">
+                            <i class="fa fa-user-edit"> Perfil</i>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="{{ path('app_reset_form_new', {'id': app.user.id()}) }}" class="dropdown-item">
+                            <i class="fa fa-cog"> Cambiar contraseña</i>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="{{ path('app_logout') }}" class="dropdown-item">
+                            <i class="fa fa-cog"> Salir</i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link pr-0" href="{{ path('app_ayuda_index') }}" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        <div class="media align-items-center text-dark">
+                            <div class="media-body  ml-2  d-none d-lg-block">
+                                <i class="fa fa-video"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link">
+                <span class="brand-text font-weight-light"><marquee>Magos Artesanos – Sistema de Royalties</marquee></span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    {% if app.user.avatar %}
+                        <a href="{{ path('app_user_form_edit', {'id': app.user.id}) }}">
+                            <div class="image">
+                                <img
+                                        src="{{ asset('uploads/' ~ app.user.avatar) }}"
+                                        style="background-color: white;"
+                                        class="img-circle elevation-2"
+                                        alt="User Image">
+                            </div>
+                        </a>
+                    {% endif %}
+                    <a href="{{ path('app_resumen') }}">
+                        <div class="info">
+                            <a href="{{ path('app_user_form_edit', {'id': app.user.id}) }}"
+                               class="d-block">{{ app.user.nombre|capitalize ~ ' ' ~ app.user.apellidos|capitalize }}</a>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                             with font-awesome or any other icon font library -->
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if resumen == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_resumen') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                                        <p>
+                                            Dashboard
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_resumen') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                                        <p>
+                                            Dashboard
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% elseif is_granted('ROLE_USER') %}
+                            {% if resumen == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_resumen') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                                        <p>
+                                            Dashboard
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_resumen') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                                        <p>
+                                            Dashboard
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                        {% else %}
+                            {% if asignarp == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_asignar_producto') }}" class="nav-link active">
+                                        <i class="nav-icon fa fa-copy"></i>
+                                        <p>
+                                            Mis Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_asignar_producto') }}" class="nav-link">
+                                        <i class="nav-icon fa fa-copy"></i>
+                                        <p>
+                                            Mis Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                        {% else %}
+                            {% if asignars == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_servicios_asignados') }}" class="nav-link">
+                                        <i class="nav-icon fa fa-wrench"></i>
+                                        <p>
+                                            Mis Servicios
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_servicios_asignados') }}" class="nav-link">
+                                        <i class="nav-icon fa fa-wrench"></i>
+                                        <p>
+                                            Mis Servicios
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if empres == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_empresa_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-archive"></i>
+                                        <p>
+                                            Empresa
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_empresa_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-archive"></i>
+                                        <p>
+                                            Empresa
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                        {% else %}
+                            {% if ventas == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_ventas') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-shopping-cart"></i>
+                                        <p>
+                                            Mis Ventas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_ventas') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-shopping-cart"></i>
+                                        <p>
+                                            Mis Ventas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if usuar == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_user_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-users"></i>
+                                        <p>
+                                            Usuarios Activos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_user_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-users"></i>
+                                        <p>
+                                            Usuarios Activos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if usuarI == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_user_inactivos') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-users"></i>
+                                        <p>
+                                            Usuarios Inactivos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_user_inactivos') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-users"></i>
+                                        <p>
+                                            Usuarios Inactivos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if product == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_producto_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_producto_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if amortizacion == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_amortizacion_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Amortizaciones
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_amortizacion_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Amortizaciones
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% else %}
+                            {% if amortizacionUser == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_amortizacion_user_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Mis Amortizaciones
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_amortizacion_user_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Mis Amortizaciones
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if service == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_servicio_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-wrench"></i>
+                                        <p>
+                                            Servicios
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_servicio_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-wrench"></i>
+                                        <p>
+                                            Servicios
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if pack == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_pack_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Packs de Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_pack_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Packs de Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if vp == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_venta_productos_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-table"></i>
+                                        <p>
+                                            Ventas de Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_venta_productos_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-table"></i>
+                                        <p>
+                                            Ventas de Productos
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if vs == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_venta_servicios_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-table"></i>
+                                        <p>
+                                            Ventas de Servicios
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_venta_servicios_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-table"></i>
+                                        <p>
+                                            Ventas de Servicios
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if canceladas == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_ventas_canceladas') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-table"></i>
+                                        <p>
+                                            Ventas Canceladas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_ventas_canceladas') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-table"></i>
+                                        <p>
+                                            Ventas Canceladas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if royaltiesp == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_solicitar_pago_royal_acumulado_index') }}"
+                                       class="nav-link active">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Liquidar Pago Royalties
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_solicitar_pago_royal_acumulado_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Liquidar Pago Royalties
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% else %}
+                            {% if royaltiesp == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_solicitar_pago_royal_acumulado_index') }}"
+                                       class="nav-link active">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Mis Solicitudes de Pago
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_solicitar_pago_royal_acumulado_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Mis Solicitudes de Pago
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                        {% else %}
+                            {% if direcc == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_direccion_index') }}"
+                                       class="nav-link active">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Mi Dirección de Recogida
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_direccion_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Mi Dirección de Recogida
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if retir == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_retiros_saldos_acumulados') }}"
+                                       class="nav-link active">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Distribución Royalties
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_retiros_saldos_acumulados') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-tree"></i>
+                                        <p>
+                                            Distribución Royalties
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if recogida == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_solicitar_recogida_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Solicitud de Recogidas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_solicitar_recogida_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Solicitud de Recogidas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% else %}
+                            {% if recogida == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_solicitar_recogida_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Mis Solicitudes de Recogida
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_solicitar_recogida_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Mis Solicitudes de Recogida
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if productAgot == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_producto_agotado_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Productos Agotados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_producto_agotado_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Productos Agotados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% else %}
+                            {% if productAgot == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_producto_agotado_user') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Mis Productos Agotados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_producto_agotado_user') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-copy"></i>
+                                        <p>
+                                            Mis Productos Agotados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                        {% else %}
+                            {% if buy == 1 %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_metodo_de_pago') }}" class="nav-link active">
+                                        <i class="nav-icon fa fa-credit-card"></i>
+                                        <p>
+                                            Mis Formas de Pago
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item has-treeview">
+                                    <a href="{{ path('app_metodo_de_pago') }}" class="nav-link">
+                                        <i class="nav-icon fa fa-credit-card"></i>
+                                        <p>
+                                            Mis Formas de Pago
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if estad == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_estado_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Estado de cuentas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_estado_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Estado de cuentas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% else %}
+                            {% if estadUser == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_estado_user_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Mis Estados de cuentas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_estado_user_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-dollar-sign"></i>
+                                        <p>
+                                            Mis Estados de cuentas
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_USER') %}
+                            {% if hist == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_historial_retiro_saldo_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Retiro Royalties Realizados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_historial_retiro_saldo_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Retiro Royalties Realizados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_USER') %}
+                            {% if ing == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_ingreso_saldo_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Ingreso Royalties Realizados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_ingreso_saldo_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fas fa-paperclip"></i>
+                                        <p>
+                                            Ingreso Royalties Realizados
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {% if tipoNot == 1 %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_tipo_notificacion_index') }}" class="nav-link active">
+                                        <i class="nav-icon fas fa-bell"></i>
+                                        <p>
+                                            Notificaciones
+                                        </p>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{ path('app_tipo_notificacion_index') }}" class="nav-link">
+                                        <i class="nav-icon fas fa-bell"></i>
+                                        <p>
+                                            Notificaciones
+                                        </p>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        {% block page %}
+
+        {% endblock %}
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2022 </strong>Versión v3.1 Todos los Derechos Reservados.
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    </body>
+{% endblock %}
+</html>

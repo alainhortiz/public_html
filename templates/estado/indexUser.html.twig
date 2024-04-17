@@ -1,0 +1,157 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mi Estado de Cuentas{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Mi Estado de Cuentas</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title">
+                                <h3>Movimientos del acumulado en la cuenta en USD</h3>
+                            </div>
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataMovimientosUSD">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th class="hidden">id</th>
+                                        <th>Fecha</th>
+                                        <th>Acumulado</th>
+                                        <th>Acción</th>
+                                        <th>Código Venta</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for movimiento in movimientos %}
+                                        {% if movimiento.tipodemoneda == 'USD' %}
+                                            <tr data-id="{{ movimiento.id }}">
+                                                <td class="hidden">{{ movimiento.id }}</td>
+                                                <td>{{ movimiento.fecha|date('Y-m-d h:i:s') }}</td>
+                                                <td>{{ movimiento.saldo|number_format(2, '.', ',') }}</td>
+                                                {% if movimiento.accion == 1 %}
+                                                    <td>Ingreso por concepto de ingreso de royalties</td>
+                                                {% elseif movimiento.accion == 2 %}
+                                                    <td>Retiro por concepto de retiro de royalties</td>
+                                                {% elseif movimiento.accion == 3 %}
+                                                    <td>Ingreso por concepto de amortización del producto</td>
+                                                {% elseif movimiento.accion == 4 %}
+                                                    <td>Ingreso por concepto de beneficio de royalties</td>
+                                                {% elseif movimiento.accion == 5 %}
+                                                    <td>Retiro por concepto de solicitud de pago de royalties</td>
+                                                {% elseif movimiento.accion == 6 %}
+                                                    <td>Ingreso por concepto de cancelación de solicitud de pago de royalties</td>
+                                                {% elseif movimiento.accion == 7 %}
+                                                    <td>Retiro de royalties por concepto de cancelación de venta</td>
+                                                {% elseif movimiento.accion == 8 %}
+                                                    <td>Retiro de saldo de amortización por concepto de cancelación de venta</td>
+                                                {% endif %}
+                                                <td>{{ movimiento.venta ?  movimiento.venta.codigo : '' }}</td>
+                                            </tr>
+                                        {% endif %}
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="4">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-title">
+                                <h3>Movimientos del acumulado en la cuenta en EUR</h3>
+                            </div>
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataMovimientosEUR">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th class="hidden">id</th>
+                                        <th>Fecha</th>
+                                        <th>Acumulado</th>
+                                        <th>Acción</th>
+                                        <th>Código Venta</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for movimiento in movimientos %}
+                                        {% if movimiento.tipodemoneda == 'EUR' %}
+                                            <tr data-id="{{ movimiento.id }}">
+                                                <td class="hidden">{{ movimiento.id }}</td>
+                                                <td>{{ movimiento.fecha|date('Y-m-d h:i:s') }}</td>
+                                                <td>{{ movimiento.saldo|number_format(2, '.', ',') }}</td>
+                                                {% if movimiento.accion == 1 %}
+                                                    <td>Ingreso por concepto de ingreso de royalties</td>
+                                                {% elseif movimiento.accion == 2 %}
+                                                    <td>Retiro por concepto de retiro de royalties</td>
+                                                {% elseif movimiento.accion == 3 %}
+                                                    <td>Ingreso por concepto de amortización del producto</td>
+                                                {% elseif movimiento.accion == 4 %}
+                                                    <td>Ingreso por concepto de beneficio de royalties</td>
+                                                {% elseif movimiento.accion == 5 %}
+                                                    <td>Retiro por concepto de solicitud de pago de royalties</td>
+                                                {% elseif movimiento.accion == 6 %}
+                                                    <td>Ingreso por concepto de cancelación de solicitud de pago de royalties</td>
+                                                {% elseif movimiento.accion == 7 %}
+                                                    <td>Retiro de royalties por concepto de cancelación de venta</td>
+                                                {% elseif movimiento.accion == 8 %}
+                                                    <td>Retiro de saldo de amortización por concepto de cancelación de venta</td>
+                                                {% endif %}
+                                                <td>{{ movimiento.venta ?  movimiento.venta.codigo : '' }}</td>
+                                            </tr>
+                                        {% endif %}
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="4">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataMovimientosUSD, #dataMovimientosEUR').DataTable({
+                "paging": true,
+                "order": [0, "desc"],
+                "lengthChange": false,
+                "searching": false,
+                "lengthMenu": [[6], [6]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+{% endblock %}

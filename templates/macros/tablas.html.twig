@@ -1,0 +1,417 @@
+{% macro tabla_ventas(arreglo,tipo,moneda,tipoEncabezado) %}
+<thead class="text-center">
+<tr>
+    <th>Pack</th>
+    <th>{{ tipoEncabezado }}</th>
+    <th>Fecha</th>
+    <th>Código</th>
+    {% if tipoEncabezado == 'Producto' %}
+        <th>Cantidad</th>
+    {% endif %}
+    <th>Ganancia x Amortización</th>
+    <th>Ganancia x Beneficio</th>
+</tr>
+</thead>
+<tbody class="text-center">
+{% for ven in arreglo %}
+    {% if ven.producto.tipoProducto == tipo and ven.producto.tipodemoneda == moneda and ven.royaltie != 0 %}
+        <tr class="text-center">
+            <td>{{ ven.pack ? 'SI' : '-' }}</td>
+            <td>{{ ven.producto.nombre }}</td>
+            <td>{{ ven.venta.fecha|date('Y-m-d') }}</td>
+            <td>{{ ven.venta.codigo }}</td>
+            {% if tipoEncabezado == 'Producto' %}
+                <td>{{ ven.cantidad }}</td>
+            {% endif %}
+            <td>{{ ven.pagoAmortizacion|number_format(2, '.', ',') }}</td>
+            <td>{{ ven.royaltie|number_format(2, '.', ',') }}</td>
+        </tr>
+    {% endif %}
+{% else %}
+    <tr>
+        <td colspan="7">No se encontraron registros</td>
+    </tr>
+{% endfor %}
+{% endmacro %}
+
+{% macro tabla_solicitud_pagos(arreglo,estado,tipo) %}
+    <div class="table-responsive" style="padding-left: 5px">
+        <table class="table table-bordered table-striped display" id="">
+            <thead class="text-center">
+            <tr>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <th>Usuario</th>
+                {% endif %}
+                <th>Fecha</th>
+                <th>Tipo de Producto</th>
+                <th>Royalties Pagados</th>
+                <th>Factura</th>
+                <th>M&eacute;todo de Pago</th>
+                {% if tipo == 'rechazados' %}
+                    <th>Concepto</th>
+                {% endif %}
+                {% if tipo == 'solicitud' %}
+                    <th>Acciones</th>
+                {% endif %}
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            {% for solicitar in arreglo %}
+                {% if solicitar.estado == estado %}
+                    <tr data-id="{{ solicitar.id }}">
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <td>{{ solicitar.user.nombre|capitalize ~ ' ' ~ solicitar.user.apellidos|capitalize }}</td>
+                        {% endif %}
+                        <td>{{ solicitar.fecha ? solicitar.fecha|date('Y-m-d') : '' }}</td>
+                        {% if  solicitar.tipoPago == 1 %}
+                            <td>General</td>
+                            <td class="text-bold">{{ solicitar.royaltiespagar|number_format(2, '.', ',') ~ ' USD' }}</td>
+                        {% elseif solicitar.tipoPago == 2 %}
+                            <td>General</td>
+                            <td class="text-bold">{{ solicitar.royaltiespagar|number_format(2, '.', ',') ~ ' EUR' }}</td>
+                        {% elseif solicitar.tipoPago == 3 %}
+                            <td>libro</td>
+                            <td class="text-bold">{{ solicitar.royaltiespagar|number_format(2, '.', ',') ~ ' USD' }}</td>
+                        {% elseif solicitar.tipoPago == 4 %}
+                            <td>libro</td>
+                            <td class="text-bold">{{ solicitar.royaltiespagar|number_format(2, '.', ',') ~ ' EUR' }}</td>
+                        {% elseif solicitar.tipoPago == 5 %}
+                            <td>Servicio</td>
+                            <td class="text-bold">{{ solicitar.royaltiespagar|number_format(2, '.', ',') ~ ' USD' }}</td>
+                        {% elseif solicitar.tipoPago == 6 %}
+                            <td>Servicio</td>
+                            <td class="text-bold">{{ solicitar.royaltiespagar|number_format(2, '.', ',') ~ ' EUR' }}</td>
+                        {% endif %}
+                        {% if solicitar.factura != '' %}
+                            <td><a href="{{ asset('uploads/' ~ solicitar.factura) }}"
+                                   target="_blank">Ver
+                                    Factura</a>
+                            </td>
+                        {% else %}
+                            <td>Sin Factura</td>
+                        {% endif %}
+                        {% if solicitar.metododepago == 'WesterUnion' %}
+                            <td>
+                                <div class="card bg-light">
+                                    <div class="card-body pt-0">
+                                        <div class="row" style="padding-top: 10px">
+                                            <div class="col-12">
+                                                <h2 class="lead"><b>Wester Union</b></h2>
+                                                <p class="text-muted text-sm">
+                                                    <b>Destinatario: </b> {{ solicitar.westerunion ? solicitar.westerunion.nombre ~ ' ' ~ solicitar.westerunion.primerApellido ~ ' ' ~ solicitar.westerunion.segundoApellido : '' }}
+                                                </p>
+                                                <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                    <li class="small"><span class="fa-li"><i
+                                                                    class="fas fa-lg fa-mail-bulk"></i></span> Correo:
+                                                        {{ solicitar.westerUnion ? solicitar.westerunion.email: '' }}
+                                                    </li>
+                                                    <li class="small"><span class="fa-li"><i
+                                                                    class="fas fa-lg fa-building"></i></span>
+                                                        Ciudad: {{ solicitar.westerUnion ? solicitar.westerunion.ciudad: '' }}
+                                                    </li>
+                                                    <li class="small"><span class="fa-li"><i
+                                                                    class="fas fa-lg fa-phone"></i></span>
+                                                        Phone
+                                                        #: {{ solicitar.westerUnion ? solicitar.westerunion.numeromovil: '' }}
+                                                    </li>
+                                                    <li class="small">
+                                                        Código MTCN: {{ solicitar.info ? solicitar.info: '' }}
+                                                    </li>
+                                                    {% if solicitar.documentoAprobacion != '' %}
+                                                        <li class="small">
+                                                            <a href="{{ asset('uploads/' ~ solicitar.documentoAprobacion) }}"
+                                                               target="_blank">Ver Adjunto</a>
+                                                        </li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        {% elseif  solicitar.metododepago == 'Paypal' %}
+                            <td>
+                                <div class="card bg-light">
+                                    <div class="card-body pt-0">
+                                        <div class="row" style="padding-top: 10px">
+                                            <div class="col-12">
+                                                <h2 class="lead"><b>Paypal</b></h2>
+                                                <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                    <li class="small"><span class="fa-li"><i
+                                                                    class="fas fa-lg fa-mail-bulk"></i></span> Correo:
+                                                        {{ solicitar.paypal ? solicitar.paypal.email: '' }}
+                                                    </li>
+                                                    <li class="small">No. Transacción:
+                                                        {{ solicitar.info ? solicitar.info: '' }}
+                                                    </li>
+                                                    {% if solicitar.documentoAprobacion != '' %}
+                                                        <li class="small">
+                                                            <a href="{{ asset('uploads/' ~ solicitar.documentoAprobacion) }}"
+                                                               target="_blank">Ver Adjunto</a>
+                                                        </li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        {% elseif  solicitar.metododepago == 'Bizum' %}
+                            <td>
+                                <div class="card bg-light">
+                                    <div class="card-body pt-0">
+                                        <div class="row" style="padding-top: 10px">
+                                            <div class="col-12">
+                                                <h2 class="lead"><b>Bizum</b></h2>
+                                                <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                    <li class="small"><span class="fa-li"><i
+                                                                    class="fas fa-lg fa-phone"></i></span>
+                                                        Phone #: {{ solicitar.bizum ? solicitar.bizum.telefono: '' }}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        {% elseif  solicitar.metododepago == 'Transferencia' %}
+                            <td>
+                                <div class="card bg-light">
+                                    <div class="card-body pt-0">
+                                        <div class="row" style="padding-top: 10px">
+                                            <div class="col-12">
+                                                <h2 class="lead"><b>Transferencia</b></h2>
+                                                <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                    <li class="small"><span class="fa-li"><i
+                                                                    class="fas fa-lg fa-bank"></i></span> No.Cuenta
+                                                        (IBAN):
+                                                        {{ solicitar.transferenciaBancaria ? solicitar.transferenciaBancaria.numerocuenta: '' }}
+                                                    </li>
+                                                    <li class="small"><span class="fa-li"><i
+                                                                    class="fas fa-lg fa-user"></i></span> Titular:
+                                                        {{ solicitar.transferenciaBancaria ? solicitar.transferenciaBancaria.titular: '' }}
+                                                    </li>
+                                                    {% if solicitar.documentoAprobacion != '' %}
+                                                        <li class="small">
+                                                            <a href="{{ asset('uploads/' ~ solicitar.documentoAprobacion) }}"
+                                                               target="_blank">Ver Adjunto</a>
+                                                        </li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        {% elseif  solicitar.metododepago == 'Voucher' %}
+                            <td>
+                                <div class="card bg-light">
+                                    <div class="card-body pt-0">
+                                        <div class="row" style="padding-top: 10px">
+                                            <div class="col-12">
+                                                <h2 class="lead"><b>Voucher</b></h2>
+                                                <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                    <li class="small"> Cupón de Descuento:
+                                                        {{ solicitar.info ? solicitar.info: '' }}
+                                                    </li>
+                                                    {% if solicitar.documentoAprobacion != '' %}
+                                                        <li class="small">
+                                                            <a href="{{ asset('uploads/' ~ solicitar.documentoAprobacion) }}"
+                                                               target="_blank">Ver Adjunto</a>
+                                                        </li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        {% else %}
+                            <td>{{ solicitar.metododepago }}</td>
+                        {% endif %}
+                        {% if tipo == 'rechazados' %}
+                            <td>{{ solicitar.motivoRechazo }}</td>
+                        {% endif %}
+                        {% if tipo == 'solicitud' %}
+                            <td style="margin: 0 auto;">
+                                {% if is_granted('ROLE_ADMIN') %}
+                                    <button class="btn btn-success aprobar"
+                                            data-toggle="tooltip"
+                                            title="Realizar pago"><i
+                                                class="fas fa-check"></i>
+                                    </button>
+                                    <button class="btn btn-secondary rechazar"
+                                            data-toggle="tooltip"
+                                            title="Rechazar pago"><i
+                                                class="fas fa-ban"></i>
+                                    </button>
+                                {% else %}
+                                    <form method="post"
+                                          action="{{ path('app_solicitar_pago_royal_acumulado_delete', {'id': solicitar.id}) }}"
+                                          onsubmit="return confirm('Está segur@ que desea eliminar este pago?');">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <input type="hidden" name="_token"
+                                               value="{{ csrf_token('delete' ~ solicitar.id) }}">
+                                        <button class="btn btn-danger"
+                                                data-toggle="tooltip"
+                                                title="Eliminar"><i
+                                                    class="fas fa-trash"></i>
+                                        </button>
+                                    </form>
+                                {% endif %}
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% else %}
+                <tr>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <td colspan="6">No se encontraron registros</td>
+                    {% else %}
+                        <td colspan="6">No se encontraron registros</td>
+                    {% endif %}
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endmacro %}
+
+{% macro tabla_retiro_pagos(arreglo,moneda) %}
+    <div class="table-responsive" style="padding-left: 5px">
+        <table class="table table-bordered table-striped display" id="">
+            <thead class="text-center">
+            <tr>
+                <th>Usuarios</th>
+                <th>Correo</th>
+                <th>Saldo Inicial</th>
+                <th>Royalties Acumulados</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            {% for venta in arreglo %}
+                {% if moneda == 'saldoGeneralUSD' and venta.saldoGeneralUSD != 0 %}
+                    <tr data-id="{{ venta.id }}">
+                        <td>{{ venta.nombre  ~ ' ' ~ venta.apellidos }}</td>
+                        <td>{{ venta.email }}</td>
+                        <td>{{ venta.saldoInicialGeneralUSD|number_format(2, '.', ',') }}</td>
+                        <td>{{ venta.saldoGeneralUSD|number_format(2, '.', ',') }}</td>
+                        <td style="margin: 0 auto;">
+                            <button class="btn btn-secondary ingresar"
+                                    data-toggle="tooltip"
+                                    title="Ingresar saldo"><i
+                                        class="fas fa-dollar-sign"></i>
+                            </button>
+                            <button class="btn btn-danger retirar" data-toggle="tooltip"
+                                    title="Retirar saldo">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                {% elseif moneda == 'saldoGeneralEUR' and venta.saldoGeneralEUR != 0 %}
+                    <tr data-id="{{ venta.id }}">
+                        <td>{{ venta.nombre  ~ ' ' ~ venta.apellidos }}</td>
+                        <td>{{ venta.email }}</td>
+                        <td>{{ venta.saldoInicialGeneralEUR|number_format(2, '.', ',') }}</td>
+                        <td>{{ venta.saldoGeneralEUR|number_format(2, '.', ',') }}</td>
+                        <td style="margin: 0 auto;">
+                            <button class="btn btn-secondary ingresar"
+                                    data-toggle="tooltip"
+                                    title="Ingresar saldo"><i
+                                        class="fas fa-dollar-sign"></i>
+                            </button>
+                            <button class="btn btn-danger retirar" data-toggle="tooltip"
+                                    title="Retirar saldo">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                {% elseif moneda == 'saldoLibroUSD' and venta.saldoLibroUSD != 0 %}
+                    <tr data-id="{{ venta.id }}">
+                        <td>{{ venta.nombre  ~ ' ' ~ venta.apellidos }}</td>
+                        <td>{{ venta.email }}</td>
+                        <td>{{ venta.saldoInicialLibroUSD|number_format(2, '.', ',') }}</td>
+                        <td>{{ venta.saldoLibroUSD|number_format(2, '.', ',') }}</td>
+                        <td style="margin: 0 auto;">
+                            <button class="btn btn-secondary ingresar"
+                                    data-toggle="tooltip"
+                                    title="Ingresar saldo"><i
+                                        class="fas fa-dollar-sign"></i>
+                            </button>
+                            <button class="btn btn-danger retirar" data-toggle="tooltip"
+                                    title="Retirar saldo">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                {% elseif moneda == 'saldoLibroEUR' and venta.saldoLibroEUR != 0 %}
+                    <tr data-id="{{ venta.id }}">
+                        <td>{{ venta.nombre  ~ ' ' ~ venta.apellidos }}</td>
+                        <td>{{ venta.email }}</td>
+                        <td>{{ venta.saldoInicialLibroEUR|number_format(2, '.', ',') }}</td>
+                        <td>{{ venta.saldoLibroEUR|number_format(2, '.', ',') }}</td>
+                        <td style="margin: 0 auto;">
+                            <button class="btn btn-secondary ingresar"
+                                    data-toggle="tooltip"
+                                    title="Ingresar saldo"><i
+                                        class="fas fa-dollar-sign"></i>
+                            </button>
+                            <button class="btn btn-danger retirar" data-toggle="tooltip"
+                                    title="Retirar saldo">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                {% elseif moneda == 'saldoServicioUSD' and venta.saldoServicioUSD != 0 %}
+                    <tr data-id="{{ venta.id }}">
+                        <td>{{ venta.nombre  ~ ' ' ~ venta.apellidos }}</td>
+                        <td>{{ venta.email }}</td>
+                        <td>{{ venta.saldoInicialServicioUSD|number_format(2, '.', ',') }}</td>
+                        <td>{{ venta.saldoServicioUSD|number_format(2, '.', ',') }}</td>
+                        <td style="margin: 0 auto;">
+                            <button class="btn btn-secondary ingresar"
+                                    data-toggle="tooltip"
+                                    title="Ingresar saldo"><i
+                                        class="fas fa-dollar-sign"></i>
+                            </button>
+                            <button class="btn btn-danger retirar" data-toggle="tooltip"
+                                    title="Retirar saldo">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                {% elseif moneda == 'saldoServicioEUR' and venta.saldoServicioEUR != 0 %}
+                    <tr data-id="{{ venta.id }}">
+                        <td>{{ venta.nombre  ~ ' ' ~ venta.apellidos }}</td>
+                        <td>{{ venta.email }}</td>
+                        <td>{{ venta.saldoInicialServicioEUR|number_format(2, '.', ',') }}</td>
+                        <td>{{ venta.saldoServicioEUR|number_format(2, '.', ',') }}</td>
+                        <td style="margin: 0 auto;">
+                            <button class="btn btn-secondary ingresar"
+                                    data-toggle="tooltip"
+                                    title="Ingresar saldo"><i
+                                        class="fas fa-dollar-sign"></i>
+                            </button>
+                            <button class="btn btn-danger retirar" data-toggle="tooltip"
+                                    title="Retirar saldo">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                {% endif %}
+            {% else %}
+                <tr>
+                    <td colspan="4">No se encontraron registros</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endmacro %}
+
+
+
+
+

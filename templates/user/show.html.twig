@@ -1,0 +1,241 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Datos de Cuenta{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <section class="content">
+                    <!-- Default box -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            {% if bolsaGeneralDolar < 0  or bolsaGeneralDolar > 0 %}
+                                <div class="col-12 col-sm-4 col-md-4">
+                                    <div class="info-box" data-toggle="tooltip"
+                                         data-placement="top"
+                                         title="Solicitar pago de royalties" disabled>
+                                        <span class="info-box-icon bg-info"><i class="fa fa-dollar-sign"></i></span>
+                                        <div class="info-box-content">
+                                            <span class="info-box-text text-bold">Productos Generales</span>
+                                            <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                            <span class="info-box-number"><i
+                                                        class="fa fa-dollar-sign"></i> {{ bolsaGeneralDolar|number_format(2, '.', ',') }}</span>
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                            {% endif %}
+                            <!-- /.col -->
+                            {% if bolsaGeneralEuros < 0 or bolsaGeneralEuros > 0 %}
+                                <div class="col-12 col-sm-4 col-md-4">
+                                    <div class="info-box"
+                                         data-toggle="tooltip"
+                                         data-placement="top"
+                                         title="Solicitar pago de royalties">
+                                        <span class="info-box-icon bg-info"><i class="fa fa-euro-sign"></i></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text text-bold">Productos Generales</span>
+                                            <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                            <span class="info-box-number"><i
+                                                        class="fa fa-euro-sign"></i> {{ bolsaGeneralEuros|number_format(2, '.', ',') }}</span>
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                            {% endif %}
+                            <!-- /.col -->
+                            {% if bolsaLibroDolar < 0 or bolsaLibroDolar > 0 %}
+                                <div class="col-12 col-sm-4 col-md-4">
+                                    <div class="info-box"
+                                         data-toggle="tooltip"
+                                         data-placement="top"
+                                         title="Solicitar pago de royalties">
+                                        <span class="info-box-icon bg-danger"><i class="fa fa-dollar-sign"></i></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text text-bold">Libros</span>
+                                            <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                            <span class="info-box-number"><i
+                                                        class="fa fa-dollar-sign"></i> {{ bolsaLibroDolar|number_format(2, '.', ',') }}</span>
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                            {% endif %}
+                            <!-- /.col -->
+                            {% if bolsaLibroEuros < 0 or bolsaLibroEuros > 0 %}
+                                <div class="col-12 col-sm-4 col-md-4">
+                                    <div class="info-box"
+                                         data-toggle="tooltip"
+                                         data-placement="top"
+                                         title="Solicitar pago de royalties">
+                                        <span class="info-box-icon bg-danger"><i class="fa fa-euro-sign"></i></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text text-bold">Productos Libros</span>
+                                            <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                            <span class="info-box-number"><i
+                                                        class="fa fa-euro-sign"></i> {{ bolsaLibroEuros|number_format(2, '.', ',') }}</span>
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                            {% endif %}
+                            <!-- /.col -->
+                            {% if bolsaServicioDolar < 0 or bolsaServicioDolar > 0 %}
+                                <div class="col-12 col-sm-4 col-md-4">
+                                    <div class="info-box"
+                                         data-toggle="tooltip"
+                                         data-placement="top"
+                                         title="Solicitar pago de royalties">
+                                        <span class="info-box-icon bg-warning"><i class="fa fa-dollar-sign"></i></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text text-bold">Servicios</span>
+                                            <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                            <span class="info-box-number"><i
+                                                        class="fa fa-dollar-sign"></i> {{ bolsaServicioDolar|number_format(2, '.', ',') }}</span>
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                            {% endif %}
+                            <!-- /.col -->
+                            {% if bolsaServicioEuros < 0 or bolsaServicioEuros > 0 %}
+                                <div class="col-12 col-sm-4 col-md-4">
+                                    <div class="info-box"
+                                         data-toggle="tooltip"
+                                         data-placement="top"
+                                         title="Solicitar pago de royalties">
+                                        <span class="info-box-icon bg-warning"><i class="fa fa-euro-sign"></i></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text text-bold">Servicios</span>
+                                            <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                            <span class="info-box-number"><i
+                                                        class="fa fa-euro-sign"></i> {{ bolsaServicioEuros|number_format(2, '.', ',') }}</span>
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                            {% endif %}
+                            <!-- /.col -->
+                        </div>
+                    </div><!-- /.card -->
+                </section>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Informaci&oacute;n de la cuenta de {{ user.nombre }}</h3>
+                        </div>
+                    </div>
+
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>Nombre</th>
+                            <td>{{ user.nombre }}</td>
+                        </tr>
+                        <tr>
+                            <th>Apellidos</th>
+                            <td>{{ user.apellidos }}</td>
+                        </tr>
+                        <tr>
+                            <th>Empresa</th>
+                            <td>{{ user.empresa }}</td>
+                        </tr>
+                        <tr>
+                            <th>NIF/CIF</th>
+                            <td>{{ user.nifcif }}</td>
+                        </tr>
+                        <tr>
+                            <th>Direcci&oacute;n</th>
+                            <td>{{ user.direccion }}</td>
+                        </tr>
+                        <tr>
+                            <th>Poblaci&oacute;n</th>
+                            <td>{{ user.poblacion }}</td>
+                        </tr>
+                        <tr>
+                            <th>Provincia</th>
+                            <td>{{ user.provincia }}</td>
+                        </tr>
+                        <tr>
+                            <th>Pa&iacute;s</th>
+                            <td>{{ user.pais }}</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>{{ user.email }}</td>
+                        </tr>
+                        <tr>
+                            <th>Código Postal</th>
+                            <td>{{ user.codigoPostal }}</td>
+                        </tr>
+                        <tr>
+                            <th>Roles</th>
+                            <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+                        </tr>
+                        <tr>
+                            <th>Tel&eacute;fono</th>
+                            <td>{{ user.telefono }}</td>
+                        </tr>
+                        <tr>
+                            <th>Emite Factura</th>
+                            <td>{{ user.emitirfactura ? 'Si' : 'No' }}</td>
+                        </tr>
+                        <tr>
+                            <th>Productos Asignados</th>
+                            {% if productos %}
+                                <td class="form-group">
+                                    <label>
+                                        <select multiple="" class="custom-select" disabled="">
+                                            {% for usuarioid in productos %}
+                                                <option>{{ usuarioid }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </label>
+                                </td>
+                            {% else %}
+                                <td>No tiene</td>
+                            {% endif %}
+                        </tr>
+                        <tr>
+                            <th>Servicios Asignados</th>
+                            {% if servicios %}
+                                <td class="form-group">
+                                    <label>
+                                        <select multiple="" class="custom-select" disabled="">
+                                            {% for usuariosid in servicios %}
+                                                <option>{{ usuariosid }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </label>
+                                </td>
+                            {% else %}
+                                <td>No tiene</td>
+                            {% endif %}
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div style="padding: 20px">
+                        <a class="btn btn-danger" style="float: left" href="{{ path('app_user_index') }}">Regresar</a>
+
+                        <a class="btn btn-success" style="float: right"
+                           href="{{ path('app_user_form_edit', {'id': user.id}) }}">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

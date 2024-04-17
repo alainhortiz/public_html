@@ -1,0 +1,144 @@
+[12-May-2022 19:51:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[12-May-2022 19:52:05 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[16-May-2022 08:52:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[16-May-2022 10:30:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[18-May-2022 03:55:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[18-May-2022 22:38:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[20-May-2022 16:18:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[21-May-2022 02:11:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[21-May-2022 02:11:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[21-May-2022 02:11:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[21-May-2022 02:11:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[21-May-2022 02:11:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[21-May-2022 02:11:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[21-May-2022 02:11:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[21-May-2022 02:11:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[21-May-2022 02:11:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[21-May-2022 02:11:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[21-May-2022 02:11:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[22-May-2022 12:53:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[23-May-2022 00:05:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[28-May-2022 04:06:15 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[28-May-2022 04:06:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[29-May-2022 06:54:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[29-May-2022 06:54:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[30-May-2022 16:22:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[30-May-2022 16:22:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[31-May-2022 21:56:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[01-Jun-2022 22:50:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[03-Jun-2022 09:56:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[08-Jun-2022 13:51:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[10-Jun-2022 19:47:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[10-Jun-2022 19:48:15 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[11-Jun-2022 02:24:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[11-Jun-2022 02:24:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16
+[11-Jun-2022 08:48:30 UTC] PHP Fatal error:  Uncaught Error: Interface 'SymfonyCasts\Bundle\ResetPassword\Model\ResetPasswordRequestInterface' not found in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/ResetPasswordRequest.php on line 13
+[11-Jun-2022 08:48:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/src/Entity/User.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Entity/User.php on line 16

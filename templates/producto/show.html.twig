@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Producto{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header" style="background-color: #343a40">
+                        <div class="card-title text-white">
+                            <h3>Producto</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataProductos">
+                                    <tbody>
+                                    <tr>
+                                        <th>Tipo</th>
+                                        {% if producto.tipoProducto == 1 %}
+                                            <td>General</td>
+                                        {% elseif producto.tipoProducto == 2 %}
+                                            <td>Libro</td>
+                                        {% endif %}
+                                    </tr>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <td>{{ producto.nombre }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>IDD</th>
+                                        <td>{{ producto.idd }}</td>
+                                    </tr>
+                                    {% if producto.imagen %}
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <td>
+                                                <div class="product-image-thumb active"><img width="50" height="50"
+                                                                                             src="{{ asset('uploads/' ~ producto.imagen) }}"
+                                                                                             alt="Foto Producto"></div>
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                    <tr>
+                                        <th>Beneficio por Venta</th>
+                                        <td>{{ producto.beneficioxventa }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Moneda</th>
+                                        <td>{{ producto.tipodemoneda }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Stock</th>
+                                        <td>{{ producto.stock }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Aviso Stock</th>
+                                        <td>{{ producto.stockAdvertencia }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Usuario Asignado</th>
+                                        <td>{{ producto.user ? producto.user.nombre ~ ' ' ~ producto.user.apellidos }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        {% if producto.amortizaciones|length > 0 %}
+                            <div class="row">
+                                <div class="card-header" style="background-color: #343a40">
+                                    <div class="card-title text-white">
+                                        <h3>Amortizaciones</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive" style="padding-left: 5px">
+                                    <table class="table table-bordered table-striped" id="dataAmortizaciones">
+                                        <thead class="text-center">
+                                        <tr>
+                                            <th>Costo de Producción</th>
+                                            <th>Precio de Venta</th>
+                                            <th>Por liquidar</th>
+                                            <th>Beneficiado</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                        {% for amortizacion in producto.amortizaciones %}
+                                            <tr class="text-center">
+                                                <td>{{ amortizacion.costoProduccion|number_format(2, '.', ',') }}</td>
+                                                <td>{{ amortizacion.precioVenta|number_format(2, '.', ',') }}</td>
+                                                <td>{{ amortizacion.saldoRestante|number_format(2, '.', ',') }}</td>
+                                                {% if amortizacion.isAdministrador == '1' %}
+                                                    <td>Administrador</td>
+                                                {% else %}
+                                                    <td>{{ producto.user.nombre ~ ' ' ~ producto.user.apellidos }}</td>
+                                                {% endif %}
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div style="padding: 20px">
+                        <a class="btn btn-danger" style="float: left"
+                           href="{{ path('app_producto_index') }}">Regresar</a>
+
+                        <a class="btn btn-success" style="float: right"
+                           href="{{ path('app_producto_form_edit', {'id': producto.id}) }}">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataAmortizaciones').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "lengthMenu": [[1], [1]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+        });
+    </script>
+{% endblock %}

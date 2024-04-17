@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de Ventas canceladas{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Ventas canceladas</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataVentas">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Código de Venta</th>
+                                        <th>Producto</th>
+                                        <th>Cantidad</th>
+                                        <th>Usuario</th>
+                                        <th>Royalties</th>
+                                        <th>Amortización</th>
+                                        <th>Cuenta afectada</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for venta in ventasCanceladas %}
+                                        <tr class="text-center">
+                                            <td>{{ venta.fecha|date('Y-m-d h:i:s') }}</td>
+                                            <td>{{ venta.codigo }}</td>
+                                            <td>{{ venta.producto.nombre }}</td>
+                                            <td>{{ venta.cantidad|number_format(0, '.', ',') }}</td>
+                                            <td>{{ venta.producto.user.nombre ~ ' ' ~ venta.producto.user.apellidos }}</td>
+                                            <td>{{ venta.royaltie|number_format(2, '.', ',') }}</td>
+                                            <td>{{ venta.amortizacion|number_format(2, '.', ',') }}</td>
+                                            <td>{{ venta.saldoAfectado }}</td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="8">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataVentas').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[10], [10]],
+                "ordering": false,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+{% endblock %}

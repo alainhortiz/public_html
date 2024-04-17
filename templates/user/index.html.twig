@@ -1,0 +1,687 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de Usuarios{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Usuarios Activos</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ path('app_user_form_new') }}">
+                            <button type="button" class="btn btn-block bg-gradient-success"><i
+                                        class="fa fa-user-plus"></i> Crear Nuevo Usuario
+                            </button>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataUser">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Avatar</th>
+                                        <th>Rol</th>
+                                        <th>Nombre</th>
+                                        <th>Empresa</th>
+                                        <th>Productos asignados</th>
+                                        <th>Servicios asignados</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for user in users %}
+                                        {% set cantProductos = 0 %}
+                                        {% set cantServicios = 0 %}
+                                        {% if user.productos|length > 0 %}
+                                            {% for producto in user.productos %}
+                                                {% if (producto.tipoProducto == 1 or producto.tipoProducto == 2) and producto.isActive == 1 %}
+                                                    {% set cantProductos = cantProductos + 1 %}
+                                                {% elseif producto.tipoProducto == 3 and producto.isActive == 1 %}
+                                                    {% set cantServicios = cantServicios + 1 %}
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                        <tr data-id="{{ user.id }}">
+                                            {% if user.avatar %}
+                                                <td><img width="80" height="80"
+                                                         src="{{ asset('uploads/' ~ user.avatar) }}"
+                                                         alt="Avatar Usuario"></td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                            {% if user.roles %}
+                                                {% if user.roles[0] == 'ROLE_ADMIN' %}
+                                                    <td>Administrador</td>
+                                                {% else %}
+                                                    <td>Usuario</td>
+                                                {% endif %}
+                                            {% endif %}
+                                            <td>{{ user.nombre ~ ' ' ~ user.apellidos }}</td>
+                                            <td>{{ user.empresa }}</td>
+                                            <td>{{ cantProductos }}</td>
+                                            <td>{{ cantServicios }}</td>
+                                            <td style="margin: 0 auto;">
+                                                <button class="btn btn-secondary ingresar"
+                                                        data-toggle="tooltip"
+                                                        title="Ingresar saldo"><i
+                                                            class="fas fa-dollar-sign"></i>
+                                                </button>
+                                                <button class="btn btn-danger retirar" data-toggle="tooltip"
+                                                        title="Retirar saldo">
+                                                    <i class="fas fa-exchange-alt"></i>
+                                                </button>
+                                                <a href="{{ path('app_user_show', {'id': user.id}) }}">
+                                                    <button class="btn btn-info" data-toggle="tooltip"
+                                                            title="ver"><i
+                                                                class="fas fa-info"></i>
+                                                    </button>
+                                                </a>
+                                                <a href="{{ path('app_reset_form_new', {'id': user.id}) }}">
+                                                    <button class="btn btn-warning"
+                                                            data-toggle="tooltip"
+                                                            title="Restear contraseña"><i
+                                                                class="fas fa-lock"></i>
+                                                    </button>
+                                                </a>
+                                                <a href="{{ path('app_user_form_edit', {'id': user.id}) }}">
+                                                    <button class="btn btn-success"
+                                                            data-toggle="tooltip"
+                                                            title="Editar"><i
+                                                                class="fas fa-edit"></i>
+                                                    </button>
+                                                </a>
+                                                <button class="btn btn-danger delete"
+                                                        data-toggle="tooltip"
+                                                        title="Eliminar"><i
+                                                            class="fas fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="15">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ include('user/modalAddRetiroSaldo.html.twig') }}
+        {{ include('user/modalAddIngresoSaldo.html.twig') }}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <script>
+        $(function () {
+
+            let table = $('#dataUser').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[8], [8]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "scrollY": 300,
+                "scrollCollapse": true
+            });
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            let nombre, id, saldoGeneralUSD, saldoGeneralEUR, saldoLibroUSD, saldoLibroEUR, saldoServicioUSD,
+                saldoServicioEUR, usuarioId, acumulado;
+
+            $('#addRoyaltie').keypress(function (tecla) {
+                if ((tecla.charCode < 48 || tecla.charCode > 57) && (tecla.charCode !== 46) && (tecla.charCode !== 8)) {
+                    return false;
+                } else {
+                    let len = $('#addRoyaltie').val().length;
+                    let index = $('#addRoyaltie').val().indexOf('.');
+
+                    if (index > 0 && tecla.charCode === 46) {
+                        return false;
+                    }
+
+                    if (index > 0) {
+                        let CharAfterdot = (len + 1) - index;
+                        if (CharAfterdot > 3) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            });
+
+            $('#addRoyaltieIngreso').keypress(function (tecla) {
+                if ((tecla.charCode < 48 || tecla.charCode > 57) && (tecla.charCode !== 46) && (tecla.charCode !== 8)) {
+                    return false;
+                } else {
+                    let len = $('#addRoyaltieIngreso').val().length;
+                    let index = $('#addRoyaltieIngreso').val().indexOf('.');
+
+                    if (index > 0 && tecla.charCode === 46) {
+                        return false;
+                    }
+
+                    if (index > 0) {
+                        let CharAfterdot = (len + 1) - index;
+                        if (CharAfterdot > 3) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            });
+
+            $('#tipoProducto').on('change', function () {
+                {% for user in users %}
+                id = parseInt('{{ user.id }}');
+                if (id === usuarioId) {
+                    saldoGeneralUSD = parseFloat('{{ user.saldoGeneralUSD }}');
+                    saldoGeneralEUR = parseFloat('{{ user.saldoGeneralEUR }}');
+                    saldoLibroUSD = parseFloat('{{ user.saldoLibroUSD }}');
+                    saldoLibroEUR = parseFloat('{{ user.saldoLibroEUR }}');
+                    saldoServicioUSD = parseFloat('{{ user.saldoServicioUSD }}');
+                    saldoServicioEUR = parseFloat('{{ user.saldoServicioEUR }}');
+                    acumulado = 0;
+                    switch (parseInt($('#tipoProducto').val())) {
+                        case 1:
+                            if(saldoGeneralUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoGeneralUSD }}');
+                            }
+                            break;
+                        case 2:
+                            if(saldoGeneralEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoGeneralEUR }}');
+                            }
+                            break;
+                        case 3:
+                            if(saldoLibroUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoLibroUSD }}');
+                            }
+                            break;
+                        case 4:
+                            if(saldoLibroEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoLibroEUR }}');
+                            }
+                            break;
+                        case 5:
+                            if(saldoServicioUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoServicioUSD }}');
+                            }
+                            break;
+                        case 6:
+                            if(saldoServicioEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoServicioEUR }}');
+                            }
+                            break;
+                    }
+                }
+                {% endfor %}
+                $("#modalTitle").text("SALDO ACUMULADO DE " + nombre.toUpperCase() + " " + acumulado);
+            });
+
+            $('#tipoProductoIngreso').on('change', function () {
+                {% for user in users %}
+                    id = parseInt('{{ user.id }}');
+                    if (id === usuarioId) {
+                        saldoGeneralUSD = parseFloat('{{ user.saldoGeneralUSD }}');
+                        saldoGeneralEUR = parseFloat('{{ user.saldoGeneralEUR }}');
+                        saldoLibroUSD = parseFloat('{{ user.saldoLibroUSD }}');
+                        saldoLibroEUR = parseFloat('{{ user.saldoLibroEUR }}');
+                        saldoServicioUSD = parseFloat('{{ user.saldoServicioUSD }}');
+                        saldoServicioEUR = parseFloat('{{ user.saldoServicioEUR }}');
+                        acumulado = 0;
+                        switch (parseInt($('#tipoProductoIngreso').val())) {
+                            case 1:
+                                if(saldoGeneralUSD !== 0){
+                                    acumulado = parseFloat('{{ user.saldoGeneralUSD }}');
+                                }
+                                break;
+                            case 2:
+                                if(saldoGeneralEUR !== 0){
+                                    acumulado = parseFloat('{{ user.saldoGeneralEUR }}');
+                                }
+                                break;
+                            case 3:
+                                if(saldoLibroUSD !== 0){
+                                    acumulado = parseFloat('{{ user.saldoLibroUSD }}');
+                                }
+                                break;
+                            case 4:
+                                if(saldoLibroEUR !== 0){
+                                    acumulado = parseFloat('{{ user.saldoLibroEUR }}');
+                                }
+                                break;
+                            case 5:
+                                if(saldoServicioUSD !== 0){
+                                    acumulado = parseFloat('{{ user.saldoServicioUSD }}');
+                                }
+                                break;
+                            case 6:
+                                if(saldoServicioEUR !== 0){
+                                    acumulado = parseFloat('{{ user.saldoServicioEUR }}');
+                                }
+                                break;
+                        }
+                    }
+                {% endfor %}
+                $("#modalTitleIngreso").text("SALDO ACUMULADO DE " + nombre.toUpperCase() + " " + acumulado);
+            });
+
+            let fichero;
+            let siFichero = 0;
+
+            $('#dataUser tbody').on('click', '.retirar', function () {
+                let row = $(this).parents('tr');
+                let fila = table.row(row).data();
+                usuarioId = parseInt(row.data('id'));
+                nombre = fila[2];
+                {% for user in users %}
+                id = parseInt('{{ user.id }}');
+                if (id === usuarioId) {
+                    saldoGeneralUSD = parseFloat('{{ user.saldoGeneralUSD }}');
+                    saldoGeneralEUR = parseFloat('{{ user.saldoGeneralEUR }}');
+                    saldoLibroUSD = parseFloat('{{ user.saldoLibroUSD }}');
+                    saldoLibroEUR = parseFloat('{{ user.saldoLibroEUR }}');
+                    saldoServicioUSD = parseFloat('{{ user.saldoServicioUSD }}');
+                    saldoServicioEUR = parseFloat('{{ user.saldoServicioEUR }}');
+                    acumulado = 0;
+                    switch (parseInt($('input:radio[name=tipoProducto]:checked').val())) {
+                        case 1:
+                            if(saldoGeneralUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoGeneralUSD }}');
+                            }
+                            break;
+                        case 2:
+                            if(saldoGeneralEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoGeneralEUR }}');
+                            }
+                            break;
+                        case 3:
+                            if(saldoLibroUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoLibroUSD }}');
+                            }
+                            break;
+                        case 4:
+                            if(saldoLibroEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoLibroEUR }}');
+                            }
+                            break;
+                        case 5:
+                            if(saldoServicioUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoServicioUSD }}');
+                            }
+                            break;
+                        case 6:
+                            if(saldoServicioEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoServicioEUR }}');
+                            }
+                            break;
+                    }
+
+                }
+                {% endfor %}
+                $("#modalTitle").text("SALDO ACUMULADO DE " + nombre.toUpperCase() + " " + acumulado);
+                limpiarModalRetiro()
+                $('#modalAddRetiroSaldo').modal('show');
+
+            });
+
+            $("#uploadDocumentoRetiro").on('change', function (e) {
+                let fichero = $("#uploadDocumentoRetiro").val();
+                let input = document.getElementById('uploadDocumentoRetiro');
+                let file = input.files[0]; //2 000 000
+                let allowedExtensions = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf|.jpg|.png)$/i;
+
+                if (!allowedExtensions.exec(fichero)) {
+                    toastr["error"]('Sólo se pueden subir archivos con extensiones: .docx, .xlsx, .pptx .pdf, .jpg, .png.', "Advertencia")
+                    $("#uploadDocumentoRetiro").val('');
+                    return false;
+                } else if (file.size > 2000000) {
+                    toastr["error"]('El tamaño del fichero no puede ser mayor que 2 MB.', "Advertencia")
+                    $("#uploadDocumentoRetiro").val('');
+                    return false;
+                } else {
+                    //aqui subo el fichero y guardo el nombre
+                    let Ruta = Routing.generate('app_fichero_retiro');
+                    let form = document.getElementById("myformRetiro");
+                    siFichero = 1;
+
+                    $(".preload").removeClass('hidden');
+
+                    $.ajax({
+                        url: Ruta,
+                        type: "post",
+                        dataType: "json",
+                        data: new FormData(form),
+                        contentType: false,
+                        processData: false,
+                        cache: false
+                    }).done(function (data) {
+                        $(".preload").addClass('hidden');
+                        fichero = data['fichero'];
+                    });
+                }
+            });
+
+            $('#btnAddGuardar').on('click', function () {
+
+                //Validaciones
+
+                if ($("#tipoProducto").val() === '0') {
+                    toastr["error"]('Debe seleccionar un tipo de cuenta, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+
+                if ($("#addRoyaltie").val() === '') {
+                    toastr["error"]('Teclee la cantidad de royaltie a retirar', "Advertencia")
+                    return false;
+                }
+
+                if ($("#addMotivo").val() === '') {
+                    toastr["error"]('Teclee el motivo', "Advertencia")
+                    return false;
+                }
+
+                if (siFichero === 0){
+                    fichero = '';
+                }else{
+                    fichero = document.getElementById('uploadDocumentoRetiro').files[0].name;
+                }
+
+                let Ruta = Routing.generate('app_retiro_saldo_acumulado_new');
+
+                $('#modalAddRetiroSaldo').modal('hide');
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    idUsuario: usuarioId,
+                    royaltie: parseFloat($("#addRoyaltie").val()),
+                    tipoSaldo: parseInt($("#tipoProducto").val()),
+                    motivo: $("#addMotivo").val(),
+                    saldoAcumulado: acumulado,
+                    fichero: fichero
+                };
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "html",
+                    data: mat_datos,
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+                    if (data === 'ok') {
+                        toastr["success"]('Retiro de saldo registrado', "Notificación")
+                        window.location.href = "{{ path('app_user_index') }}";
+                    } else {
+                        toastr["error"](data, "Notificación")
+                    }
+                });
+            });
+
+            $('#dataUser tbody').on('click', '.ingresar', function () {
+                let row = $(this).parents('tr');
+                let fila = table.row(row).data();
+                usuarioId = parseInt(row.data('id'));
+                nombre = fila[2];
+                {% for user in users %}
+                id = parseInt('{{ user.id }}');
+                if (id === usuarioId) {
+                    saldoGeneralUSD = parseFloat('{{ user.saldoGeneralUSD }}');
+                    saldoGeneralEUR = parseFloat('{{ user.saldoGeneralEUR }}');
+                    saldoLibroUSD = parseFloat('{{ user.saldoLibroUSD }}');
+                    saldoLibroEUR = parseFloat('{{ user.saldoLibroEUR }}');
+                    saldoServicioUSD = parseFloat('{{ user.saldoServicioUSD }}');
+                    saldoServicioEUR = parseFloat('{{ user.saldoServicioEUR }}');
+                    acumulado = 0;
+                    switch (parseInt($('input:radio[name=tipoProductoIngreso]:checked').val())) {
+                        case 1:
+                            if(saldoGeneralUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoGeneralUSD }}');
+                                tipoSaldo = 1;
+                            }
+                            break;
+                        case 2:
+                            if(saldoGeneralEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoGeneralEUR }}');
+                                tipoSaldo = 2;
+                            }
+                            break;
+                        case 3:
+                            if(saldoLibroUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoLibroUSD }}');
+                                tipoSaldo = 3;
+                            }
+                            break;
+                        case 4:
+                            if(saldoLibroEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoLibroEUR }}');
+                                tipoSaldo = 4;
+                            }
+                            break;
+                        case 5:
+                            if(saldoServicioUSD !== 0){
+                                acumulado = parseFloat('{{ user.saldoServicioUSD }}');
+                                tipoSaldo = 5;
+                            }
+                            break;
+                        case 6:
+                            if(saldoServicioEUR !== 0){
+                                acumulado = parseFloat('{{ user.saldoServicioEUR }}');
+                                tipoSaldo = 6;
+                            }
+                            break;
+                    }
+
+                }
+                {% endfor %}
+                $("#modalTitleIngreso").text("SALDO ACUMULADO DE " + nombre.toUpperCase() + " " + acumulado);
+                limpiarModalIngreso();
+                $('#modalAddIngresoSaldo').modal('show');
+
+            });
+
+            $("#uploadDocumentoIngreso").on('change', function (e) {
+                let fichero = $("#uploadDocumentoIngreso").val();
+                let input = document.getElementById('uploadDocumentoIngreso');
+                let file = input.files[0]; //2 000 000
+                let allowedExtensions = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf|.jpg|.png)$/i;
+
+                if (!allowedExtensions.exec(fichero)) {
+                    toastr["error"]('Sólo se pueden subir archivos con extensiones: .docx, .xlsx, .pptx .pdf, .jpg, .png.', "Advertencia")
+                    $("#uploadDocumentoIngreso").val('');
+                    return false;
+                } else if (file.size > 2000000) {
+                    toastr["error"]('El tamaño del fichero no puede ser mayor que 2 MB.', "Advertencia")
+                    $("#uploadDocumentoIngreso").val('');
+                    return false;
+                } else {
+                    //aqui subo el fichero y guardo el nombre
+                    let Ruta = Routing.generate('app_fichero_ingreso');
+                    let form = document.getElementById("myformIngreso");
+                    siFichero = 1;
+
+                    $(".preload").removeClass('hidden');
+
+                    $.ajax({
+                        url: Ruta,
+                        type: "post",
+                        dataType: "json",
+                        data: new FormData(form),
+                        contentType: false,
+                        processData: false,
+                        cache: false
+                    }).done(function (data) {
+                        $(".preload").addClass('hidden');
+                        fichero = data['fichero'];
+                    });
+                }
+            });
+
+            $('#btnAddGuardarIngreso').on('click', function () {
+
+                //Validaciones
+
+                if ($("#tipoProductoIngreso").val() === '0') {
+                    toastr["error"]('Debe seleccionar un tipo de cuenta, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+
+                if ($("#addRoyaltieIngreso").val() === '') {
+                    toastr["error"]('Teclee la cantidad de royaltie a ingresar', "Advertencia")
+                    return false;
+                }
+
+                if ($("#addMotivoIngreso").val() === '') {
+                    toastr["error"]('Teclee el motivo', "Advertencia")
+                    return false;
+                }
+
+                if (siFichero === 0){
+                    fichero = '';
+                }else{
+                    fichero = document.getElementById('uploadDocumentoIngreso').files[0].name;
+                }
+
+                let Ruta = Routing.generate('app_ingreso_saldo_acumulado_new');
+
+                $('#modalAddIngresoSaldo').modal('hide');
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    idUsuario: usuarioId,
+                    royaltie: parseFloat($("#addRoyaltieIngreso").val()),
+                    tipoSaldo: parseInt($("#tipoProductoIngreso").val()),
+                    motivo: $("#addMotivoIngreso").val(),
+                    saldoAcumulado: acumulado,
+                    fichero: fichero
+                };
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "html",
+                    data: mat_datos,
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+                    if (data === 'ok') {
+                        toastr["success"]('Ingreso de saldo registrado', "Notificación")
+                        window.location.href = "{{ path('app_user_index') }}";
+                    } else {
+                        toastr["error"](data, "Notificación")
+                    }
+                });
+            });
+
+            $('#dataUser tbody').on('click', '.delete', function () {
+
+                let row = $(this).parents('tr');
+
+                let mat_datos = {id: row.data('id')};
+
+                let Ruta = Routing.generate('app_user_delete');
+
+                let opcion = confirm("Esta seguro que desea eliminar el usuario seleccionado?");
+                if (opcion === true) {
+                    $(".preload").removeClass('hidden');
+
+                    $.ajax({
+                        url: Ruta,
+                        type: "post",
+                        dataType: "html",
+                        data: mat_datos,
+                    }).done(function (data) {
+                        $(".preload").addClass('hidden');
+                        if (data === 'ok') {
+                            toastr["success"]('Se ha borrado el usuario seleccionado', "Notificación")
+                            window.location.href = "{{ path('app_user_index') }}";
+                        } else {
+                            toastr["error"](data, "Notificación")
+                        }
+                    });
+                }
+
+            });
+
+            function limpiarModalIngreso()
+            {
+                $('#modalAddIngresoSaldo input').each(function () {
+                    $(this).val('');
+                });
+
+                $('#modalAddIngresoSaldo textarea').each(function () {
+                    $(this).val('');
+                });
+                $('#tipoProductoIngreso').val(0);
+            }
+
+            function limpiarModalRetiro()
+            {
+                $('#modalAddRetiroSaldo input').each(function () {
+                    $(this).val('');
+                });
+
+                $('#modalAddRetiroSaldo textarea').each(function () {
+                    $(this).val('');
+                });
+                $('#tipoProducto').val(0);
+            }
+
+        });
+    </script>
+{% endblock %}

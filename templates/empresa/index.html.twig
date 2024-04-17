@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Información de la Empresa{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Información de la Empresa</h3>
+                        </div>
+                    </div>
+                    {# <div class="col-md-3"> #}
+                    {# <a href="{{ path('app_empresa_new') }}"> #}
+                    {# <button type="button" class="btn btn-block bg-gradient-success"><i #}
+                    {# class="fa fa-user-plus"></i> Crear Nueva Empresa #}
+                    {# </button> #}
+                    {# </a> #}
+                    {# </div> #}
+                    <div class="card-body">
+                        <div class="row">
+                            <table class="table table-bordered table-striped">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>No</th>
+                                    <th>Direccion</th>
+                                    <th>Ciudad</th>
+                                    <th>Acciones</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for empresa in empresas %}
+                                    <tr>
+                                        <td>{{ empresa.nombre }}</td>
+                                        <td>{{ empresa.no }}</td>
+                                        <td>{{ empresa.direccion }}</td>
+                                        <td>{{ empresa.ciudad }}</td>
+                                        <td>
+                                            <div class="row">
+                                                {# <div class="col-sm-4"> #}
+                                                {# <a href="{{ path('app_empresa_show', {'id': empresa.id}) }}"> #}
+                                                {# <button class="btn btn-block btn-info" data-toggle="tooltip" #}
+                                                {# title="ver"><i #}
+                                                {# class="fas fa-info"></i> #}
+                                                {# </button> #}
+                                                {# </a> #}
+                                                {# </div> #}
+                                                <div class="col-sm-6">
+                                                    <a href="{{ path('app_empresa_edit', {'id': empresa.id}) }}">
+                                                        <button style="margin-left: 50%"
+                                                                class="btn btn-block btn-success" data-toggle="tooltip"
+                                                                title="Editar"><i
+                                                                    class="fas fa-edit"></i>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="4">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

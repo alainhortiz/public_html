@@ -1,0 +1,259 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Estado de Cuentas{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Usuarios</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataUser">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Avatar</th>
+                                        <th>Rol</th>
+                                        <th>Nombre</th>
+                                        <th>Empresa</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for user in users %}
+                                        <tr data-id="{{ user.id }}">
+                                            {% if user.avatar %}
+                                                <td><img width="80" height="80"
+                                                         src="{{ asset('uploads/' ~ user.avatar) }}"
+                                                         alt="Avatar Usuario"></td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                            {% if user.roles %}
+                                                {% if user.roles[0] == 'ROLE_ADMIN' %}
+                                                    <td>Administrador</td>
+                                                {% else %}
+                                                    <td>Usuario</td>
+                                                {% endif %}
+                                            {% endif %}
+                                            <td>{{ user.nombre ~ ' ' ~ user.apellidos }}</td>
+                                            <td>{{ user.empresa }}</td>
+                                            <td style="margin: 0 auto;">
+                                                <div>
+                                                    <button class="btn btn-primary usd"
+                                                            data-toggle="tooltip"
+                                                            title="Ver cuenta en dólares"><i
+                                                                class="fas fa-dollar-sign"></i>
+                                                    </button>
+                                                    <button class="btn btn-secondary eur"
+                                                            data-toggle="tooltip"
+                                                            title="Ver cuenta en euros"><i
+                                                                class="fas fa-euro-sign"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="5">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row" id="tablaMovimientos" style="display: none">
+                            <div class="card-title">
+                                <h3 id="mostrarMovimientos">Movimientos</h3>
+                            </div>
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataMovimientos">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th class="hidden">id</th>
+                                        <th>Fecha</th>
+                                        <th>Acumulado</th>
+                                        <th>Acción</th>
+                                        <th>Código Venta</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <script>
+        $(function () {
+
+            let tableUser = $('#dataUser').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[8], [8]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            let tableMovimiento = $('#dataMovimientos').DataTable({
+                "paging": true,
+                "order": [0, "desc"],
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[8], [8]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            //Declaracion de variables
+            let idUsuario, id, tipoMoneda, accion;
+            let movimientos = [];
+
+            $('#dataUser tbody').on('click', '.usd', function () {
+                let row = $(this).parents('tr');
+                idUsuario = parseInt(row.data('id'));
+                mostrarMovimientos('usd');
+            });
+
+            $('#dataUser tbody').on('click', '.eur', function () {
+                let row = $(this).parents('tr');
+                idUsuario = parseInt(row.data('id'));
+                mostrarMovimientos('eur');
+            });
+
+            function mostrarMovimientos(moneda) {
+                movimientos = [];
+                {% for movimiento in movimientos %}
+                id = parseInt('{{ movimiento.user.id }}');
+                tipoMoneda = '{{ movimiento.tipodemoneda }}';
+                switch (parseInt('{{ movimiento.accion }}')) {
+                    case 1:
+                        accion = 'Ingreso por concepto de ingreso de royalties';
+                        break;
+                    case 2:
+                        accion = 'Retiro por concepto de retiro de royalties';
+                        break;
+                    case 3:
+                        accion = 'Ingreso por concepto de amortización del producto';
+                        break;
+                    case 4:
+                        accion = 'Ingreso por concepto de beneficio de royalties';
+                        break;
+                    case 5:
+                        accion = 'Retiro por concepto de solicitud de pago de royalties';
+                        break;
+                    case 6:
+                        accion = 'Ingreso por concepto de cancelación de solicitud de pago de royalties';
+                        break;
+                    case 7:
+                        accion = 'Retiro de royalties por concepto de cancelación de venta';
+                        break;
+                    case 8:
+                        accion = 'Retiro de saldo de amortización por concepto de cancelación de venta';
+                        break;
+                }
+                if (id === idUsuario) {
+                    if (moneda === 'usd' && tipoMoneda === 'USD') {
+                        movimientos.push([
+                            '{{ movimiento.id }}',
+                            '{{ movimiento.fecha|date('Y-m-d h:i:s') }}',
+                            '{{ movimiento.saldo|number_format(2, '.', ',') }}',
+                            accion,
+                            '{{ movimiento.venta ? movimiento.venta.codigo : '' }}'
+                        ]);
+                    } else if (moneda === 'eur' && tipoMoneda === 'EUR') {
+                        movimientos.push([
+                            '{{ movimiento.id }}',
+                            '{{ movimiento.fecha|date('Y-m-d h:i:s') }}',
+                            '{{ movimiento.saldo|number_format(2, '.', ',') }}',
+                            accion,
+                            '{{ movimiento.venta ? movimiento.venta.codigo : '' }}'
+                        ]);
+                    }
+                }
+                {% endfor %}
+                if (movimientos.length !== 0) {
+                    $('#mostrarMovimientos').text('Movimientos de lo acumulado en la cuenta en ' + moneda.toUpperCase());
+                    $('#tablaMovimientos').css("display", "block");
+                    tableMovimiento = $('#dataMovimientos').DataTable({
+                        destroy: true,
+                        data: movimientos,
+                        columns: [
+                            {class: "hidden"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"}
+                        ],
+                        "order": [0, "desc"],
+                        "lengthMenu": [[6], [6]]
+                    });
+                } else {
+                    $('#tablaMovimientos').css("display", "none");
+                    toastr["info"]('Esta cuenta no tiene movimientos.', "Información")
+                    return false;
+                }
+            }
+
+        });
+    </script>
+{% endblock %}

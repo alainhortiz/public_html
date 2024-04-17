@@ -1,0 +1,4 @@
+<form method="post" action="{{ path('app_ayuda_delete', {'id': ayuda.id}) }}" onsubmit="return confirm('Esta seguro que desea eliminar este video de ayuda?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ ayuda.id) }}">
+    <button class="btn btn-danger" > Eliminar</button>
+</form>

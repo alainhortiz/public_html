@@ -1,0 +1,158 @@
+{{ form_start(form, {'attr': {'id':'form_newusuario'}}) }}
+<form role="form" action="{{ path('app_user_new') }}">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="custom-file">
+                    {{ form_widget(form.avatar) }}
+                    <label class="custom-file-label" for="producto_imagen">Subir Avatar</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="text-danger">
+                    {{ form_errors(form) }}
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.nombre) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.apellidos) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="input-group">
+                    {{ form_widget(form.empresa) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="input-group">
+                    {{ form_widget(form.direccion) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.poblacion) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.pais) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="input-group">
+                    {{ form_widget(form.email) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.nifcif) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.provincia) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.telefono) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        {{ form_widget(form.password) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if is_granted('ROLE_ADMIN') %}
+            <div class="col-sm-6">
+                <div class="form-group">
+                    {{ form_widget(form.emitirfactura) }}
+                </div>
+            </div>
+        {% else %}
+            <div class="col-sm-6">
+                <div class="form-group">
+                    {{ form_widget(form.emitirfactura,{'attr': {'style':'display:none','disabled': 'disabled'}}) }}
+                </div>
+            </div>
+        {% endif %}
+        {% if is_granted('ROLE_ADMIN') %}
+            <div class="col-sm-6">
+                <div class="form-group">
+                    {{ form_widget(form.roles) }}
+                </div>
+            </div>
+        {% else %}
+            <div class="col-sm-6">
+                <div class="form-group">
+                    {{ form_widget(form.roles, {'attr': {'style':'display:none','disabled':'disabled'}}) }}
+                </div>
+            </div>
+        {% endif %}
+        {% if is_granted('ROLE_ADMIN') %}
+            <div class="col-sm-12">
+                <div class="form-group">
+                    {{ form_widget(form.isActive) }}
+                </div>
+            </div>
+        {% else %}
+        {% endif %}
+        <div class="col-sm-12">
+            <div class="form-group">
+                {{ form_widget(form.captcha) }}
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary" style="float: left;"> Guardar</button>
+        {% if is_granted('ROLE_ADMIN') %}
+            <a class="btn btn-danger" style="float: right" href="{{ path('app_user_index') }}"> Cancelar</a>
+        {% else %}
+            <a class="btn btn-danger" style="float: right" href="{{ path('app_login') }}"> Cancelar</a>
+        {% endif %}
+    </div>
+    {{ form_row(form._token) }}
+</form>
+{{ form_end(form) }}

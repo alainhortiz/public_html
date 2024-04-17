@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tipo de Notificaciones{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Tipo de Notificaciones</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <table class="table table-bordered table-striped">
+                                <thead class="text-center">
+                                <tr>
+                                    <th class="hidden">Id</th>
+                                    <th class="text-center">Código</th>
+                                    <th>Nombre</th>
+                                    <th>Mensaje</th>
+                                    <th>Acciones</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for tipo_notificacion in tipo_notificacions %}
+                                    <tr>
+                                        <td class="hidden">{{ tipo_notificacion.id }}</td>
+                                        <td class="text-center">{{ tipo_notificacion.codigo }}</td>
+                                        <td>{{ tipo_notificacion.nombre }}</td>
+                                        <td>{{ tipo_notificacion.mensaje }}</td>
+                                        <td style="margin: 0 auto;">
+                                                <a href="{{ path('app_tipo_notificacion_edit', {'id': tipo_notificacion.id}) }}">
+                                                    <button
+                                                            class="btn btn-block btn-success" data-toggle="tooltip"
+                                                            title="Modificar mensaje"><i
+                                                                class="fas fa-edit"></i>
+                                                    </button>
+                                                </a>
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="5">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+    <body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="{{ path('app_login') }}"><img src="{{ asset('dist/img/MagosArtesanos.png') }}" alt="Logo Artesanos"
+                                                   height="100" width="300"></a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Entre para comenzar su sesi&oacute;n</p>
+
+                <form method="post">
+                    {% if error %}
+                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    {% endif %}
+
+                    {% if app.user %}
+                        <div class="mb-3">
+                            Su cuenta no ha sido activada todavía {{ app.user.email }}
+                        </div>
+                    {% endif %}
+
+
+                    <div class="input-group mb-3">
+                        <input type="email" value="{{ last_username }}" name="email" id="inputEmail"
+                               class="form-control" required autofocus placeholder="Entre el Email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" name="password" id="inputPassword" class="form-control"
+                               autocomplete="current-password" required placeholder="Entre su contraseña">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="_csrf_token"
+                           value="{{ csrf_token('authenticate') }}"
+                    >
+{#                        <p class="mb-1 text-center">#}
+{#                            <a href="{{ path('app_forgot_password_request') }}">Olvid&oacute; el password?</a>#}
+{#                        </p>#}
+                    <div class="row">
+                        <div class="col-sm-6 float-left">
+                            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                        </div>
+                        <div class="col-sm-6 float-right">
+                            <a href="{{ path('app_user_form_registro') }}">
+                                <button type="button" class="btn btn-primary btn-block float-right">Registrarse</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+                <br>
+                <p class="mb-1 text-center">
+                    <a href="{{ path('app_forgot_password_request') }}">Olvid&oacute; el password?</a>
+                </p>
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <!-- /.login-box -->
+    </body>
+
+{% endblock %}
+

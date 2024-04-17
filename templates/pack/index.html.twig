@@ -1,0 +1,171 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de Packs de Productos{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Packs de Productos</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="{{ path('app_pack_new') }}">
+                                    <button type="button" class="btn btn-block bg-gradient-success">Crear Nuevo Pack
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataPacks">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Imagen</th>
+                                        <th>Beneficio por Venta</th>
+                                        <th>Cantidad de Productos</th>
+                                        <th>Vendidos</th>
+                                        <th>Disponible</th>
+                                        <th class="text-center">Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for pack in packs %}
+                                        {% set disponible = 0 %}
+                                        {% for producto in pack.productos() %}
+                                            {% if producto.producto.stock <= producto.producto.stockAdvertencia %}
+                                                {% set disponible = 1 %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        <tr data-id="{{ pack.id }}" class="text-center">
+                                            <td>{{ pack.nombre }}</td>
+                                            {% if pack.imagen %}
+                                                <td><img width="80" height="80"
+                                                         src="{{ asset('uploads/' ~ pack.imagen) }}"
+                                                         alt="Foto Pack"></td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                            <td>{{ pack.beneficioxventa|number_format(2, '.', ',') ~ ' ' ~ pack.tipodemoneda }}</td>
+                                            <td>{{ pack.productos|length }}</td>
+                                            <td>-</td>
+                                            {% if disponible == 1 %}
+                                                <td>No</td>
+                                            {% else %}
+                                                <td>Si</td>
+                                            {% endif %}
+                                            <td style="margin: 0 auto;">
+                                                <a href="{{ path('app_pack_show', {'id': pack.id}) }}">
+                                                    <button class="btn btn-info" data-toggle="tooltip"
+                                                            title="ver"><i
+                                                                class="fas fa-info"></i>
+                                                    </button>
+                                                </a>
+                                                <a href="{{ path('app_pack_edit', {'id': pack.id}) }}">
+                                                    <button class="btn btn-success"
+                                                            data-toggle="tooltip"
+                                                            title="Editar"><i
+                                                                class="fas fa-edit"></i>
+                                                    </button>
+                                                </a>
+                                                <button class="btn btn-danger delete"
+                                                        data-toggle="tooltip"
+                                                        title="Eliminar"><i
+                                                            class="fas fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="7">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataPacks').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[6], [6]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            $('#dataPacks tbody').on('click', '.delete', function () {
+
+                let row = $(this).parents('tr');
+
+                let mat_datos = {id: row.data('id')};
+
+                let Ruta = Routing.generate('app_pack_delete');
+
+                let opcion = confirm("Esta seguro que desea eliminar el pack de productos seleccionado?");
+                if (opcion === true) {
+                    $(".preload").removeClass('hidden');
+
+                    $.ajax({
+                        url: Ruta,
+                        type: "post",
+                        dataType: "html",
+                        data: mat_datos,
+                    }).done(function (data) {
+                        $(".preload").addClass('hidden');
+                        if (data === 'ok') {
+                            toastr["success"]('El pack de productos ha sido borrado', "Notificación")
+                            window.location.href = "{{ path('app_pack_index') }}";
+                        } else {
+                            toastr["error"](data, "Notificación")
+                        }
+                    });
+                }
+            });
+
+        });
+    </script>
+{% endblock %}

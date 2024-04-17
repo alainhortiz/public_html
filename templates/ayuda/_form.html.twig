@@ -1,0 +1,41 @@
+{{ form_start(form, {'attr': {'id':'form_ayuda'}}) }}
+<form role="form" action="{{ path('app_ayuda_new') }}">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="text-danger">
+                    {{ form_errors(form) }}
+                </div>
+                <div class="input-group">
+                    {{ form_widget(form.titulo) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="text-danger">
+                    {{ form_errors(form) }}
+                </div>
+                <div class="input-group">
+                    {{ form_widget(form.descripcion) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="text-danger">
+                    {{ form_errors(form) }}
+                </div>
+                <div class="input-group">
+                    {{ form_widget(form.url) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary" style="float: left;"> Guardar</button>
+        <a class="btn btn-default" style="float: right" href="{{ path('app_ayuda_index') }}"> Cancelar</a>
+    </div>
+    {{ form_row(form._token) }}
+</form>
+{{ form_end(form) }}

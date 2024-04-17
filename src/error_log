@@ -1,0 +1,28 @@
+[10-Jun-2022 14:13:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/camilopic/public_html/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Kernel.php on line 8
+[10-Jun-2022 19:50:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/camilopic/public_html/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Kernel.php on line 8
+[11-Jun-2022 02:25:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/camilopic/public_html/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Kernel.php on line 8
+[12-Jun-2022 19:12:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/camilopic/public_html/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Kernel.php on line 8
+[20-Jun-2022 10:48:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/camilopic/public_html/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Kernel.php on line 8
+[23-Jun-2022 19:38:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/camilopic/public_html/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Kernel.php on line 8
+[28-Jun-2022 22:35:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/camilopic/public_html/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Kernel.php on line 8

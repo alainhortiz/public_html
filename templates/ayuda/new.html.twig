@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nuevo video de ayuda{% endblock %}
+
+{% block pagescript %}
+    {% if mensaje is not null %}
+        {% if mensaje == 1 %}
+            <script type="text/javascript">
+                jQuery(document).ready(function ($) {
+                    toastr["error"]("Teclee una dirección url válida")
+
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": true,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": true,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                });
+            </script>
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    <body class="hold-transition register-page">
+    <div class="register-box text-center">
+        <div class="card" style="width: 435px;">
+            <div class="card-body">
+                <h3>Registro de nuevo video de ayuda</h3>
+                <br>
+                {{ include('ayuda/_form.html.twig') }}
+            </div>
+        </div>
+    </div>
+    </body>
+{% endblock %}

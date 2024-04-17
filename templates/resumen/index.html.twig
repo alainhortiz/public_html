@@ -1,0 +1,498 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Resumen{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">Resumen</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item">Inicio</li>
+                            <li class="breadcrumb-item active">Resumen</li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        {% if is_granted('ROLE_ADMIN') %}
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Info boxes -->
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-info elevation-1"><i class="fas fa-users"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Total Usuarios activos</span>
+                                    <span class="info-box-number">{{ totalu }}</span>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="info-box mb-3">
+                            <span class="info-box-icon bg-warning elevation-1"><i
+                                        class="fas fa-users"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Total de Usuarios inactivos</span>
+                                    <span class="info-box-number">{{ totali }}</span>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <!-- /.col -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+                            <div class="info-box mb-3">
+                                    <span class="info-box-icon bg-danger elevation-1"><i
+                                                class="fas fa-copy"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Total Productos</span>
+                                    <span class="info-box-number">{{ totalp }}</span>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- /.col -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+                            <div class="info-box mb-3">
+                                    <span class="info-box-icon bg-blue elevation-1"><i
+                                                class="fas fa-wrench"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Total Servicios</span>
+                                    <span class="info-box-number">{{ totals }}</span>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- fix for small devices only -->
+                        <div class="clearfix hidden-md-up"></div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+                            <div class="info-box mb-3">
+                                    <span class="info-box-icon bg-success elevation-1"><i
+                                                class="fas fa-shopping-cart"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Total de Ventas</span>
+                                    <span class="info-box-number">{{ totalv }}</span>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <!-- Main row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- USERS LIST -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Nuevos Usuarios</strong></h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool"
+                                                data-card-widget="collapse"><i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool"
+                                                data-card-widget="remove"><i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <ul class="users-list clearfix">
+                                        {% for user in users %}
+                                            <li>
+                                                {% if user.avatar %}
+                                                    <img src="{{ asset('uploads/' ~ user.avatar) }}"
+                                                         alt="User Image" width="80" height="80">
+                                                {% else %}
+                                                    <img src="{{ asset('dist/img/usuarioanonimo.png') }}"
+                                                         alt="User Image" width="80" height="80">
+                                                {% endif %}
+                                                <a class="users-list-name" href="#">{{ user.nombre }}</a>
+                                                <span class="users-list-date">{{ fecha }}</span>
+                                                {% if user.roles %}
+                                                    {% if user.roles[0] == 'ROLE_ADMIN' %}
+                                                        <span class="users-list-date">Administrador</span>
+                                                    {% endif %}
+                                                {% endif %}
+                                            </li>
+                                        {% else %}
+                                            <li>
+                                                <span>No se encontraron registros</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <!-- /.users-list -->
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer text-center">
+                                    <a href="{{ path('app_user_index') }}">Ver Todos los Usuarios</a>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- TABLE: LATEST ORDERS -->
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header border-transparent">
+                                    <h3 class="card-title"><strong>Últimas Ventas</strong></h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table m-0">
+                                            <thead>
+                                            <tr>
+                                                <th>ID Orden</th>
+                                                <th>Fecha</th>
+                                                <th class="text-center">Cantidad de Productos</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for venta in ventasptotal %}
+                                                <tr>
+                                                    <td><a href="#">{{ venta.codigo }}</a></td>
+                                                    <td>{{ venta.fecha|date('Y-m-d') }}</td>
+                                                    <td class="text-center">{{ venta.ventas|length }}</td>
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.table-responsive -->
+                                </div>
+
+                                <!-- /.card-footer -->
+                            </div>
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="col-md-12">
+                            <!-- PRODUCT LIST -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Productos Adicionados Recientemente</strong></h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <ul class="products-list product-list-in-card pl-2 pr-2">
+                                        {% for producto in ultimosproductos %}
+                                            <li class="item">
+                                                {% if producto.imagen %}
+                                                    <div class="product-img">
+                                                        <img src="{{ asset('uploads/' ~ producto.imagen) }}"
+                                                             alt="Product Image"
+                                                             class="img-size-64">
+                                                    </div>
+                                                {% endif %}
+                                                <div class="product-info">
+                                                    <a href="#" class="product-title">{{ producto.nombre }}
+                                                        <span class="badge badge-warning float-right">{{ producto.beneficioxventa }}</span></a>
+                                                </div>
+                                            </li>
+                                        {% else %}
+                                            <li>
+                                                <span>No se encontraron registros</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer text-center">
+                                    <a href="{{ path('app_producto_index') }}" class="uppercase">Ver Todos los
+                                        Productos</a>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!--/. container-fluid -->
+            </section>
+            <!-- /.content -->
+        {% else %}
+            <!-- Main content -->
+            <section class="content">
+                <!-- Default box -->
+                <div class="container-fluid">
+                    <div class="row">
+                        {% if bolsaGeneralDolar < 0  or bolsaGeneralDolar > 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box" data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Solicitar pago de royalties" disabled>
+                                    <span class="info-box-icon bg-info"><i class="fa fa-dollar-sign"></i></span>
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Generales</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaGeneralDolar|number_format(2, '.', ',') }}</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaGeneralEuros < 0 or bolsaGeneralEuros > 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Solicitar pago de royalties">
+                                    <span class="info-box-icon bg-info"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Generales</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaGeneralEuros|number_format(2, '.', ',') }}</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaLibroDolar < 0 or bolsaLibroDolar > 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Solicitar pago de royalties">
+                                    <span class="info-box-icon bg-danger"><i class="fa fa-dollar-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Libros</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaLibroDolar|number_format(2, '.', ',') }}</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaLibroEuros < 0 or bolsaLibroEuros > 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Solicitar pago de royalties">
+                                    <span class="info-box-icon bg-danger"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Libros</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaLibroEuros|number_format(2, '.', ',') }}</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaServicioDolar < 0 or bolsaServicioDolar > 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Solicitar pago de royalties">
+                                    <span class="info-box-icon bg-warning"><i class="fa fa-dollar-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Servicios</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaServicioDolar|number_format(2, '.', ',') }}</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaServicioEuros < 0 or bolsaServicioEuros > 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Solicitar pago de royalties">
+                                    <span class="info-box-icon bg-warning"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Servicios</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaServicioEuros|number_format(2, '.', ',') }}</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                    </div>
+                    <div class="row col-12">
+                        <div class="col-md-6">
+                            <!-- PRODUCT LIST -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Productos asignados recientemente</strong></h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <ul class="products-list product-list-in-card pl-2 pr-2">
+                                        {% for producto in misProductos %}
+                                            <li class="item">
+                                                {% if producto.imagen %}
+                                                    <div class="product-img">
+                                                        <img src="{{ asset('uploads/' ~ producto.imagen) }}"
+                                                             alt="Product Image"
+                                                             class="img-size-64">
+                                                    </div>
+                                                {% endif %}
+                                                <div class="product-info">
+                                                    <a href="#" class="product-title">{{ producto.nombre }}
+                                                        {% if producto.tipoProducto %}
+                                                            {% if producto.tipoProducto == 1 %}
+                                                                <span class="badge badge-warning float-right">General</span>
+                                                            {% elseif producto.tipoProducto == 2 %}
+                                                                <span class="badge badge-warning float-right">Libro</span>
+                                                            {% endif %}
+                                                        {% endif %}
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        {% else %}
+                                            <li>
+                                                <span>No tiene productos asignados</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer text-center">
+                                    <a href="{{ path('app_mis_productos') }}" class="uppercase">Ver Todos mis
+                                        Productos</a>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <div class="col-md-6">
+                            <!-- SERVICE LIST -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Servicios asignados recientemente</strong></h3>
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <ul class="products-list product-list-in-card pl-2 pr-2">
+                                        {% for servicio in misServicios %}
+                                            <li class="item">
+                                                <div class="product-info">
+                                                    <a href="#" class="product-title">{{ servicio.nombre }}
+                                                        {% if servicio.documentoServicio %}
+                                                            <a href="{{ asset('uploads/' ~ servicio.documentoServicio) }}"
+                                                               target="_blank"
+                                                               class="badge badge-warning float-right">Ver
+                                                                Documento</a>
+                                                        {% endif %}
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        {% else %}
+                                            <li>
+                                                <span>No tiene servicios asignados</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer text-center">
+                                    <a href="{{ path('app_mis_servicios') }}" class="uppercase">Ver Todos mis
+                                        Servicios</a>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                </div><!-- /.card -->
+            </section>
+            <!-- /.content -->
+        {% endif %}
+    </div>
+    <!-- /.content-wrapper -->
+{% endblock %}

@@ -1,0 +1,154 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pack de Productos{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header" style="background-color: #343a40">
+                        <div class="card-title text-white">
+                            <h3>Pack de Productos</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataPack">
+                                    <tbody>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <td>{{ packProducto.nombre }}</td>
+                                    </tr>
+                                    {% if packProducto.imagen %}
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <td><img width="50" height="50"
+                                                     src="{{ asset('uploads/' ~ packProducto.imagen) }}"
+                                                     alt="Foto Pack"></td>
+                                        </tr>
+                                    {% endif %}
+                                    <tr>
+                                        <th>Beneficio total por venta</th>
+                                        <td>{{ packProducto.beneficioxventa }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Moneda</th>
+                                        <td>{{ packProducto.tipodemoneda }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        {% if packProducto.productos|length > 0 %}
+                            <div class="row">
+                                <div class="card-header" style="background-color: #343a40">
+                                    <div class="card-title text-white">
+                                        <h3>Productos</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive" style="padding-left: 5px">
+                                    <table class="table table-bordered table-striped" id="dataProductos">
+                                        <thead class="text-center">
+                                        <tr>
+                                            <th>Tipo de Producto</th>
+                                            <th>Nombre</th>
+                                            <th>Imagen del Producto</th>
+                                            <th>Stock</th>
+                                            <th>Amortización</th>
+                                            <th>Beneficio por Venta</th>
+                                            <th>Usuario Asignado</th>
+                                            <th>Producto Agotado</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                        {% for producto in packProducto.productos %}
+                                            {% set disponible = 0 %}
+                                            {% if producto.producto.stock <= producto.producto.stockAdvertencia %}
+                                                {% set disponible = 1 %}
+                                            {% endif %}
+                                            <tr data-id="{{ producto.id }}" class="text-center">
+                                                {% if producto.producto.tipoProducto == 1 %}
+                                                    <td>General</td>
+                                                {% elseif producto.producto.tipoProducto == 2 %}
+                                                    <td>Libro</td>
+                                                {% endif %}
+                                                <td>{{ producto.producto.nombre }}</td>
+                                                {% if producto.producto.imagen %}
+                                                    <td><img width="80" height="80"
+                                                             src="{{ asset('uploads/' ~ producto.producto.imagen) }}"
+                                                             alt="Foto Producto"></td>
+                                                {% else %}
+                                                    <td>-</td>
+                                                {% endif %}
+                                                <td>{{ producto.producto.Stock }}</td>
+                                                {% if producto.producto.amortizaciones|length > 0 %}
+                                                    <td>Si</td>
+                                                {% else %}
+                                                    <td>No</td>
+                                                {% endif %}
+                                                <td>{{ producto.beneficioxventa|number_format(2, '.', ',') ~ ' ' ~ packProducto.tipodemoneda }}</td>
+                                                <td>{{ producto.producto.user ? producto.producto.user.nombre ~ ' ' ~ producto.producto.user.apellidos }}</td>
+                                                {% if disponible == 1 %}
+                                                    <td>Si</td>
+                                                {% else %}
+                                                    <td>No</td>
+                                                {% endif %}
+                                            </tr>
+                                        {% else %}
+                                            <tr>
+                                                <td colspan="7">No se encontraron registros</td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div style="padding: 20px">
+                        <a class="btn btn-danger" style="float: left"
+                           href="{{ path('app_pack_index') }}">Regresar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataProductos').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[3], [3]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+        });
+    </script>
+{% endblock %}

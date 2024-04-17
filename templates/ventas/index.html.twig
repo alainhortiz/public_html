@@ -1,0 +1,347 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mis Ventas{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Mis Ventas</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <!-- Default box -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        {% if bolsaGeneralDolar > 0 %}
+                            <div class="col-12">
+                                <div class="info-box" id="mostrarGeneralUSD" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar ventas en USD de productos generales">
+                                    <span class="info-box-icon bg-info"><i class="fa fa-dollar-sign"></i></span>
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Generales</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaGeneralDolar|number_format(2, '.', ',') }}</span>
+                                        <span class="info-box-text text-bold text-right">Mostrar</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        {% if bolsaGeneralEuros > 0 %}
+                            <div class="col-12">
+                                <div class="info-box" id="mostrarGeneralEUR" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar ventas en EUR de productos generales">
+                                    <span class="info-box-icon bg-info"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Generales</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaGeneralEuros|number_format(2, '.', ',') }}</span>
+                                        <span class="info-box-text text-bold text-right">Mostrar</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        {% if bolsaLibroDolar > 0 %}
+                            <div class="col-12">
+                                <div class="info-box" id="mostrarLibroUSD" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar ventas en USD de libros">
+                                    <span class="info-box-icon bg-danger"><i class="fa fa-dollar-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Libros</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaLibroDolar|number_format(2, '.', ',') }}</span>
+                                        <span class="info-box-text text-bold text-right">Mostrar</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        {% if bolsaLibroEuros > 0 %}
+                            <div class="col-12">
+                                <div class="info-box" id="mostrarLibroEUR" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar ventas en EUR de libros">
+                                    <span class="info-box-icon bg-danger"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Libros</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaLibroEuros|number_format(2, '.', ',') }}</span>
+                                        <span class="info-box-text text-bold text-right">Mostrar</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        {% if bolsaServicioDolar > 0 %}
+                            <div class="col-12">
+                                <div class="info-box" id="mostrarServiciosUSD" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar ventas en USD de servicios">
+                                    <span class="info-box-icon bg-warning"><i class="fa fa-dollar-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Servicios</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaServicioDolar|number_format(2, '.', ',') }}</span>
+                                        <span class="info-box-text text-bold text-right">Mostrar</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        {% if bolsaServicioEuros > 0 %}
+                            <div class="col-12">
+                                <div class="info-box" id="mostrarServiciosEUR" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar ventas en EUR de servicios">
+                                    <span class="info-box-icon bg-warning"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Servicios</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaServicioEuros|number_format(2, '.', ',') }}</span>
+                                        <span class="info-box-text text-bold text-right">Mostrar</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                    </div>
+                    {% import 'macros/tablas.html.twig' as tabla %}
+                    <div class="col-12 col-md-8 col-lg-8">
+                        <div class="col-12">
+                            <!-- LISTADO DE VENTAS -->
+                            <div class="card" id="GeneralUSD" style="display: none">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Ventas de productos generales en USD</strong></h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataGeneralUSD">
+                                            {{ tabla.tabla_ventas(ventasProductos,1,'USD','Producto') }}
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <div class="card" id="GeneralEUR" style="display: none">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Ventas de productos generales en EUR</strong></h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataGeneralEUR">
+                                            {{ tabla.tabla_ventas(ventasProductos,1,'EUR','Producto') }}
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <div class="card" id="LibroUSD" style="display: none">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Ventas de libros en USD</strong></h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataLibroUSD">
+                                            {{ tabla.tabla_ventas(ventasProductos,2,'USD','Producto') }}
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <div class="card" id="LibroEUR" style="display: none">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Ventas de libros en EUR</strong></h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataLibroEUR">
+                                            {{ tabla.tabla_ventas(ventasProductos,2,'EUR','Producto') }}
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <div class="card" id="ServicioUSD" style="display: none">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Ventas de servicios en USD</strong></h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataServicioUSD">
+                                            {{ tabla.tabla_ventas(ventasProductos,3,'USD','Servicio') }}
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <div class="card" id="ServicioEUR" style="display: none">
+                                <div class="card-header">
+                                    <h3 class="card-title"><strong>Ventas de servicios en EUR</strong></h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataServicioEUR">
+                                            {{ tabla.tabla_ventas(ventasProductos,3,'EUR','Servicio') }}
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.card -->
+        </section>
+        <!-- /.content -->
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            let saldoAcumulado = 0;
+
+            $('#dataGeneralUSD, #dataGeneralEUR, #dataLibroUSD, #dataLibroEUR, #dataServicioUSD, #dataServicioEUR').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "lengthMenu": [[7], [7]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            $('#mostrarGeneralUSD').on('click', function () {
+                saldoAcumulado = parseFloat('{{ bolsaGeneralDolar }}');
+                $('#GeneralEUR').css("display", "none");
+                $('#LibroUSD').css("display", "none");
+                $('#LibroEUR').css("display", "none");
+                $('#ServicioUSD').css("display", "none");
+                $('#ServicioEUR').css("display", "none");
+                if (saldoAcumulado > 0) {
+                    $('#GeneralUSD').css("display", "block");
+                }
+            });
+
+            $('#mostrarGeneralEUR').on('click', function () {
+                saldoAcumulado = parseFloat('{{ bolsaGeneralEuros }}');
+                $('#GeneralUSD').css("display", "none");
+                $('#LibroUSD').css("display", "none");
+                $('#LibroEUR').css("display", "none");
+                $('#ServicioUSD').css("display", "none");
+                $('#ServicioEUR').css("display", "none");
+                if (saldoAcumulado > 0) {
+                    $('#GeneralEUR').css("display", "block");
+                }
+            });
+
+            $('#mostrarLibroUSD').on('click', function () {
+                saldoAcumulado = parseFloat('{{ bolsaLibroDolar }}');
+                $('#GeneralUSD').css("display", "none");
+                $('#GeneralEUR').css("display", "none");
+                $('#LibroEUR').css("display", "none");
+                $('#ServicioUSD').css("display", "none");
+                $('#ServicioEUR').css("display", "none");
+                if (saldoAcumulado > 0) {
+                    $('#LibroUSD').css("display", "block");
+                }
+            });
+
+            $('#mostrarLibroEUR').on('click', function () {
+                saldoAcumulado = parseFloat('{{ bolsaLibroEuros }}');
+                $('#GeneralUSD').css("display", "none");
+                $('#GeneralEUR').css("display", "none");
+                $('#LibroUSD').css("display", "none");
+                $('#ServicioUSD').css("display", "none");
+                $('#ServicioEUR').css("display", "none");
+                if (saldoAcumulado > 0) {
+                    $('#LibroEUR').css("display", "block");
+                }
+            });
+
+            $('#mostrarServiciosUSD').on('click', function () {
+                saldoAcumulado = parseFloat('{{ bolsaServicioDolar }}');
+                $('#GeneralUSD').css("display", "none");
+                $('#GeneralEUR').css("display", "none");
+                $('#LibroUSD').css("display", "none");
+                $('#LibroEUR').css("display", "none");
+                $('#ServicioEUR').css("display", "none");
+                if (saldoAcumulado > 0) {
+                    $('#ServicioUSD').css("display", "block");
+                }
+            });
+
+            $('#mostrarServiciosEUR').on('click', function () {
+                saldoAcumulado = parseFloat('{{ bolsaServicioEuros }}');
+                $('#GeneralUSD').css("display", "none");
+                $('#GeneralEUR').css("display", "none");
+                $('#LibroUSD').css("display", "none");
+                $('#LibroEUR').css("display", "none");
+                $('#ServicioUSD').css("display", "none");
+                if (saldoAcumulado > 0) {
+                    $('#ServicioEUR').css("display", "block");
+                }
+            });
+
+
+        });
+    </script>
+{% endblock %}

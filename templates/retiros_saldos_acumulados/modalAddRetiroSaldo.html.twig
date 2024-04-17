@@ -1,0 +1,44 @@
+<div id="modalAddRetiroSaldo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+     aria-hidden="true">
+    <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #303132">
+                <h6 class="modal-title text-uppercase text-white" id="modaTitleRetiro">RETIRO DE SALDO ACUMULADO DE USUARIO</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label id="fecha">
+                            Fecha de Retiro: {{ "now"|date('Y-m-d') }}
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <label for="addRoyaltie" id="labelAddRoyaltie">Royalties a retirar</label>
+                    <input type="text" class="form-control"
+                           placeholder="Teclee la cantidad" id="addRoyaltie"
+                           name="addRoyaltie">
+                </div>
+                <div class="col-sm-12">
+                    <label for="addMotivo">Concepto</label>
+                    <textarea style=" width: 100%; resize: none ; height: 100px ; margin-top: 2px"
+                            id="addMotivo"></textarea>
+                </div>
+                <div class="col-sm-12">
+                    <form id="myformRetiro" method="post" ENCTYPE="multipart/form-data">
+                        Documento adjunto<input type="file" name="uploadDocumentoRetiro" id="uploadDocumentoRetiro"/>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm text-white" style="background-color: #303132"
+                        id="btnAddGuardar">Guardar
+                </button>
+                <button type="button" class="btn btn-link  text-dark ml-auto" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

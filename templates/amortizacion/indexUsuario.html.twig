@@ -1,0 +1,359 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de Mis Productos Amortizados{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Mis Productos Amortizados</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataProductos">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Tipo de Producto</th>
+                                        <th>Producto</th>
+                                        <th>Imagen</th>
+                                        <th>Stock</th>
+                                        <th>Usuario Asignado</th>
+                                        <th>Cantidad de Amortizaciones</th>
+                                        <th class="text-center">Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for producto in productos %}
+                                        {% if producto.amortizaciones|length > 0 %}
+                                            <tr data-id="{{ producto.id }}" class="text-center">
+                                                {% if producto.tipoProducto == 1 %}
+                                                    <td>General</td>
+                                                {% elseif producto.tipoProducto == 2 %}
+                                                    <td>Libro</td>
+                                                {% endif %}
+                                                <td>{{ producto.nombre }}</td>
+                                                {% if producto.imagen %}
+                                                    <td><img width="80" height="80"
+                                                             src="{{ asset('uploads/' ~ producto.imagen) }}"
+                                                             alt="Foto Producto"></td>
+                                                {% else %}
+                                                    <td>-</td>
+                                                {% endif %}
+                                                <td>{{ producto.Stock }}</td>
+                                                <td>{{ producto.user ? producto.user.nombre ~ ' ' ~ producto.user.apellidos }}</td>
+                                                <td>{{ producto.amortizaciones|length }}</td>
+                                                <td style="margin: 0 auto;">
+                                                    <button class="btn btn-info amortizacion"
+                                                            data-toggle="tooltip"
+                                                            title="Ver amortizaciones"><i
+                                                                class="fas fa-info"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="7">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row" id="tablaAmortizaciones" style="display: none">
+                            <div class="card-title">
+                                <h3>Amortizaciones</h3>
+                            </div>
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataAmortizaciones">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th class="hidden">id</th>
+                                        <th>Costo de Producción</th>
+                                        <th>Precio de Venta</th>
+                                        <th>Por liquidar</th>
+                                        <th>Beneficiado</th>
+                                        <th class="text-center">Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row" id="tablaVentas" style="display: none">
+                            <div class="card-title">
+                                <h3>Ventas realizadas</h3>
+                            </div>
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataVentas">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Liquidación</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            let tableProductos = $('#dataProductos').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[3], [3]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            let tableAmortizaciones = $('#dataAmortizaciones').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "lengthMenu": [[1], [1]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            let tableVentas = $('#dataVentas').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "lengthMenu": [[1], [1]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            $('#costo').keypress(function (tecla) {
+                if ((tecla.charCode < 48 || tecla.charCode > 57) && (tecla.charCode !== 44) && (tecla.charCode !== 46) && (tecla.charCode !== 8)) {
+                    return false;
+                } else {
+                    let len = $('#costo').val().length;
+                    let indexPunto = $('#costo').val().indexOf('.');
+                    let indexComa = $('#costo').val().indexOf(',');
+
+                    if (tecla.charCode === 44) {
+                        if (len === 0 && tecla.charCode === 44) {
+                            return false;
+                        }
+                        if (indexComa > 0 && tecla.charCode === 44) {
+                            return false;
+                        }
+                        if (indexPunto !== -1) {
+                            return false;
+                        }
+                    }else if (tecla.charCode === 46) {
+                        if (len === 0 && tecla.charCode === 46) {
+                            return false;
+                        }
+                        if (indexPunto > 0 && tecla.charCode === 46) {
+                            return false;
+                        }
+                        if (indexComa !== -1) {
+                            return false;
+                        }
+                    }
+                    if (indexPunto > 0) {
+                        let CharAfterdot = (len + 1) - indexPunto;
+                        if (CharAfterdot > 3) {
+                            return false;
+                        }
+                    }else if (indexComa > 0) {
+                        let CharAfterdot = (len + 1) - indexComa;
+                        if (CharAfterdot > 3) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            });
+
+            $('#precio').keypress(function (tecla) {
+                if ((tecla.charCode < 48 || tecla.charCode > 57) && (tecla.charCode !== 44) && (tecla.charCode !== 46) && (tecla.charCode !== 8)) {
+                    return false;
+                } else {
+                    let len = $('#precio').val().length;
+                    let indexPunto = $('#precio').val().indexOf('.');
+                    let indexComa = $('#precio').val().indexOf(',');
+
+                    if (tecla.charCode === 44) {
+                        if (len === 0 && tecla.charCode === 44) {
+                            return false;
+                        }
+                        if (indexComa > 0 && tecla.charCode === 44) {
+                            return false;
+                        }
+                        if (indexPunto !== -1) {
+                            return false;
+                        }
+                    }else if (tecla.charCode === 46) {
+                        if (len === 0 && tecla.charCode === 46) {
+                            return false;
+                        }
+                        if (indexPunto > 0 && tecla.charCode === 46) {
+                            return false;
+                        }
+                        if (indexComa !== -1) {
+                            return false;
+                        }
+                    }
+                    if (indexPunto > 0) {
+                        let CharAfterdot = (len + 1) - indexPunto;
+                        if (CharAfterdot > 3) {
+                            return false;
+                        }
+                    }else if (indexComa > 0) {
+                        let CharAfterdot = (len + 1) - indexComa;
+                        if (CharAfterdot > 3) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            });
+
+            //Declaracion de variables
+            let idP, idProducto, idA, idAmortizacion;
+            let amortizaciones = [];
+            let ventas = [];
+
+            $('#dataProductos tbody').on('click', '.amortizacion', function () {
+                let row = $(this).parents('tr');
+                idProducto = parseInt(row.data('id'));
+                amortizaciones = [];
+                $('#tablaAmortizaciones').css("display", "none");
+                $('#tablaVentas').css("display", "none");
+                {% for amortizacion in amortizaciones %}
+                idP = parseInt('{{ amortizacion.producto.id }}');
+                if (idP === idProducto) {
+                    {% if amortizacion.isAdministrador == '1' %}
+                    amortizaciones.push([
+                        '{{ amortizacion.id }}',
+                        '{{ amortizacion.costoProduccion|number_format(2, '.', ',') }}',
+                        '{{ amortizacion.precioVenta|number_format(2, '.', ',') }}',
+                        '{{ amortizacion.saldoRestante|number_format(2, '.', ',') }}',
+                        'Administrador'
+                    ]);
+                    {% else %}
+                    amortizaciones.push([
+                        '{{ amortizacion.id }}',
+                        '{{ amortizacion.costoProduccion|number_format(2, '.', ',') }}',
+                        '{{ amortizacion.precioVenta|number_format(2, '.', ',') }}',
+                        '{{ amortizacion.saldoRestante|number_format(2, '.', ',') }}',
+                        '{{ amortizacion.producto.user.nombre ~ ' ' ~ amortizacion.producto.user.apellidos }}'
+                    ]);
+                    {% endif %}
+                }
+                {% endfor %}
+                if (amortizaciones.length !== 0) {
+                    $('#tablaAmortizaciones').css("display", "block");
+                    tableAmortizaciones = $('#dataAmortizaciones').DataTable({
+                        destroy: true,
+                        data: amortizaciones,
+                        columns: [
+                            {class: "hidden"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {
+                                defaultContent: "<div>" + "<a href='#' " +
+                                    "<button class='btn btn-info ventas' " +
+                                    " data-toggle='tooltip' title='Ver ventas'> " +
+                                    "<i class='fas fa-info'></i>" +
+                                    "</button>" +
+                                    "</div>"
+                            }
+                        ],
+                        "order": [[ 0, "desc" ]],
+                        "lengthMenu": [[6], [6]]
+                    });
+                } else {
+                    $('#tablaAmortizaciones').css("display", "none");
+                    toastr["info"]('Este producto no tiene amortizaciones.', "Información")
+                    return false;
+                }
+            });
+
+            $('#dataAmortizaciones tbody').on('click', '.ventas', function () {
+                let row = $(this).parents('tr');
+                let fila = tableAmortizaciones.row(row).data();
+                idAmortizacion = parseInt(fila[0]);
+                ventas = [];
+                $('#tablaVentas').css("display", "none");
+                {% for venta in ventasProductos %}
+                    {% if venta.amortizacion %}
+                        idA = parseInt('{{ venta.amortizacion.id }}');
+                        if (idA === idAmortizacion) {
+                            ventas.push([
+                                '{{ venta.venta.codigo }}',
+                                '{{ venta.pagoAmortizacion|number_format(2, '.', ',') }}'
+                            ]);
+                        }
+                    {% endif %}
+                {% endfor %}
+                if (ventas.length !== 0) {
+                    $('#tablaVentas').css("display", "block");
+                    tableVentas = $('#dataVentas').DataTable({
+                        destroy: true,
+                        data: ventas,
+                        columns: [
+                            {class: "text-center"},
+                            {class: "text-center"}
+                        ],
+                        "lengthMenu": [[2], [2]]
+                    });
+                } else {
+                    $('#tablaVentas').css("display", "none");
+                    toastr["info"]('Esta amortización no se liquido en ninguna venta.', "Información")
+                    return false;
+                }
+            });
+
+        });
+    </script>
+{% endblock %}
+

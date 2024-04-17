@@ -1,0 +1,163 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de Servicios{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Servicios</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="{{ path('app_servicio_form_new') }}">
+                                    <button type="button" class="btn btn-block bg-gradient-success">Crear Nuevo Servicio
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataServicios">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Beneficio por Venta</th>
+                                        <th>Concepto</th>
+                                        <th>Documento</th>
+                                        <th>Usuario Asignado</th>
+                                        <th class="text-center">Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for servicio in servicios %}
+                                        <tr data-id="{{ servicio.id }}" class="text-center">
+                                            <td>{{ servicio.nombre }}</td>
+                                            <td>{{ servicio.beneficioxventa ~ ' ' ~ servicio.tipodemoneda }}</td>
+                                            <td>{{ servicio.conceptoServicio }}</td>
+                                            {% if servicio.documentoServicio %}
+                                                <td><a href="{{ asset('uploads/' ~ servicio.documentoServicio) }}"
+                                                       target="_blank">Ver
+                                                        Documento</a>
+                                                </td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                            <td>{{ servicio.user ? servicio.user.nombre ~ ' ' ~ servicio.user.apellidos }}</td>
+                                            <td style="margin: 0 auto;">
+                                                <a href="{{ path('app_servicio_show', {'id': servicio.id}) }}">
+                                                    <button class="btn btn-info" data-toggle="tooltip"
+                                                            title="ver"><i
+                                                                class="fas fa-info"></i>
+                                                    </button>
+                                                </a>
+                                                {% if servicio.cantidadVentas() == 0 %}
+                                                    <a href="{{ path('app_servicio_form_edit', {'id': servicio.id}) }}">
+                                                        <button class="btn btn-success"
+                                                                data-toggle="tooltip"
+                                                                title="Editar"><i
+                                                                    class="fas fa-edit"></i>
+                                                        </button>
+                                                    </a>
+                                                {% endif %}
+                                                <button class="btn btn-danger delete"
+                                                        data-toggle="tooltip"
+                                                        title="Eliminar"><i
+                                                            class="fas fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="6">No se encontraron registros</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataServicios').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[7], [7]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            $('#dataServicios tbody').on('click', '.delete', function () {
+
+                let row = $(this).parents('tr');
+
+                let mat_datos = {id: row.data('id')};
+
+                let Ruta = Routing.generate('app_servicio_delete');
+
+                let opcion = confirm("Esta seguro que desea eliminar el servicio seleccionado?");
+                if (opcion === true) {
+                    $(".preload").removeClass('hidden');
+
+                    $.ajax({
+                        url: Ruta,
+                        type: "post",
+                        dataType: "html",
+                        data: mat_datos,
+                    }).done(function (data) {
+                        $(".preload").addClass('hidden');
+                        if (data === 'ok') {
+                            toastr["success"]('El servicio ha sido borrado', "Notificación")
+                            window.location.href = "{{ path('app_servicio_index') }}";
+                        } else {
+                            toastr["error"](data, "Notificación")
+                        }
+                    });
+                }
+            });
+
+        });
+    </script>
+{% endblock %}
+

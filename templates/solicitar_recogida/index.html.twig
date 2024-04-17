@@ -1,0 +1,457 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Solicitar Recogida{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h1>Listado de Solicitudes Recogidas</h1>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        {% if is_granted('ROLE_USER') %}
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-block bg-gradient-success"
+                                            id="btnNuevaSolicitud">Crear Nueva
+                                        Solicitud
+                                    </button>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <div class="row">
+                                <div class="table-responsive" style="padding-left: 5px">
+                                    <table class="table table-bordered table-striped" id="dataSolicitudAdmin">
+                                        <thead class="text-center">
+                                        <tr>
+                                            <th>Fecha de Solicitud</th>
+                                            <th>Usuario</th>
+                                            <th>Preferencia</th>
+                                            <th>Estado</th>
+                                            <th>Fecha de recogida</th>
+                                            <th>Hora de recogida</th>
+                                            <th>Link de envío</th>
+                                            <th>Comentarios</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                        {% for solicitar_recogida in solicitar_recogidas %}
+                                            <tr data-id="{{ solicitar_recogida.id }}">
+                                                <td>{{ solicitar_recogida.fechaSolicitud ? solicitar_recogida.fechaSolicitud|date('Y-m-d') : '' }}</td>
+                                                <td>{{ solicitar_recogida.user.nombre ~ ' ' ~ solicitar_recogida.user.apellidos }}</td>
+                                                <td>{{ solicitar_recogida.indicadorSolicitud }}</td>
+                                                <td>{{ solicitar_recogida.estado }}</td>
+                                                <td>{{ solicitar_recogida.fechaRecogida ? solicitar_recogida.fechaRecogida|date('Y-m-d') : '' }}</td>
+                                                <td>{{ solicitar_recogida.horaRecogida ? 'De ' ~ solicitar_recogida.horaRecogida|date('H:i:s') ~ ' a ' ~ solicitar_recogida.horaFinRecogida|date('H:i:s') : '' }}</td>
+                                                {% if solicitar_recogida.linkRecogida %}
+                                                    <td><a href="{{ solicitar_recogida.linkRecogida }}"
+                                                           target="_blank">Ver datos del envío</a>
+                                                    </td>
+                                                {% else %}
+                                                    <td></td>
+                                                {% endif %}
+                                                {% if solicitar_recogida.estado == 'Aprobada' %}
+                                                    <td>{{ solicitar_recogida.observacionRecogida }}</td>
+                                                {% elseif solicitar_recogida.estado == 'Rechazada' %}
+                                                    <td>{{ solicitar_recogida.motivoRechazo }}</td>
+                                                {% else %}
+                                                    <td></td>
+                                                {% endif %}
+                                                <td style="margin: 0 auto;">
+                                                    {% if solicitar_recogida.nombreContactoRecogida != '' %}
+                                                        <button
+                                                                class="btn btn-primary ver"
+                                                                data-toggle="tooltip"
+                                                                title="Ver dirección de recogida"><i
+                                                                    class="fas fa-eye"></i>
+                                                        </button>
+                                                    {% endif %}
+                                                    {% if solicitar_recogida.estado == 'Sin aprobar' %}
+                                                        <button
+                                                                class="btn btn-success aprobar"
+                                                                data-toggle="tooltip"
+                                                                title="Aprobar solicitud"><i
+                                                                    class="fas fa-check"></i>
+                                                        </button>
+                                                        <button
+                                                                class="btn btn-secondary rechazar"
+                                                                data-toggle="tooltip"
+                                                                title="Rechazar solicitud"><i
+                                                                    class="fas fa-ban"></i>
+                                                        </button>
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                        {% else %}
+                                            <tr>
+                                                <td colspan="9">No se encontraron registros</td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="row">
+                                <div class="table-responsive" style="padding-left: 5px">
+                                    <table class="table table-bordered table-striped" id="dataSolicitudUser">
+                                        <thead class="text-center">
+                                        <tr>
+                                            <th>Fecha de Solicitud</th>
+                                            <th>Preferencia</th>
+                                            <th>Estado</th>
+                                            <th>Fecha de recogida</th>
+                                            <th>Hora de recogida</th>
+                                            <th>Link de envío</th>
+                                            <th>Comentarios</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                        {% for solicitar_recogida in solicitar_recogidas %}
+                                            <tr data-id="{{ solicitar_recogida.id }}">
+                                                <td>{{ solicitar_recogida.fechaSolicitud ? solicitar_recogida.fechaSolicitud|date('Y-m-d') : '' }}</td>
+                                                <td>{{ solicitar_recogida.indicadorSolicitud }}</td>
+                                                <td>{{ solicitar_recogida.estado }}</td>
+                                                <td>{{ solicitar_recogida.fechaRecogida ? solicitar_recogida.fechaRecogida|date('Y-m-d') : '' }}</td>
+                                                <td>{{ solicitar_recogida.horaRecogida ? 'De ' ~ solicitar_recogida.horaRecogida|date('H:i:s') ~ ' a ' ~ solicitar_recogida.horaFinRecogida|date('H:i:s') : '' }}</td>
+                                                {% if solicitar_recogida.linkRecogida %}
+                                                    <td><a href="{{ solicitar_recogida.linkRecogida }}"
+                                                           target="_blank">Ver datos del envío</a>
+                                                    </td>
+                                                {% else %}
+                                                    <td></td>
+                                                {% endif %}
+                                                {% if solicitar_recogida.estado == 'Aprobada' %}
+                                                    <td>{{ solicitar_recogida.observacionRecogida }}</td>
+                                                {% elseif solicitar_recogida.estado == 'Rechazada' %}
+                                                    <td>{{ solicitar_recogida.motivoRechazo }}</td>
+                                                {% else %}
+                                                    <td></td>
+                                                {% endif %}
+                                                {% if solicitar_recogida.nombreContactoRecogida != '' %}
+                                                    <td style="margin: 0 auto;">
+                                                        <button class="btn btn-primary ver"
+                                                                data-toggle="tooltip"
+                                                                title="Ver dirección de recogida"><i
+                                                                    class="fas fa-eye"></i>
+                                                        </button>
+                                                    </td>
+                                                {% endif %}
+                                            </tr>
+                                        {% else %}
+                                            <tr>
+                                                <td colspan="8">No se encontraron registros</td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ include('solicitar_recogida/modalAddSolicitud.html.twig') }}
+        {{ include('solicitar_recogida/modalAprobarSolicitud.html.twig') }}
+        {{ include('solicitar_recogida/modalRechazoSolicitud.html.twig') }}
+        {{ include('solicitar_recogida/modalVerDireccion.html.twig') }}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+
+            {% if solicitar_recogidas|length > 0 %}
+            $('#dataSolicitudAdmin, #dataSolicitudUser').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[10], [10]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+            {% endif %}
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "500",
+                "timeOut": "3000",
+                "extendedTimeOut": "500",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            let idSolicitud, diaSemanaRecogida, fechaAprobacion, idDireccion;
+            const festivos = ['1/1', '6/1', '15/4', '15/8', '12/10', '1/11', '6/12', '8/12'];
+
+            $('#fechaRecogida').on('change', function () {
+                const fecha = new Date($("#fechaRecogida").val());
+                diaSemanaRecogida = fecha.getDay() + 1;
+                fechaAprobacion = fecha.setDate(fecha.getDate() + 1);
+                fechaAprobacion = new Date(fechaAprobacion).toLocaleDateString('es', {
+                    month: "numeric",
+                    day: "numeric"
+                });
+            });
+
+            $('#btnNuevaSolicitud').on('click', function () {
+                $('#addPreferencia').val('');
+                {% if direccion %}
+                    idDireccion = '{{ direccion.id }}';
+                    $('#nombre').val('{{ direccion.nombre }}');
+                    $('#direccion').val('{{ direccion.direccion }}');
+                    $('#telefono').val('{{ direccion.telefono }}');
+                    $("#codigoPostal").val('{{ direccion.codigoPostal }}');
+                    $("#poblacion").val('{{ direccion.poblacion }}');
+                    $("#provincia").val('{{ direccion.provincia }}');
+                    $("#pais").val('{{ direccion.pais }}');
+                {% else %}
+                    idDireccion = '';
+                    $('#nombre').val('');
+                    $('#direccion').val('');
+                    $('#telefono').val('');
+                    $("#codigoPostal").val('');
+                    $("#poblacion").val('');
+                    $("#provincia").val('');
+                    $("#pais").val('');
+                {% endif %}
+
+                $('#modalAddSolicitud').modal('show');
+            });
+
+            $('#dataSolicitudAdmin, #dataSolicitudUser tbody').on('click', '.ver', function () {
+
+                let row = $(this).parents('tr');
+                let idSolicitudR = parseInt(row.data('id'));
+                let id;
+
+                {% if solicitar_recogidas %}
+                {% for solicitar in solicitar_recogidas %}
+                id = parseInt('{{ solicitar.id }}');
+                if (id === idSolicitudR) {
+                    $('#mostrarNombre').text('Nombre del contacto: ' + '{{ solicitar.nombreContactoRecogida }}');
+                    $('#mostrarDireccion').text('Dirección de recogida: ' + '{{ solicitar.direccionContactoRecogida }}');
+                    $('#mostrarTelefono').text('Teléfono del contacto: ' + '{{ solicitar.telefonoContactoRecogida }}');
+                    $('#mostrarCodigo').text('Código postal: ' + '{{ solicitar.codigoPostalContactoRecogida }}');
+                    $('#mostrarPoblacion').text('Población: ' + '{{ solicitar.poblacionContactoRecogida }}');
+                    $('#mostrarProvincia').text('Provincia: ' + '{{ solicitar.provinciaContactoRecogida }}');
+                    $('#mostrarPais').text('País: ' + '{{ solicitar.paisContactoRecogida }}');
+                }
+                {% endfor %}
+                {% endif %}
+
+                $('#modalVerDireccion').modal('show');
+
+            });
+
+            $('#dataSolicitudAdmin tbody').on('click', '.aprobar', function () {
+
+                let row = $(this).parents('tr');
+                idSolicitud = row.data('id');
+
+                $('#modalAprobarSolicitud').modal('show');
+
+            });
+
+            $('#dataSolicitudAdmin tbody').on('click', '.rechazar', function () {
+
+                let row = $(this).parents('tr');
+                idSolicitud = row.data('id');
+
+                $('#modalRechazoSolicitud').modal('show');
+
+            });
+
+            $('#btnAddSolicitudGuardar').on('click', function () {
+
+                let Ruta = Routing.generate('app_solicitar_recogida_insert');
+
+                //Validaciones
+                if ($("#nombre").val() === '') {
+                    toastr["error"]('El nombre del contacto es obligatorio, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if ($("#addPreferencia").val() === '') {
+                    toastr["error"]('La información de preferencia, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+
+                $('#modalAddSolicitud').modal('hide');
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    idDireccion: idDireccion,
+                    nombre: $('#nombre').val(),
+                    direccion: $('#direccion').val(),
+                    telefono: $('#telefono').val(),
+                    poblacion: $('#poblacion').val(),
+                    provincia: $('#provincia').val(),
+                    pais: $('#pais').val(),
+                    codigoPostal: $('#codigoPostal').val(),
+                    preferencia: $('#addPreferencia').val()
+                };
+                $.ajax({
+                    type: "POST",
+                    dataType: "html",
+                    url: Ruta,
+                    data: mat_datos
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+                    if (data === 'ok') {
+                        toastr["success"]('El solicitud de recogida ha sido enviada.', "Notificación")
+                        window.location.href = "{{ path('app_solicitar_recogida_index') }}";
+                    } else {
+                        toastr["error"](data, "Advertencia")
+                    }
+                });
+
+            });
+
+            $('#btnAddGuardar').on('click', function () {
+
+                //Validaciones
+                //fin de seamana
+                if (diaSemanaRecogida === 6 || diaSemanaRecogida === 7) {
+                    toastr["error"]('No se permite recogidas el fin de semana.', "Advertencia")
+                    return false;
+                }
+                //dias festivos
+                // if (festivos.includes(fechaAprobacion)) {
+                //     toastr["error"]('No se permite recogidas los días festivos.', "Advertencia")
+                //     return false;
+                // }
+
+                if ($("#fechaRecogida").val() === '') {
+                    toastr["error"]('La fecha de recogida es obligatoria, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if ($("#horaRecogida").val() === '') {
+                    toastr["error"]('La hora inicial de recogida es obligatoria, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if ($("#horaFinRecogida").val() === '') {
+                    toastr["error"]('La hora final de recogida es obligatoria, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+
+                let Ruta = Routing.generate('app_solicitar_recogida_update', {'id': idSolicitud});
+
+                $('#modalAprobarSolicitud').modal('hide');
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    fechaRecogida: $("#fechaRecogida").val(),
+                    horaRecogida: $("#horaRecogida").val(),
+                    horaFinRecogida: $("#horaFinRecogida").val(),
+                    linkRecogida: $("#linkRecogida").val(),
+                    observacionRecogida: $("#observacion").val()
+                };
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "html",
+                    data: mat_datos,
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+                    if (data === 'ok') {
+                        $('#modalAprobarSolicitud input').each(function () {
+                            $(this).val('');
+                        });
+                        toastr["success"]('La solicitud de recogida ha sido aprobada', "Notificación")
+                        window.location.href = "{{ path('app_solicitar_recogida_index') }}";
+                    } else {
+                        toastr["error"](data, "Notificación")
+                    }
+                });
+            });
+
+            $('#btnAddRechazoGuardar').on('click', function () {
+
+                //Validaciones
+
+                if ($("#addMotivo").val() === '') {
+                    toastr["error"]('El comentario de rechazo, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+
+                let Ruta = Routing.generate('app_solicitar_recogida_rechazar', {'id': idSolicitud});
+
+                $('#modalRechazoSolicitud').modal('hide');
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    motivo: $("#addMotivo").val(),
+                };
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "html",
+                    data: mat_datos,
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+                    if (data === 'ok') {
+                        $('#modalRechazoSolicitud input').each(function () {
+                            $(this).val('');
+                        });
+                        toastr["success"]('La solicitud de recogida ha sido rechazada', "Notificación")
+                        window.location.href = "{{ path('app_solicitar_recogida_index') }}";
+                    } else {
+                        toastr["error"](data, "Notificación")
+                    }
+                });
+            });
+
+        });
+    </script>
+{% endblock %}

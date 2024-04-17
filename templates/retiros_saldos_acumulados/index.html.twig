@@ -1,0 +1,729 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Distribución de Royalties{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                {% if is_granted('ROLE_ADMIN') %}
+                    <div class="row">
+                        {% if bolsaGeneralDolar != 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box" type="button" id="addGeneralUSD" data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar distribución por usuarios">
+                                    <span class="info-box-icon bg-info"><i class="fa fa-dollar-sign"></i></span>
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Generales</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaGeneralDolar|number_format(2, '.', ',') }}</span>
+                                        <i class="fa fa-eye text-right"></i>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaGeneralEuros != 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box" id="addGeneralEUR" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar distribución por usuarios">
+                                    <span class="info-box-icon bg-info"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Generales</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaGeneralEuros|number_format(2, '.', ',') }}</span>
+                                        <i class="fa fa-eye text-right"></i>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaLibroDolar != 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box" id="addLibroUSD" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar distribución por usuarios">
+                                    <span class="info-box-icon bg-danger"><i class="fa fa-dollar-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Libros</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-dollar-sign"></i> {{ bolsaLibroDolar|number_format(2, '.', ',') }}</span>
+                                        <i class="fa fa-eye text-right"></i>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaLibroEuros != 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box" id="addLibroEUR" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar distribución por usuarios">
+                                    <span class="info-box-icon bg-danger"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Productos Libros</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaLibroEuros|number_format(2, '.', ',') }}</span>
+                                        <i class="fa fa-eye text-right"></i>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaServicioDolar != 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box" id="addServicioUSD" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar distribución por usuarios">
+                                    <span class="info-box-icon bg-warning"><i class="fa fa-dollar-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Servicios</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Dólares</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaServicioDolar|number_format(2, '.', ',') }}</span>
+                                        <i class="fa fa-eye text-right"></i>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                        {% if bolsaServicioEuros != 0 %}
+                            <div class="col-12 col-sm-4 col-md-4">
+                                <div class="info-box" id="addServicioEUR" type="button"
+                                     data-toggle="tooltip"
+                                     data-placement="top"
+                                     title="Mostrar distribución por usuarios">
+                                    <span class="info-box-icon bg-warning"><i class="fa fa-euro-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text text-bold">Servicios</span>
+                                        <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                        <span class="info-box-number"><i
+                                                    class="fa fa-euro-sign"></i> {{ bolsaServicioEuros|number_format(2, '.', ',') }}</span>
+                                        <i class="fa fa-eye text-right"></i>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                        {% endif %}
+                        <!-- /.col -->
+                    </div>
+                {% endif %}
+                <div class="card" id="tarjeta" style="display: none">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3 id="nameListado">Distribución del saldo por usuarios</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        {% import 'macros/tablas.html.twig' as tabla %}
+                        <div class="row" id="tablaGeneralUSD" style="display: none">
+                            {{ tabla.tabla_retiro_pagos(acumulados,'saldoGeneralUSD') }}
+                        </div>
+                        <div class="row" id="tablaGeneralEUR" style="display: none">
+                            {{ tabla.tabla_retiro_pagos(acumulados,'saldoGeneralEUR') }}
+                        </div>
+                        <div class="row" id="tablaLibroUSD" style="display: none">
+                            {{ tabla.tabla_retiro_pagos(acumulados,'saldoLibroUSD') }}
+                        </div>
+                        <div class="row" id="tablaLibroEUR" style="display: none">
+                            {{ tabla.tabla_retiro_pagos(acumulados,'saldoLibroEUR') }}
+                        </div>
+                        <div class="row" id="tablaServicioUSD" style="display: none">
+                            {{ tabla.tabla_retiro_pagos(acumulados,'saldoServicioUSD') }}
+                        </div>
+                        <div class="row" id="tablaServicioEUR" style="display: none">
+                            {{ tabla.tabla_retiro_pagos(acumulados,'saldoServicioEUR') }}
+                        </div>
+                    </div>
+                    {{ include('retiros_saldos_acumulados/modalAddRetiroSaldo.html.twig') }}
+                    {{ include('retiros_saldos_acumulados/modalAddIngresoSaldo.html.twig') }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+ {% block javascripts %}
+     {{ parent() }}
+<!-- DataTables -->
+<script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+<script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+<!-- Acceso a Rutas del Controller -->
+<script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+<script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+<script>
+    $(document).ready(function () {
+
+        //Declaracion de variables
+        let tipoSaldo = 0;
+        let moneda = '';
+
+        {% if acumulados|length > 0 %}
+                let table = $('table.display').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "lengthMenu": [[6], [6]],
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                });
+        {% endif %}
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+        {% if mensaje is not null %}
+        {% if mensaje != 0 %}
+        toastr["error"]('{{ mensaje }}', "Notificación")
+        {% endif %}
+        {% endif %}
+
+        $('#addRoyaltie').keypress(function (tecla) {
+            if ((tecla.charCode < 48 || tecla.charCode > 57) && (tecla.charCode !== 44) && (tecla.charCode !== 46) && (tecla.charCode !== 8)) {
+                return false;
+            } else {
+                let len = $('#addRoyaltie').val().length;
+                let indexPunto = $('#addRoyaltie').val().indexOf('.');
+                let indexComa = $('#addRoyaltie').val().indexOf(',');
+
+                if (tecla.charCode === 44) {
+                    if (len === 0 && tecla.charCode === 44) {
+                        return false;
+                    }
+                    if (indexComa > 0 && tecla.charCode === 44) {
+                        return false;
+                    }
+                    if (indexPunto !== -1) {
+                        return false;
+                    }
+                }else if (tecla.charCode === 46) {
+                    if (len === 0 && tecla.charCode === 46) {
+                        return false;
+                    }
+                    if (indexPunto > 0 && tecla.charCode === 46) {
+                        return false;
+                    }
+                    if (indexComa !== -1) {
+                        return false;
+                    }
+                }
+                if (indexPunto > 0) {
+                    let CharAfterdot = (len + 1) - indexPunto;
+                    if (CharAfterdot > 3) {
+                        return false;
+                    }
+                }else if (indexComa > 0) {
+                    let CharAfterdot = (len + 1) - indexComa;
+                    if (CharAfterdot > 3) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        });
+
+        $('#addRoyaltieIngreso').keypress(function (tecla) {
+            if ((tecla.charCode < 48 || tecla.charCode > 57) && (tecla.charCode !== 44) && (tecla.charCode !== 46) && (tecla.charCode !== 8)) {
+                return false;
+            } else {
+                let len = $('#addRoyaltieIngreso').val().length;
+                let indexPunto = $('#addRoyaltieIngreso').val().indexOf('.');
+                let indexComa = $('#addRoyaltieIngreso').val().indexOf(',');
+
+                if (tecla.charCode === 44) {
+                    if (len === 0 && tecla.charCode === 44) {
+                        return false;
+                    }
+                    if (indexComa > 0 && tecla.charCode === 44) {
+                        return false;
+                    }
+                    if (indexPunto !== -1) {
+                        return false;
+                    }
+                }else if (tecla.charCode === 46) {
+                    if (len === 0 && tecla.charCode === 46) {
+                        return false;
+                    }
+                    if (indexPunto > 0 && tecla.charCode === 46) {
+                        return false;
+                    }
+                    if (indexComa !== -1) {
+                        return false;
+                    }
+                }
+                if (indexPunto > 0) {
+                    let CharAfterdot = (len + 1) - indexPunto;
+                    if (CharAfterdot > 3) {
+                        return false;
+                    }
+                }else if (indexComa > 0) {
+                    let CharAfterdot = (len + 1) - indexComa;
+                    if (CharAfterdot > 3) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        });
+
+        $('#addGeneralUSD').on('click', function () {
+            tipoSaldo = 1;
+            moneda = 'USD';
+            $("#nameListado").text("Distribución del saldo por usuarios de productos generales en dólares");
+            $("#tablaGeneralEUR").css("display", "none");
+            $("#tablaLibroUSD").css("display", "none");
+            $("#tablaLibroEUR").css("display", "none");
+            $("#tablaServicioUSD").css("display", "none");
+            $("#tablaServicioEUR").css("display", "none");
+            $("#tarjeta").css("display", "block");
+            $("#tablaGeneralUSD").css("display", "block");
+        });
+
+        $('#addGeneralEUR').on('click', function () {
+            tipoSaldo = 2;
+            moneda = 'EUR';
+            $("#nameListado").text("Distribución del saldo por usuarios de productos generales en euros");
+            $("#tablaGeneralUSD").css("display", "none");
+            $("#tablaLibroUSD").css("display", "none");
+            $("#tablaLibroEUR").css("display", "none");
+            $("#tablaServicioUSD").css("display", "none");
+            $("#tablaServicioEUR").css("display", "none");
+            $("#tarjeta").css("display", "block");
+            $("#tablaGeneralEUR").css("display", "block");
+        });
+
+        $('#addLibroUSD').on('click', function () {
+            tipoSaldo = 3;
+            moneda = 'USD';
+            $("#nameListado").text("Distribución del saldo por usuarios de libros en dólares");
+            $("#tablaGeneralUSD").css("display", "none");
+            $("#tablaGeneralEUR").css("display", "none");
+            $("#tablaLibroEUR").css("display", "none");
+            $("#tablaServicioUSD").css("display", "none");
+            $("#tablaServicioEUR").css("display", "none");
+            $("#tarjeta").css("display", "block");
+            $("#tarjeta").css("display", "block");
+            $("#tablaLibroUSD").css("display", "block");
+        });
+
+        $('#addLibroEUR').on('click', function () {
+            tipoSaldo = 4;
+            moneda = 'EUR';
+            $("#nameListado").text("Distribución del saldo por usuarios de libros en euros");
+            $("#tablaGeneralUSD").css("display", "none");
+            $("#tablaGeneralEUR").css("display", "none");
+            $("#tablaLibroUSD").css("display", "none");
+            $("#tablaServicioUSD").css("display", "none");
+            $("#tablaServicioEUR").css("display", "none");
+            $("#tarjeta").css("display", "block");
+            $("#tablaLibroEUR").css("display", "block");
+        });
+
+        $('#addServicioUSD').on('click', function () {
+            tipoSaldo = 5;
+            moneda = 'USD';
+            $("#nameListado").text("Distribución del saldo por usuarios de servicios en dólares");
+            $("#tablaGeneralUSD").css("display", "none");
+            $("#tablaGeneralEUR").css("display", "none");
+            $("#tablaLibroUSD").css("display", "none");
+            $("#tablaLibroEUR").css("display", "none");
+            $("#tablaServicioEUR").css("display", "none");
+            $("#tarjeta").css("display", "block");
+            $("#tablaServicioUSD").css("display", "block");
+        });
+
+        $('#addServicioEUR').on('click', function () {
+            tipoSaldo = 6;
+            moneda = 'EUR';
+            $("#nameListado").text("Distribución del saldo por usuarios de servicios en euros");
+            $("#tablaGeneralUSD").css("display", "none");
+            $("#tablaGeneralEUR").css("display", "none");
+            $("#tablaLibroUSD").css("display", "none");
+            $("#tablaLibroEUR").css("display", "none");
+            $("#tablaServicioUSD").css("display", "none");
+            $("#tarjeta").css("display", "block");
+            $("#tablaServicioEUR").css("display", "block");
+        });
+
+        let usuarioId;
+        let usuario;
+        let acumulado;
+        let id;
+        let saldoGeneralUSD, saldoGeneralEUR, saldoLibroUSD, saldoLibroEUR, saldoServicioUSD, saldoServicioEUR;
+        let fichero;
+        let siFichero = 0;
+
+        $('table.display tbody').on('click', '.retirar', function () {
+            let row = $(this).parents('tr');
+            let fila = table.row(row).data();
+            usuarioId = parseInt(row.data('id'));
+            usuario = fila[0];
+            {% for venta in acumulados %}
+                id = parseInt('{{ venta.id }}');
+                if (id === usuarioId) {
+                    saldoGeneralUSD = parseFloat('{{ venta.saldoGeneralUSD }}');
+                    saldoGeneralEUR = parseFloat('{{ venta.saldoGeneralEUR }}');
+                    saldoLibroUSD = parseFloat('{{ venta.saldoLibroUSD }}');
+                    saldoLibroEUR = parseFloat('{{ venta.saldoLibroEUR }}');
+                    saldoServicioUSD = parseFloat('{{ venta.saldoServicioUSD }}');
+                    saldoServicioEUR = parseFloat('{{ venta.saldoServicioEUR }}');
+                    switch (tipoSaldo) {
+                        case 1:
+                            if(saldoGeneralUSD !== 0){
+                                acumulado = parseFloat('{{ venta.saldoGeneralUSD }}');
+                            }
+                            break;
+                        case 2:
+                            if(saldoGeneralEUR !== 0){
+                                acumulado = parseFloat('{{ venta.saldoGeneralEUR }}');
+                            }
+                            break;
+                        case 3:
+                            if(saldoLibroUSD !== 0){
+                                acumulado = parseFloat('{{ venta.saldoLibroUSD }}');
+                            }
+                            break;
+                        case 4:
+                            if(saldoLibroEUR !== 0){
+                                acumulado = parseFloat('{{ venta.saldoLibroEUR }}');
+                            }
+                            break;
+                        case 5:
+                            if(saldoServicioUSD !== 0){
+                                acumulado = parseFloat('{{ venta.saldoServicioUSD }}');
+                            }
+                            break;
+                        case 6:
+                            if(saldoServicioEUR !== 0){
+                                acumulado = parseFloat('{{ venta.saldoServicioEUR }}');
+                            }
+                            break;
+                    }
+
+                }
+            {% endfor %}
+            $("#modaTitleRetiro").text("RETIRO DE SALDO A " + usuario.toUpperCase());
+            $("#labelAddRoyaltie").text("Royalties a retirar: " + acumulado + ' ' + moneda);
+            $('#modalAddRetiroSaldo').modal('show');
+
+        });
+
+        $('table.display tbody').on('click', '.ingresar', function () {
+            let row = $(this).parents('tr');
+            let fila = table.row(row).data();
+            usuarioId = parseInt(row.data('id'));
+            usuario = fila[0];
+            {% for venta in acumulados %}
+            id = parseInt('{{ venta.id }}');
+            if (id === usuarioId) {
+                saldoGeneralUSD = parseFloat('{{ venta.saldoGeneralUSD }}');
+                saldoGeneralEUR = parseFloat('{{ venta.saldoGeneralEUR }}');
+                saldoLibroUSD = parseFloat('{{ venta.saldoLibroUSD }}');
+                saldoLibroEUR = parseFloat('{{ venta.saldoLibroEUR }}');
+                saldoServicioUSD = parseFloat('{{ venta.saldoServicioUSD }}');
+                saldoServicioEUR = parseFloat('{{ venta.saldoServicioEUR }}');
+                switch (tipoSaldo) {
+                    case 1:
+                        if(saldoGeneralUSD !== 0){
+                            acumulado = parseFloat('{{ venta.saldoGeneralUSD }}');
+                        }
+                        break;
+                    case 2:
+                        if(saldoGeneralEUR !== 0){
+                            acumulado = parseFloat('{{ venta.saldoGeneralEUR }}');
+                        }
+                        break;
+                    case 3:
+                        if(saldoLibroUSD !== 0){
+                            acumulado = parseFloat('{{ venta.saldoLibroUSD }}');
+                        }
+                        break;
+                    case 4:
+                        if(saldoLibroEUR !== 0){
+                            acumulado = parseFloat('{{ venta.saldoLibroEUR }}');
+                        }
+                        break;
+                    case 5:
+                        if(saldoServicioUSD !== 0){
+                            acumulado = parseFloat('{{ venta.saldoServicioUSD }}');
+                        }
+                        break;
+                    case 6:
+                        if(saldoServicioEUR !== 0){
+                            acumulado = parseFloat('{{ venta.saldoServicioEUR }}');
+                        }
+                        break;
+                }
+
+            }
+            {% endfor %}
+            $("#modaTitleRetiro").text("INGRESO DE SALDO A " + usuario.toUpperCase());
+            $('#modalAddIngresoSaldo').modal('show');
+
+        });
+
+        $("#uploadDocumentoRetiro").on('change', function (e) {
+            let fichero = $("#uploadDocumentoRetiro").val();
+            let input = document.getElementById('uploadDocumentoRetiro');
+            let file = input.files[0]; //2 000 000
+            let allowedExtensions = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf|.jpg|.png)$/i;
+
+            if (!allowedExtensions.exec(fichero)) {
+                toastr["error"]('Sólo se pueden subir archivos con extensiones: .docx, .xlsx, .pptx .pdf, .jpg, .png.', "Advertencia")
+                $("#uploadDocumentoRetiro").val('');
+                return false;
+            } else if (file.size > 2000000) {
+                toastr["error"]('El tamaño del fichero no puede ser mayor que 2 MB.', "Advertencia")
+                $("#uploadDocumentoRetiro").val('');
+                return false;
+            } else {
+                //aqui subo el fichero y guardo el nombre
+                let Ruta = Routing.generate('app_fichero_retiro');
+                let form = document.getElementById("myformRetiro");
+                siFichero = 1;
+
+                $(".preload").removeClass('hidden');
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "json",
+                    data: new FormData(form),
+                    contentType: false,
+                    processData: false,
+                    cache: false
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+                    fichero = data['fichero'];
+                });
+            }
+        });
+
+        $("#uploadDocumentoIngreso").on('change', function (e) {
+            let fichero = $("#uploadDocumentoIngreso").val();
+            let input = document.getElementById('uploadDocumentoIngreso');
+            let file = input.files[0]; //2 000 000
+            let allowedExtensions = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf|.jpg|.png)$/i;
+
+            if (!allowedExtensions.exec(fichero)) {
+                toastr["error"]('Sólo se pueden subir archivos con extensiones: .docx, .xlsx, .pptx .pdf, .jpg, .png.', "Advertencia")
+                $("#uploadDocumentoIngreso").val('');
+                return false;
+            } else if (file.size > 2000000) {
+                toastr["error"]('El tamaño del fichero no puede ser mayor que 2 MB.', "Advertencia")
+                $("#uploadDocumentoIngreso").val('');
+                return false;
+            } else {
+                //aqui subo el fichero y guardo el nombre
+                let Ruta = Routing.generate('app_fichero_ingreso');
+                let form = document.getElementById("myformIngreso");
+                siFichero = 1;
+
+                $(".preload").removeClass('hidden');
+
+                $.ajax({
+                    url: Ruta,
+                    type: "post",
+                    dataType: "json",
+                    data: new FormData(form),
+                    contentType: false,
+                    processData: false,
+                    cache: false
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+                    fichero = data['fichero'];
+                });
+            }
+        });
+
+        $('#btnAddGuardar').on('click', function () {
+
+            //Validaciones
+
+            if ($("#addRoyaltie").val() === '' || $("#addRoyaltie").val() === '0') {
+                toastr["error"]('Teclee la cantidad de royaltie a retirar', "Advertencia")
+                return false;
+            }
+
+            if ($("#addMotivo").val() === '') {
+                toastr["error"]('Teclee el motivo', "Advertencia")
+                return false;
+            }
+
+            if (siFichero === 0){
+                fichero = '';
+            }else{
+                fichero = document.getElementById('uploadDocumentoRetiro').files[0].name;
+            }
+
+            let Ruta = Routing.generate('app_retiro_saldo_acumulado_new');
+
+            $('#modalAddRetiroSaldo').modal('hide');
+
+            $(".preload").removeClass('hidden');
+
+            let mat_datos = {
+                idUsuario: usuarioId,
+                royaltie: parseFloat($("#addRoyaltie").val().replace(',','.')),
+                tipoSaldo: tipoSaldo,
+                motivo: $("#addMotivo").val(),
+                saldoAcumulado: acumulado,
+                fichero: fichero
+            };
+
+            $.ajax({
+                url: Ruta,
+                type: "post",
+                dataType: "html",
+                data: mat_datos,
+            }).done(function (data) {
+                $(".preload").addClass('hidden');
+                if (data === 'ok') {
+                    limpiarModalRetiro();
+                    toastr["success"]('Retiro de saldo registrado', "Notificación")
+                    window.location.href = "{{ path('app_retiros_saldos_acumulados') }}";
+                } else {
+                    toastr["error"](data, "Notificación")
+                }
+            });
+        });
+
+        $('#btnAddGuardarIngreso').on('click', function () {
+
+            //Validaciones
+
+            if ($("#addRoyaltieIngreso").val() === '' || $("#addRoyaltieIngreso").val() === '0') {
+                toastr["error"]('Teclee la cantidad de royaltie a ingresar', "Advertencia")
+                return false;
+            }
+
+            if ($("#addMotivoIngreso").val() === '') {
+                toastr["error"]('Teclee el motivo', "Advertencia")
+                return false;
+            }
+
+            if (siFichero === 0){
+                fichero = '';
+            }else{
+                fichero = document.getElementById('uploadDocumentoIngreso').files[0].name;
+            }
+
+            let Ruta = Routing.generate('app_ingreso_saldo_acumulado_new');
+
+            $('#modalAddIngresoSaldo').modal('hide');
+
+            $(".preload").removeClass('hidden');
+
+            let mat_datos = {
+                idUsuario: usuarioId,
+                royaltie: parseFloat($("#addRoyaltieIngreso").val().replace(',','.')),
+                tipoSaldo: tipoSaldo,
+                motivo: $("#addMotivoIngreso").val(),
+                saldoAcumulado: acumulado,
+                fichero: fichero
+            };
+
+            $.ajax({
+                url: Ruta,
+                type: "post",
+                dataType: "html",
+                data: mat_datos,
+            }).done(function (data) {
+                $(".preload").addClass('hidden');
+                if (data === 'ok') {
+                    limpiarModalIngreso();
+                    toastr["success"]('Ingreso de saldo registrado', "Notificación")
+                    window.location.href = "{{ path('app_retiros_saldos_acumulados') }}";
+                } else {
+                    toastr["error"](data, "Notificación")
+                }
+            });
+        });
+
+        function limpiarModalIngreso()
+        {
+            $('#modalAddIngresoSaldo input').each(function () {
+                $(this).val('');
+            });
+
+            $('#modalAddIngresoSaldo textarea').each(function () {
+                $(this).val('');
+            });
+        }
+
+        function limpiarModalRetiro()
+        {
+            $('#modalAddRetiroSaldo input').each(function () {
+                $(this).val('');
+            });
+
+            $('#modalAddRetiroSaldo textarea').each(function () {
+                $(this).val('');
+            });
+        }
+
+    });
+</script>
+{% endblock %}

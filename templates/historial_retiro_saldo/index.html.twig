@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Retiros de royalties realizados{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header" style="background-color: #343a40">
+                        <div class="card-title text-white">
+                            <h3>Retiros de royalties realizados</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataRetiros">
+                                    <thead class="text-center">
+                                    <tr>
+                                        {% if is_granted('ROLE_ADMIN') %}
+                                            <th>Usuario</th>
+                                        {% endif %}
+                                        <th>Fecha</th>
+                                        <th>Cantidad</th>
+                                        <th>Motivo</th>
+                                        <th>Documento</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% set moneda = '' %}
+                                    {% for retiro in retiros %}
+                                        {% if retiro.tipoSaldo == 1 or retiro.tipoSaldo == 3 or retiro.tipoSaldo == 5 %}
+                                            {% set moneda = 'USD' %}
+                                        {% else %}
+                                            {% set moneda = 'EUR' %}
+                                        {% endif %}
+                                        <tr class="text-center">
+                                            {% if is_granted('ROLE_ADMIN') %}
+                                                <td>{{ retiro.user.nombre ~ ' ' ~ retiro.user.apellidos }}</td>
+                                            {% endif %}
+                                            <td>{{ retiro.fecha|date('Y-m-d h:i:s') }}</td>
+                                            <td>{{ retiro.cantidad|number_format(2, '.', ',') ~ ' ' ~ moneda }}</td>
+                                            <td>{{ retiro.motivo }}</td>
+                                            {% if retiro.documento %}
+                                                <td><a href="{{ asset('uploads/' ~ retiro.documento) }}"
+                                                       target="_blank">Ver
+                                                        Documento adjunto</a>
+                                                </td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="5">No se encontraron retiros realizados</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataRetiros').DataTable({
+                "paging": true,
+                "order": [1, "desc"],
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[10], [10]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,96 @@
+[12-May-2022 19:53:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:36:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:36:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:36:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:36:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:37:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:37:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:37:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:39:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:39:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:39:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:39:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:39:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:39:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[12-May-2022 20:39:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[13-May-2022 17:36:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[20-May-2022 10:38:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[28-May-2022 01:25:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[28-May-2022 04:09:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[29-May-2022 06:56:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[30-May-2022 16:24:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[08-Jun-2022 13:55:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[10-Jun-2022 19:51:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24
+[11-Jun-2022 02:26:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator' not found in /home/camilopic/public_html/src/Security/LoginAuthenticator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/src/Security/LoginAuthenticator.php on line 24

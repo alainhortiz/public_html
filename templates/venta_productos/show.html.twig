@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Productos de la Venta{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header" style="background-color: #343a40">
+                        <div class="card-title text-white">
+                            <h3>Productos de la Venta {{ venta.codigo }}</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataVentaProductos">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Pack</th>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>I.D.D</th>
+                                        <th>Cantidad</th>
+                                        <th>Usuario</th>
+                                        <th>Ganancia x Amortización</th>
+                                        <th>Ganancia x Beneficio</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                    {% for ventaProducto in venta.ventas() %}
+                                        <tr>
+                                            <td>{{ ventaProducto.pack ? ventaProducto.pack.nombre : '-' }}</td>
+                                            {% if ventaProducto.producto.imagen %}
+                                                <td><img width="80" height="80"
+                                                         src="{{ asset('uploads/' ~ ventaProducto.producto.imagen) }}"
+                                                         alt="Foto Producto"></td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                            <td>{{ ventaProducto.producto.nombre }}</td>
+                                            <td>{{ ventaProducto.producto.idd }}</td>
+                                            <td>{{ ventaProducto.cantidad }}</td>
+                                            <td>{{ ventaProducto.producto.user.nombre ~ ' ' ~ ventaProducto.producto.user.apellidos }}</td>
+                                            <td>{{ ventaProducto.pagoAmortizacion|number_format(2, '.', ',') }}</td>
+                                            <td>{{ ventaProducto.royaltie|number_format(2, '.', ',') }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="padding: 20px">
+                            <a class="btn btn-danger" style="float: left"
+                               href="{{ path('app_venta_productos_index') }}">Regresar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+        {% block javascripts %}
+            {{ parent() }}
+            <!-- DataTables -->
+            <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+            <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+            <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+            <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+            <script>
+                $(function () {
+
+                    $('#dataVentaProductos').DataTable({
+                        "paging": true,
+                        "lengthChange": false,
+                        "searching": false,
+                        "lengthMenu": [[10], [10]],
+                        "ordering": true,
+                        "info": true,
+                        "autoWidth": false,
+                        "responsive": true,
+                    });
+                });
+            </script>
+        {% endblock %}

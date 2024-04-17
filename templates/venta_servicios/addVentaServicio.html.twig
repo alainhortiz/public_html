@@ -1,0 +1,326 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Venta de Servicios{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- Select2 -->
+    <link rel="stylesheet" href="{{ asset('plugins/select2/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Alerta -->
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-primary card-outline">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <i class="fas fa-edit"></i>
+                                    Nueva venta de servicios
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                {# Fecha #}
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="fecha"></label><input type="date" class="form-control"
+                                                                              id="fecha"
+                                                                              name="fecha"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="codigo"></label><input type="text" class="form-control"
+                                                                               placeholder="Teclee el código"
+                                                                               id="codigo"
+                                                                               name="codigo"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="servicio"></label><select class="form-control select2"
+                                                                                  style="width: 100%;" id="servicio"
+                                                                                  name="servicio">
+                                                <option value="0">Seleccione el servicio</option>
+                                                {% for servicio in  servicios %}
+                                                    <option value="{{ servicio.id }}">{{ servicio.nombre ~ '-' ~ servicio.conceptoServicio }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2" style="margin-top: 20px">
+                                        <button class="btn btn-block btn-info" data-toggle="tooltip"
+                                                title="Adicionar a la venta" id="btnAdicionar"><i
+                                                    class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                {# Servicios #}
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="valorVenta">Servicios de la venta</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataServicios">
+                                            <thead class="text-center">
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Nombre</th>
+                                                <th>Concepto</th>
+                                                <th>Usuario Asignado</th>
+                                                <th>Ganancia</th>
+                                                <th>Moneda</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {# Botones #}
+                            <div class="card-footer">
+                                <div class="row justify-content-center">
+                                    <div>
+                                        <button type="button" class="btn btn-primary"
+                                                id="btnGuardar"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title="Guardar el producto">Guardar
+                                        </button>
+                                        <button type="button" class="btn btn-danger"
+                                                id="btnCancelar"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title="Salir">Cancelar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- Select2 -->
+    <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <script>
+        $(document).ready(function () {
+
+            //Declaracion de variables
+            let servicios = [];
+            let ventaServicios = [];
+
+            $('#producto').select2();
+
+            let tableServicios = $('#dataServicios').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "lengthMenu": [[10], [10]],
+                "ordering": false,
+                "info": false,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "500",
+                "timeOut": "3000",
+                "extendedTimeOut": "7000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            $('#btnCancelar').on('click', function () {
+                window.location.href = "{{ path('app_venta_servicios_index') }}";
+            });
+
+            //Adicionar en la tabla un servicio
+            $('#btnAdicionar').on('click', function () {
+
+                //Validaciones
+                if ($("#servicio").val() === '0') {
+                    toastr["error"]('Debe seleccionar el servicio que desea incluir en la venta, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                //Comprobar que no exista el producto
+                let n;
+                let existe = false;
+                for (n = 0; n < ventaServicios.length; n++) {
+                    if (ventaServicios[n]['idServicio'] == $("#servicio").val()) {
+                        existe = true;
+                        break;
+                    }
+                }
+                if (existe) {
+                    toastr["error"]('Este servicio ya existe en la venta.', "Advertencia")
+                    return false;
+                }
+
+                let idServicio = $('#servicio').val();
+                let idServicioSeleccionado;
+                let ganancia = 0;
+                if (idServicio !== '0') {
+                    {% for servicio in  servicios %}
+                    idServicioSeleccionado = '{{ servicio.id }}';
+                    if (idServicio === idServicioSeleccionado) {
+
+                        //Ganancia
+                        ganancia = parseFloat('{{ servicio.beneficioxventa }}');
+                        servicios.push([
+                            idServicio,
+                            '{{ servicio.nombre }}',
+                            '{{ servicio.conceptoServicio }}',
+                            '{{ servicio.user.nombre ~ ' ' ~ servicio.user.apellidos }}',
+                            ganancia,
+                            '{{ servicio.tipodemoneda }}'
+                        ]);
+                        ventaServicios.push({
+                            idServicio: idServicio,
+                            idUsuario: '{{ servicio.user.id }}',
+                            royalties: ganancia
+                        });
+                    }
+                    {% endfor %}
+                    //Adicionar a la tabla
+                    tableServicios = $('#dataServicios').DataTable({
+                        destroy: true,
+                        data: servicios,
+                        columns: [
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {
+                                defaultContent: "<button class='btn btn-block btn-danger delete' data-toggle='tooltip' title='Quitar de la venta'>"
+                                    + "<i class='fas fa-trash'></i></button>",
+                                class: "text-center"
+                            }
+                        ],
+                        "lengthMenu": [[10], [10]]
+                    });
+                }
+            });
+
+            //Borrar de la tabla un servicio
+            $('#dataServicios tbody').on('click', '.delete', function () {
+                let row = $(this).parents('tr');
+                let fila = tableServicios.row(row).data();
+                let n;
+                for (n = 0; n < ventaServicios.length; n++) {
+                    if (ventaServicios[n]['idServicio'] == fila[0]) {
+                        ventaServicios.splice(n, 1);
+                        break;
+                    }
+                }
+                for (n = 0; n < servicios.length; n++) {
+                    if (servicios[n][0] == fila[0]) {
+                        servicios.splice(n, 1);
+                        break;
+                    }
+                }
+                row.fadeOut();
+            });
+
+            $('#btnGuardar').on('click', function () {
+
+                let Ruta = Routing.generate('app_venta_servicio_insert');
+
+                //Validaciones
+                if ($("#fecha").val() === '') {
+                    toastr["error"]('La fecha de la venta es obligatoria, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if ($("#codigo").val() === '') {
+                    toastr["error"]('El código de la venta es obligatorio, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if (tableServicios.rows().count() === 0) {
+                    toastr["error"]('Debe incluir al menos un servicio en la venta.', "Advertencia")
+                    return false;
+                }
+                //datatable completo
+                //console.log(tableProductos.rows().data().toArray());
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    fecha: $('#fecha').val(),
+                    codigo: $('#codigo').val(),
+                    servicios: ventaServicios
+                };
+                $.ajax({
+                    type: "POST",
+                    dataType: "html",
+                    url: Ruta,
+                    data: mat_datos
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+
+                    if (data === 'ok') {
+                        toastr["success"]('La venta de servicios ha sido registrada.', "Notificación")
+                        window.location.href = "{{ path('app_venta_servicios_index') }}";
+                    } else {
+                        toastr["error"](data, "Advertencia")
+                    }
+                });
+
+
+            });
+
+        });
+    </script>
+{% endblock %}
+

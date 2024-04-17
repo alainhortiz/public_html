@@ -1,0 +1,618 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Venta de Productos{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- Select2 -->
+    <link rel="stylesheet" href="{{ asset('plugins/select2/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Alerta -->
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-success card-outline">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <i class="fas fa-edit"></i>
+                                    Nueva venta de productos
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                {# Fecha #}
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="fecha"></label><input type="date" class="form-control"
+                                                                              id="fecha"
+                                                                              name="fecha"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="codigo"></label><input type="text" class="form-control"
+                                                                               placeholder="Teclee el código"
+                                                                               id="codigo"
+                                                                               name="codigo"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="pack"></label><select class="form-control select2"
+                                                                                  style="width: 100%;" id="pack"
+                                                                                  name="pack">
+                                                <option value="0">Seleccione el pack disponible</option>
+                                                {% for pack in  packs %}
+                                                    {% set disponible = 1 %}
+                                                    {% for producto in pack.productos() %}
+                                                        {% if producto.producto.stock <= producto.producto.stockAdvertencia %}
+                                                            {% set disponible = 0 %}
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    {% if disponible == 1 %}
+                                                        <option value="{{ pack.id }}">{{ 'Nombre: ' ~ pack.nombre ~ ' -Beneficio: ' ~ pack.beneficioxventa|number_format(2, '.', ',') ~ ' ' ~ pack.tipodemoneda ~ ' -Productos: ' ~ pack.productos|length }}</option>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="cantidadPack"></label><input type="number" class="form-control"
+                                                                                 id="cantidadPack" value="0" min="0"
+                                                                                 name="cantidadPack">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2" style="margin-top: 20px">
+                                        <button class="btn btn-block btn-info" data-toggle="tooltip"
+                                                title="Adicionar a la venta" id="btnAdicionarPack"><i
+                                                    class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="producto"></label><select class="form-control select2"
+                                                                                  style="width: 100%;" id="producto"
+                                                                                  name="producto">
+                                                <option value="0">Seleccione el producto disponible</option>
+                                                {% for producto in  productos %}
+                                                    {% if producto.tipoProducto == 1 %}
+                                                        {% set tipo = 'Producto general' %}
+                                                    {% elseif producto.tipoProducto == 2 %}
+                                                        {% set tipo = 'Producto libro' %}
+                                                    {% endif %}
+                                                    <option value="{{ producto.id }}">{{ tipo ~ '-' ~ 'I.D.D: ' ~ producto.idd ~ '-' ~ producto.nombre ~ '-' ~ producto.stock ~ ' en stock' }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="cantidad"></label><input type="number" class="form-control"
+                                                                                 id="cantidad" value="0" min="0"
+                                                                                 name="cantidad">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2" style="margin-top: 20px">
+                                        <button class="btn btn-block btn-info" data-toggle="tooltip"
+                                                title="Adicionar a la venta" id="btnAdicionar"><i
+                                                    class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                {# Productos #}
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="valorVenta">Productos de la venta</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="table-responsive" style="padding-left: 5px">
+                                        <table class="table table-bordered table-striped" id="dataProductos">
+                                            <thead class="text-center">
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Tipo de Producto</th>
+                                                <th>Nombre</th>
+                                                <th>Stock</th>
+                                                <th>Usuario Asignado</th>
+                                                <th>Cantidad</th>
+                                                <th>Ganancia x Amortización</th>
+                                                <th>Ganancia x Beneficio</th>
+                                                <th>Moneda</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {# Botones #}
+                            <div class="card-footer">
+                                <div class="row justify-content-center">
+                                    <div>
+                                        <button type="button" class="btn btn-primary"
+                                                id="btnGuardar"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title="Guardar el producto">Guardar
+                                        </button>
+                                        <button type="button" class="btn btn-danger"
+                                                id="btnCancelar"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title="Salir">Cancelar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- Select2 -->
+    <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <!-- Acceso a Rutas del Controller -->
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <script>
+        $(document).ready(function () {
+
+            //Declaracion de variables
+            let productos = [];
+            let ventaProductos = [];
+
+            $('#pack, #producto').select2();
+
+            let tableProductos = $('#dataProductos').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "lengthMenu": [[5], [5]],
+                "ordering": false,
+                "info": false,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "500",
+                "timeOut": "3000",
+                "extendedTimeOut": "7000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            $('#btnCancelar').on('click', function () {
+                window.location.href = "{{ path('app_venta_productos_index') }}";
+            });
+
+            //Adicionar en la tabla un producto
+            $('#btnAdicionarPack').on('click', function () {
+
+                //Validaciones
+                if ($("#pack").val() === '0') {
+                    toastr["error"]('Debe seleccionar el pack que desea incluir en la venta, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if ($("#cantidadPack").val() === '' || $("#cantidadPack").val() === '0') {
+                    toastr["error"]('La cantidad de packs es obligatoria, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+
+                //Comprobar que no exista el packs
+                let n;
+                let existe = false;
+                for (n = 0; n < ventaProductos.length; n++) {
+                    if (ventaProductos[n]['isPack'] === 1) {
+                        if (ventaProductos[n]['idPack'] === $("#pack").val()) {
+                            existe = true;
+                            break;
+                        }
+                    }
+                }
+                if (existe) {
+                    toastr["error"]('Este pack ya existe en la venta.', "Advertencia")
+                    return false;
+                }
+
+                let idPack = $('#pack').val();
+                let idProducto = null;
+                let tipo, idPackSeleccionado,stock;
+                let precio = 0;
+                let deuda = 0;
+                let cantidad = 0;
+                let cantidadPagaDeuda = 0;
+                let gananciaDeuda = 0;
+                let gananciaBeneficio = 0;
+                let beneficioVenta = 0;
+                let restante = 0;
+                let isAmortizacion = 0;
+                let idAmortizacion = 0;
+                let isRoyalties = 0;
+                let isPack = 1;
+                if (idPack !== '0') {
+                    {% for pack in  packs %}
+                    idPackSeleccionado = '{{ pack.id }}';
+                    if (idPack === idPackSeleccionado) {
+                        //Tipo de Producto
+                        tipo = 'Pack ' + '{{ pack.nombre }}';
+                        //Validar el stock
+                        {% for producto in pack.productos() %}
+                            stock = parseInt('{{ producto.producto.stock }}');
+                            idProducto = parseInt('{{ producto.producto.id }}');
+                            if (parseInt($("#cantidadPack").val()) > stock) {
+                                toastr["error"]('La cantidad de ' + '{{ producto.producto.nombre }}' + ' incluido en este pack, supera la disponibilidad del producto.', "Advertencia")
+                                return false;
+                            }
+                            isAmortizacion = 0;
+                            isRoyalties = 0;
+                            //Amortizacion
+                            {% if producto.producto.amortizaciones|length > 0 %}
+                                    {% for amortizacion in  producto.producto.amortizaciones %}
+                                            {% if amortizacion.isActive == '1' %}
+                                                    isAmortizacion = 1;
+                                                    idAmortizacion = parseInt('{{ amortizacion.id }}');
+                                                    beneficioVenta = parseFloat('{{ producto.beneficioxventa }}');
+                                                    precio = parseFloat('{{ amortizacion.precioVenta }}');
+                                                    deuda = parseFloat('{{ amortizacion.saldoRestante }}');
+                                                    cantidad = parseInt($("#cantidadPack").val());
+                                                    cantidadPagaDeuda = deuda / precio;
+                                                    if (cantidad >= cantidadPagaDeuda) {
+                                                        gananciaDeuda = cantidadPagaDeuda * precio;
+                                                        gananciaBeneficio = (cantidad * beneficioVenta) - gananciaDeuda;
+                                                        isRoyalties = 1;
+                                                    } else if (cantidad < cantidadPagaDeuda) {
+                                                        gananciaDeuda = cantidad * precio;
+                                                        gananciaBeneficio = 0;
+                                                        isRoyalties = 0;
+                                                    }
+                                            {% endif %}
+                                    {% endfor %}
+                            {% else %}
+                                //Ganancia
+                                gananciaBeneficio = parseInt($("#cantidadPack").val()) * parseFloat('{{ producto.beneficioxventa }}');
+                                isRoyalties = 1;
+                                isAmortizacion = 0;
+                                gananciaDeuda = 0;
+                            {% endif %}
+                            if (isAmortizacion === 0) {
+                                //Ganancia
+                                gananciaBeneficio = parseInt($("#cantidadPack").val()) * parseFloat('{{ producto.beneficioxventa }}');
+                                isRoyalties = 1;
+                                isAmortizacion = 0;
+                                gananciaDeuda = 0;
+                            }
+                            restante = deuda - gananciaDeuda;
+                            productos.push([
+                                idPack,
+                                tipo,
+                                '{{ producto.producto.nombre }}',
+                                '{{ producto.producto.stock }}',
+                                '{{ producto.producto.user.nombre ~ ' ' ~ producto.producto.user.apellidos }}',
+                                $("#cantidadPack").val(),
+                                gananciaDeuda.toFixed(2),
+                                gananciaBeneficio.toFixed(2),
+                                '{{ pack.tipodemoneda }}'
+                            ]);
+                            ventaProductos.push({
+                                idPack: idPack,
+                                idProducto: idProducto,
+                                cantidad: parseInt($("#cantidadPack").val()),
+                                idUsuario: '{{ producto.producto.user.id }}',
+                                isAmortizacion: isAmortizacion,
+                                idAmortizacion: idAmortizacion,
+                                pagoAmortizacion: gananciaDeuda.toFixed(2),
+                                isRoyalties: isRoyalties,
+                                isPack: isPack,
+                                royalties: gananciaBeneficio.toFixed(2),
+                                restante: restante.toFixed(2)
+                            });
+                        {% endfor %}
+                    }
+                    {% endfor %}
+                    //Adicionar a la tabla
+                    tableProductos = $('#dataProductos').DataTable({
+                        destroy: true,
+                        data: productos,
+                        columns: [
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {
+                                defaultContent: "<button class='btn btn-block btn-danger delete' data-toggle='tooltip' title='Quitar de la venta'>"
+                                    + "<i class='fas fa-trash'></i></button>",
+                                class: "text-center"
+                            }
+                        ],
+                        "lengthMenu": [[5], [5]]
+                    });
+                }
+            });
+
+            //Adicionar en la tabla un producto
+            $('#btnAdicionar').on('click', function () {
+
+                //Validaciones
+                if ($("#producto").val() === '0') {
+                    toastr["error"]('Debe seleccionar el producto que desea incluir en la venta, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if ($("#cantidad").val() === '' || $("#cantidad").val() === '0') {
+                    toastr["error"]('La cantidad de productos es obligatoria, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+
+                //Comprobar que no exista el producto
+                let n;
+                let existe = false;
+                for (n = 0; n < ventaProductos.length; n++) {
+                    if (ventaProductos[n]['idProducto'] == $("#producto").val()) {
+                        existe = true;
+                        break;
+                    }
+                }
+                if (existe) {
+                    toastr["error"]('Este producto ya existe en la venta.', "Advertencia")
+                    return false;
+                }
+
+                let idPack = null;
+                let idProducto = $('#producto').val();
+                let tipo, idProductoSeleccionado,stock;
+                let precio = 0;
+                let deuda = 0;
+                let cantidad = 0;
+                let cantidadPagaDeuda = 0;
+                let gananciaDeuda = 0;
+                let gananciaBeneficio = 0;
+                let beneficioVenta = 0;
+                let restante = 0;
+                let isAmortizacion = 0;
+                let idAmortizacion = 0;
+                let isRoyalties = 0;
+                let isPack = 0;
+                if (idProducto !== '0') {
+                    {% for producto in  productos %}
+                    idProductoSeleccionado = '{{ producto.id }}';
+                    if (idProducto === idProductoSeleccionado) {
+                        //Tipo de Libro
+                        {% if producto.tipoProducto == 1 %}
+                        tipo = 'General';
+                        {% elseif producto.tipoProducto == 2 %}
+                        tipo = 'Libro';
+                        {% endif %}
+                        //Validar el stock
+                        stock = parseInt('{{ producto.stock }}');
+                        if (parseInt($("#cantidad").val()) > stock) {
+                            toastr["error"]('La cantidad de supera la disponibilidad del producto.', "Advertencia")
+                            return false;
+                        }
+                        isAmortizacion = 0;
+                        isRoyalties = 0;
+                        //Amortizacion
+                        {% if producto.amortizaciones|length > 0 %}
+                                {% for amortizacion in  producto.amortizaciones %}
+                                        {% if amortizacion.isActive == '1' %}
+                                        isAmortizacion = 1;
+                                        idAmortizacion = parseInt('{{ amortizacion.id }}');
+                                        beneficioVenta = parseFloat('{{ producto.beneficioxventa }}');
+                                        precio = parseFloat('{{ amortizacion.precioVenta }}');
+                                        deuda = parseFloat('{{ amortizacion.saldoRestante }}');
+                                        cantidad = parseInt($("#cantidad").val());
+                                        cantidadPagaDeuda = deuda / precio;
+                                        if (cantidad > cantidadPagaDeuda) {
+                                            gananciaDeuda = cantidadPagaDeuda * precio;
+                                            gananciaBeneficio = (cantidad - cantidadPagaDeuda) * beneficioVenta;
+                                            isRoyalties = 1;
+                                        }else if (cantidad === cantidadPagaDeuda) {
+                                            gananciaDeuda = cantidadPagaDeuda * precio;
+                                            gananciaBeneficio = 0;
+                                            isRoyalties = 0;
+                                        }else if (cantidad < cantidadPagaDeuda) {
+                                            gananciaDeuda = cantidad * precio;
+                                            gananciaBeneficio = 0;
+                                            isRoyalties = 0;
+                                        }
+                                        {% endif %}
+                                {% endfor %}
+                        {% else %}
+                                //Ganancia
+                                gananciaBeneficio = parseInt($("#cantidad").val()) * parseFloat('{{ producto.beneficioxventa }}');
+                                isRoyalties = 1;
+                                isAmortizacion = 0;
+                                gananciaDeuda = 0;
+                        {% endif %}
+                        if (isAmortizacion === 0) {
+                            //Ganancia
+                            gananciaBeneficio = parseInt($("#cantidad").val()) * parseFloat('{{ producto.beneficioxventa }}');
+                            isRoyalties = 1;
+                            isAmortizacion = 0;
+                            gananciaDeuda = 0;
+                        }
+                        restante = deuda - gananciaDeuda;
+                        productos.push([
+                            idProducto,
+                            tipo,
+                            '{{ producto.nombre }}',
+                            '{{ producto.stock }}',
+                            '{{ producto.user.nombre ~ ' ' ~ producto.user.apellidos }}',
+                            $("#cantidad").val(),
+                            gananciaDeuda.toFixed(2),
+                            gananciaBeneficio.toFixed(2),
+                            '{{ producto.tipodemoneda }}'
+                        ]);
+                        ventaProductos.push({
+                            idPack: idPack,
+                            idProducto: idProducto,
+                            cantidad: parseInt($("#cantidad").val()),
+                            idUsuario: '{{ producto.user.id }}',
+                            isAmortizacion: isAmortizacion,
+                            idAmortizacion: idAmortizacion,
+                            pagoAmortizacion: gananciaDeuda.toFixed(2),
+                            isRoyalties: isRoyalties,
+                            isPack: isPack,
+                            royalties: gananciaBeneficio.toFixed(2),
+                            restante: restante.toFixed(2)
+                        });
+                    }
+                    {% endfor %}
+                    //Adicionar a la tabla
+                    tableProductos = $('#dataProductos').DataTable({
+                        destroy: true,
+                        data: productos,
+                        columns: [
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {class: "text-center"},
+                            {
+                                defaultContent: "<button class='btn btn-block btn-danger delete' data-toggle='tooltip' title='Quitar de la venta'>"
+                                    + "<i class='fas fa-trash'></i></button>",
+                                class: "text-center"
+                            }
+                        ],
+                        "lengthMenu": [[5], [5]]
+                    });
+                }
+            });
+
+            //Borrar de la tabla un producto
+            $('#dataProductos tbody').on('click', '.delete', function () {
+                let row = $(this).parents('tr');
+                let fila = tableProductos.row(row).data();
+                ventaProductos = ventaProductos.filter(id => id.idProducto !== fila[0]);
+                productos = productos.filter(id => id[0] !== fila[0]);
+                //Adicionar a la tabla
+                tableProductos = $('#dataProductos').DataTable({
+                    destroy: true,
+                    data: productos,
+                    columns: [
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {class: "text-center"},
+                        {
+                            defaultContent: "<button class='btn btn-block btn-danger delete' data-toggle='tooltip' title='Quitar de la venta'>"
+                                + "<i class='fas fa-trash'></i></button>",
+                            class: "text-center"
+                        }
+                    ],
+                    "lengthMenu": [[5], [5]]
+                });
+            });
+
+            $('#btnGuardar').on('click', function () {
+
+                let Ruta = Routing.generate('app_venta_producto_insert');
+
+                //Validaciones
+                if ($("#fecha").val() === '') {
+                    toastr["error"]('La fecha de la venta es obligatoria, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if ($("#codigo").val() === '') {
+                    toastr["error"]('El código de la venta es obligatorio, no puede quedar en blanco.', "Advertencia")
+                    return false;
+                }
+                if (tableProductos.rows().count() === 0) {
+                    toastr["error"]('Debe incluir al menos un producto en la venta.', "Advertencia")
+                    return false;
+                }
+                //datatable completo
+                //console.log(tableProductos.rows().data().toArray());
+
+                $(".preload").removeClass('hidden');
+
+                let mat_datos = {
+                    fecha: $('#fecha').val(),
+                    codigo: $('#codigo').val(),
+                    productos: ventaProductos
+                };
+                $.ajax({
+                    type: "POST",
+                    dataType: "html",
+                    url: Ruta,
+                    data: mat_datos
+                }).done(function (data) {
+                    $(".preload").addClass('hidden');
+
+                    if (data === 'ok') {
+                        toastr["success"]('La venta de productos ha sido registrada.', "Notificación")
+                        window.location.href = "{{ path('app_venta_productos_index') }}";
+                    } else {
+                        toastr["error"](data, "Advertencia")
+                    }
+                });
+
+
+            });
+
+        });
+    </script>
+{% endblock %}
+

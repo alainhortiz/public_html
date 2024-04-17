@@ -1,0 +1,939 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pago Royal Acumulado{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <div class="preload hidden">
+        <div class="logo"></div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1"></div>
+            <div class="loader2" id="loader2"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row">
+                    {% if bolsaGeneralDolar != 0 %}
+                        <div class="col-12 col-sm-4 col-md-4">
+                            <div class="info-box" type="button" id="addGeneralUSD" data-toggle="tooltip"
+                                 data-placement="top"
+                                 title="Solicitar pago de royalties">
+                                <span class="info-box-icon bg-info"><i class="fa fa-dollar-sign"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-bold">Productos Generales</span>
+                                    <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                    <span class="info-box-number"><i
+                                                class="fa fa-dollar-sign"></i> {{ bolsaGeneralDolar|number_format(2, '.', ',') }}</span>
+                                    {% if is_granted('ROLE_ADMIN') %}
+                                        <i class="fa fa-eye text-right"></i>
+                                    {% else %}
+                                        <i class="fa fa-plus text-right"></i>
+                                    {% endif %}
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    {% endif %}
+                    <!-- /.col -->
+                    {% if bolsaGeneralEuros != 0 %}
+                        <div class="col-12 col-sm-4 col-md-4">
+                            <div class="info-box" id="addGeneralEUR" type="button"
+                                 data-toggle="tooltip"
+                                 data-placement="top"
+                                 title="Solicitar pago de royalties">
+                                <span class="info-box-icon bg-info"><i class="fa fa-euro-sign"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-bold">Productos Generales</span>
+                                    <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                    <span class="info-box-number"><i
+                                                class="fa fa-euro-sign"></i> {{ bolsaGeneralEuros|number_format(2, '.', ',') }}</span>
+                                    {% if is_granted('ROLE_ADMIN') %}
+                                        <i class="fa fa-eye text-right"></i>
+                                    {% else %}
+                                        <i class="fa fa-plus text-right"></i>
+                                    {% endif %}
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    {% endif %}
+                    <!-- /.col -->
+                    {% if bolsaLibroDolar != 0 %}
+                        <div class="col-12 col-sm-4 col-md-4">
+                            <div class="info-box" id="addLibroUSD" type="button"
+                                 data-toggle="tooltip"
+                                 data-placement="top"
+                                 title="Solicitar pago de royalties">
+                                <span class="info-box-icon bg-danger"><i class="fa fa-dollar-sign"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-bold">Libros</span>
+                                    <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                    <span class="info-box-number"><i
+                                                class="fa fa-dollar-sign"></i> {{ bolsaLibroDolar|number_format(2, '.', ',') }}</span>
+                                    {% if is_granted('ROLE_ADMIN') %}
+                                        <i class="fa fa-eye text-right"></i>
+                                    {% else %}
+                                        <i class="fa fa-plus text-right"></i>
+                                    {% endif %}
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    {% endif %}
+                    <!-- /.col -->
+                    {% if bolsaLibroEuros != 0 %}
+                        <div class="col-12 col-sm-4 col-md-4">
+                            <div class="info-box" id="addLibroEUR"
+                                 data-toggle="tooltip" type="button"
+                                 data-placement="top"
+                                 title="Solicitar pago de royalties">
+                                <span class="info-box-icon bg-danger"><i class="fa fa-euro-sign"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-bold">Productos Libros</span>
+                                    <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                    <span class="info-box-number"><i
+                                                class="fa fa-euro-sign"></i> {{ bolsaLibroEuros|number_format(2, '.', ',') }}</span>
+                                    {% if is_granted('ROLE_ADMIN') %}
+                                        <i class="fa fa-eye text-right"></i>
+                                    {% else %}
+                                        <i class="fa fa-plus text-right"></i>
+                                    {% endif %}
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    {% endif %}
+                    <!-- /.col  -->
+                    {% if bolsaServicioDolar != 0 %}
+                        <div class="col-12 col-sm-4 col-md-4">
+                            <div class="info-box" id="addServicioUSD" type="button"
+                                 data-toggle="tooltip"
+                                 data-placement="top"
+                                 title="Solicitar pago de royalties">
+                                <span class="info-box-icon bg-warning"><i class="fa fa-dollar-sign"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-bold">Servicios</span>
+                                    <span class="info-box-text">Royalties Acumulados Bolsa en D&oacute;lares</span>
+                                    <span class="info-box-number"><i
+                                                class="fa fa-dollar-sign"></i> {{ bolsaServicioDolar|number_format(2, '.', ',') }}</span>
+                                    {% if is_granted('ROLE_ADMIN') %}
+                                        <i class="fa fa-eye text-right"></i>
+                                    {% else %}
+                                        <i class="fa fa-plus text-right"></i>
+                                    {% endif %}
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    {% endif %}
+                    <!-- /.col -->
+                    {% if bolsaServicioEuros != 0 %}
+                        <div class="col-12 col-sm-4 col-md-4">
+                            <div class="info-box" id="addServicioEUR" type="button"
+                                 data-toggle="tooltip"
+                                 data-placement="top"
+                                 title="Solicitar pago de royalties">
+                                <span class="info-box-icon bg-warning"><i class="fa fa-euro-sign"></i></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-bold">Servicios</span>
+                                    <span class="info-box-text">Royalties Acumulados Bolsa en Euros</span>
+                                    <span class="info-box-number"><i
+                                                class="fa fa-euro-sign"></i> {{ bolsaServicioEuros|number_format(2, '.', ',') }}</span>
+                                    {% if is_granted('ROLE_ADMIN') %}
+                                        <i class="fa fa-eye text-right"></i>
+                                    {% else %}
+                                        <i class="fa fa-plus text-right"></i>
+                                    {% endif %}
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    {% endif %}
+                    <!-- /.col -->
+                </div>
+                <div class="card" id="listadoSolicitud">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3 id="nameListado">Listado de pagos solicitados hasta la fecha</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4 col-12 float-right" style="margin-top: 5px">
+                                <button id="btnListarSolicitud" type="button" class="btn btn-block bg-gradient-success">
+                                    <i
+                                            class="fa fa-tasks"></i> Solicitudes de pagos
+                                </button>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 float-right" style="margin-top: 5px">
+                                <button id="btnListarPagosRealizados" type="button"
+                                        class="btn btn-block bg-gradient-gray"><i
+                                            class="fa fa-tasks"></i> Registro de pagos realizados
+                                </button>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 float-right" style="margin-top: 5px">
+                                <button id="btnListarPagosRechazados" type="button"
+                                        class="btn btn-block bg-gradient-gray"><i
+                                            class="fa fa-tasks"></i> Registro de pagos rechazados
+                                </button>
+                            </div>
+                        </div>
+                        {% import 'macros/tablas.html.twig' as tabla %}
+                        <div class="row" id="tablaSolicitud" style="display: block">
+                            {{ tabla.tabla_solicitud_pagos(solicitar_pago_royal_acumulados,0,'solicitud') }}
+                        </div>
+                        <div class="row" id="tablaPagos" style="display: none">
+                            {{ tabla.tabla_solicitud_pagos(solicitar_pago_royal_acumulados,1,'pagados') }}
+                        </div>
+                        <div class="row" id="tablaRechazados" style="display: none">
+                            {{ tabla.tabla_solicitud_pagos(solicitar_pago_royal_acumulados,2,'rechazados') }}
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="detalleGeneralUSD" style="display:none;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de la bolsa de productos generales en USD por usuarios</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" style="padding-left: 5px">
+                            <table class="table table-bordered table-striped display" id="dataDetalleGeneralUSD">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Usuarios</th>
+                                    <th>Royalties Acumulados</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for detalle in allUsers %}
+                                    {% if detalle.saldoGeneralUSD != 0 %}
+                                        <tr data-id="{{ detalle.id }}">
+                                            <td>{{ detalle.nombre  ~ ' ' ~ detalle.apellidos }}</td>
+
+                                            <td>{{ detalle.saldoGeneralUSD|number_format(2, '.', ',') }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% else %}
+                                    <tr>
+                                        <td colspan="2">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="detalleGeneralEUR" style="display:none;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de la bolsa de productos generales en EUR por usuarios</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" style="padding-left: 5px">
+                            <table class="table table-bordered table-striped display">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Usuarios</th>
+                                    <th>Royalties Acumulados</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for detalle in allUsers %}
+                                    {% if detalle.saldoGeneralEUR != 0 %}
+                                        <tr data-id="{{ detalle.id }}">
+                                            <td>{{ detalle.nombre  ~ ' ' ~ detalle.apellidos }}</td>
+
+                                            <td>{{ detalle.saldoGeneralEUR|number_format(2, '.', ',') }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% else %}
+                                    <tr>
+                                        <td colspan="2">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="detalleLibroUSD" style="display:none;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de la bolsa de libros en USD por usuarios</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" style="padding-left: 5px">
+                            <table class="table table-bordered table-striped display">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Usuarios</th>
+                                    <th>Royalties Acumulados</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for detalle in allUsers %}
+                                    {% if detalle.saldoLibroUSD != 0 %}
+                                        <tr data-id="{{ detalle.id }}">
+                                            <td>{{ detalle.nombre  ~ ' ' ~ detalle.apellidos }}</td>
+
+                                            <td>{{ detalle.saldoLibroUSD|number_format(2, '.', ',') }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% else %}
+                                    <tr>
+                                        <td colspan="2">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="detalleLibroEUR" style="display:none;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de la bolsa de libros en EUR por usuarios</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" style="padding-left: 5px">
+                            <table class="table table-bordered table-striped display">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Usuarios</th>
+                                    <th>Royalties Acumulados</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for detalle in allUsers %}
+                                    {% if detalle.saldoLibroEUR != 0 %}
+                                        <tr data-id="{{ detalle.id }}">
+                                            <td>{{ detalle.nombre  ~ ' ' ~ detalle.apellidos }}</td>
+
+                                            <td>{{ detalle.saldoLibroEUR|number_format(2, '.', ',') }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% else %}
+                                    <tr>
+                                        <td colspan="2">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="detalleServicioUSD" style="display:none;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de la bolsa de servicios en USD por usuarios</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" style="padding-left: 5px">
+                            <table class="table table-bordered table-striped display">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Usuarios</th>
+                                    <th>Royalties Acumulados</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for detalle in allUsers %}
+                                    {% if detalle.saldoServicioUSD != 0 %}
+                                        <tr data-id="{{ detalle.id }}">
+                                            <td>{{ detalle.nombre  ~ ' ' ~ detalle.apellidos }}</td>
+
+                                            <td>{{ detalle.saldoServicioUSD|number_format(2, '.', ',') }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% else %}
+                                    <tr>
+                                        <td colspan="2">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="detalleServicioEUR" style="display:none;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de la bolsa de servicios en EUR por usuarios</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" style="padding-left: 5px">
+                            <table class="table table-bordered table-striped display">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Usuarios</th>
+                                    <th>Royalties Acumulados</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for detalle in allUsers %}
+                                    {% if detalle.saldoServicioEUR != 0 %}
+                                        <tr data-id="{{ detalle.id }}">
+                                            <td>{{ detalle.nombre  ~ ' ' ~ detalle.apellidos }}</td>
+
+                                            <td>{{ detalle.saldoServicioEUR|number_format(2, '.', ',') }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% else %}
+                                    <tr>
+                                        <td colspan="2">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ include('solicitar_pago_royal_acumulado/modalAddSolicitudPago.html.twig') }}
+        {{ include('solicitar_pago_royal_acumulado/modalAddMotivoRechazo.html.twig') }}
+        {{ include('solicitar_pago_royal_acumulado/modalAddAprobarPago.html.twig') }}
+    </div>
+{% endblock %}
+
+ {% block javascripts %}
+     {{ parent() }}
+     <!-- DataTables -->
+     <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+     <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+     <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+     <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+     <!-- Acceso a Rutas del Controller -->
+     <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+     <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+     <script>
+         $(document).ready(function () {
+
+             //Declaracion de variables
+             let tipoPago = 0;
+             let saldoAcumulado, metodo = 0;
+             let fichero = '';
+             let siFichero = 0;
+             let idSolicitud;
+
+             {% if solicitar_pago_royal_acumulados|length > 0 %}
+             $('table.display').DataTable({
+                 "paging": true,
+                 "lengthChange": false,
+                 "searching": true,
+                 "lengthMenu": [[4], [4]],
+                 "ordering": true,
+                 "info": true,
+                 "autoWidth": true,
+                 "scrollY": 300,
+                 "scrollCollapse": true
+             });
+             {% endif %}
+
+             toastr.options = {
+                 "closeButton": false,
+                 "debug": false,
+                 "newestOnTop": false,
+                 "progressBar": true,
+                 "positionClass": "toast-top-right",
+                 "preventDuplicates": true,
+                 "onclick": null,
+                 "showDuration": "300",
+                 "hideDuration": "1000",
+                 "timeOut": "5000",
+                 "extendedTimeOut": "1000",
+                 "showEasing": "swing",
+                 "hideEasing": "linear",
+                 "showMethod": "fadeIn",
+                 "hideMethod": "fadeOut"
+             }
+
+             {% if mensaje is not null %}
+             {% if mensaje != 0 %}
+             toastr["error"]('{{ mensaje }}', "Notificación")
+             {% endif %}
+             {% endif %}
+
+             //validar decimal
+             $('#addRoyaltie').keypress(function (tecla) {
+                 if ((tecla.charCode < 48 || tecla.charCode > 57) && (tecla.charCode !== 44) && (tecla.charCode !== 46) && (tecla.charCode !== 8)) {
+                     return false;
+                 } else {
+                     let len = $('#addRoyaltie').val().length;
+                     let indexPunto = $('#addRoyaltie').val().indexOf('.');
+                     let indexComa = $('#addRoyaltie').val().indexOf(',');
+
+                     if (tecla.charCode === 44) {
+                         if (len === 0 && tecla.charCode === 44) {
+                             return false;
+                         }
+                         if (indexComa > 0 && tecla.charCode === 44) {
+                             return false;
+                         }
+                         if (indexPunto !== -1) {
+                             return false;
+                         }
+                     } else if (tecla.charCode === 46) {
+                         if (len === 0 && tecla.charCode === 46) {
+                             return false;
+                         }
+                         if (indexPunto > 0 && tecla.charCode === 46) {
+                             return false;
+                         }
+                         if (indexComa !== -1) {
+                             return false;
+                         }
+                     }
+                     if (indexPunto > 0) {
+                         let CharAfterdot = (len + 1) - indexPunto;
+                         if (CharAfterdot > 3) {
+                             return false;
+                         }
+                     } else if (indexComa > 0) {
+                         let CharAfterdot = (len + 1) - indexComa;
+                         if (CharAfterdot > 3) {
+                             return false;
+                         }
+                     }
+                 }
+                 return true;
+             });
+
+             $('#btnListarSolicitud').on('click', function () {
+                 $("#nameListado").text("Listado de solicitudes de pago hasta la fecha");
+                 $('#btnListarSolicitud').removeClass("bg-gradient-success");
+                 $('#btnListarSolicitud').removeClass("bg-gradient-gray");
+                 $('#btnListarSolicitud').addClass("bg-gradient-success");
+                 $('#btnListarPagosRealizados').removeClass("bg-gradient-success");
+                 $('#btnListarPagosRealizados').removeClass("bg-gradient-gray");
+                 $('#btnListarPagosRealizados').addClass("bg-gradient-gray");
+                 $('#btnListarPagosRechazados').removeClass("bg-gradient-success");
+                 $('#btnListarPagosRechazados').removeClass("bg-gradient-gray");
+                 $('#btnListarPagosRechazados').addClass("bg-gradient-gray");
+                 $("#tablaPagos").css("display", "none");
+                 $("#tablaRechazados").css("display", "none");
+                 $("#tablaSolicitud").css("display", "block");
+             });
+
+             $('#btnListarPagosRealizados').on('click', function () {
+                 $("#nameListado").text("Listado de pagos realizados hasta la fecha");
+                 $('#btnListarPagosRealizados').removeClass("bg-gradient-success");
+                 $('#btnListarPagosRealizados').removeClass("bg-gradient-gray");
+                 $('#btnListarPagosRealizados').addClass("bg-gradient-success");
+                 $('#btnListarPagosRechazados').removeClass("bg-gradient-success");
+                 $('#btnListarPagosRechazados').removeClass("bg-gradient-gray");
+                 $('#btnListarPagosRechazados').addClass("bg-gradient-gray");
+                 $('#btnListarSolicitud').removeClass("bg-gradient-success");
+                 $('#btnListarSolicitud').removeClass("bg-gradient-gray");
+                 $('#btnListarSolicitud').addClass("bg-gradient-gray");
+                 $("#tablaSolicitud").css("display", "none");
+                 $("#tablaRechazados").css("display", "none");
+                 $("#tablaPagos").css("display", "block");
+             });
+
+             $('#btnListarPagosRechazados').on('click', function () {
+                 $("#nameListado").text("Listado de pagos rechazados hasta la fecha");
+                 $('#btnListarPagosRechazados').removeClass("bg-gradient-success");
+                 $('#btnListarPagosRechazados').removeClass("bg-gradient-gray");
+                 $('#btnListarPagosRechazados').addClass("bg-gradient-success");
+                 $('#btnListarPagosRealizados').removeClass("bg-gradient-success");
+                 $('#btnListarPagosRealizados').removeClass("bg-gradient-gray");
+                 $('#btnListarPagosRealizados').addClass("bg-gradient-gray");
+                 $('#btnListarSolicitud').removeClass("bg-gradient-success");
+                 $('#btnListarSolicitud').removeClass("bg-gradient-gray");
+                 $('#btnListarSolicitud').addClass("bg-gradient-gray");
+                 $("#tablaSolicitud").css("display", "none");
+                 $("#tablaPagos").css("display", "none");
+                 $("#tablaRechazados").css("display", "block");
+             });
+
+             $('#addGeneralUSD').on('click', function () {
+                 tipoPago = 1;
+                 saldoAcumulado = parseFloat('{{ bolsaGeneralDolar }}');
+                 if (saldoAcumulado > 0) {
+                     {% if is_granted('ROLE_ADMIN') %}
+                     $('#detalleGeneralEUR').css("display", "none");
+                     $('#detalleLibroUSD').css("display", "none");
+                     $('#detalleLibroEUR').css("display", "none");
+                     $('#detalleServicioUSD').css("display", "none");
+                     $('#detalleServicioEUR').css("display", "none");
+                     $('#detalleGeneralUSD').css("display", "block");
+                     {% else %}
+                     $('#upload').val('');
+                     $('#modalAddSolicitudPago').modal('show');
+                     {% endif %}
+                 }
+             });
+
+             $('#addGeneralEUR').on('click', function () {
+                 tipoPago = 2;
+                 saldoAcumulado = parseFloat('{{ bolsaGeneralEuros }}');
+                 {% if is_granted('ROLE_ADMIN') %}
+                 $('#detalleGeneralUSD').css("display", "none");
+                 $('#detalleLibroUSD').css("display", "none");
+                 $('#detalleLibroEUR').css("display", "none");
+                 $('#detalleServicioUSD').css("display", "none");
+                 $('#detalleServicioEUR').css("display", "none");
+                 $('#detalleGeneralEUR').css("display", "block");
+                 {% else %}
+                 $('#upload').val('');
+                 $('#modalAddSolicitudPago').modal('show');
+                 {% endif %}
+             });
+
+             $('#addLibroUSD').on('click', function () {
+                 tipoPago = 3;
+                 saldoAcumulado = parseFloat('{{ bolsaLibroDolar }}');
+                 if (saldoAcumulado > 0) {
+                     {% if is_granted('ROLE_ADMIN') %}
+                     $('#detalleLibroEUR').css("display", "none");
+                     $('#detalleServicioUSD').css("display", "none");
+                     $('#detalleServicioEUR').css("display", "none");
+                     $('#detalleGeneralEUR').css("display", "none");
+                     $('#detalleGeneralUSD').css("display", "none");
+                     $('#detalleLibroUSD').css("display", "block");
+                     {% else %}
+                     $('#upload').val('');
+                     $('#modalAddSolicitudPago').modal('show');
+                     {% endif %}
+                 }
+             });
+
+             $('#addLibroEUR').on('click', function () {
+                 tipoPago = 4;
+                 saldoAcumulado = parseFloat('{{ bolsaLibroEuros }}');
+                 if (saldoAcumulado > 0) {
+                     {% if is_granted('ROLE_ADMIN') %}
+                     $('#detalleServicioUSD').css("display", "none");
+                     $('#detalleServicioEUR').css("display", "none");
+                     $('#detalleGeneralEUR').css("display", "none");
+                     $('#detalleGeneralUSD').css("display", "none");
+                     $('#detalleLibroUSD').css("display", "none");
+                     $('#detalleLibroEUR').css("display", "block");
+                     {% else %}
+                     $('#upload').val('');
+                     $('#modalAddSolicitudPago').modal('show');
+                     {% endif %}
+                 }
+             });
+
+             $('#addServicioUSD').on('click', function () {
+                 tipoPago = 5;
+                 saldoAcumulado = parseFloat('{{ bolsaServicioDolar }}');
+                 if (saldoAcumulado > 0) {
+                     {% if is_granted('ROLE_ADMIN') %}
+                     $('#detalleServicioEUR').css("display", "none");
+                     $('#detalleGeneralEUR').css("display", "none");
+                     $('#detalleGeneralUSD').css("display", "none");
+                     $('#detalleLibroUSD').css("display", "none");
+                     $('#detalleLibroEUR').css("display", "none");
+                     $('#detalleServicioUSD').css("display", "block");
+                     {% else %}
+                     $('#upload').val('');
+                     $('#modalAddSolicitudPago').modal('show');
+                     {% endif %}
+                 }
+             });
+
+             $('#addServicioEUR').on('click', function () {
+                 tipoPago = 6;
+                 saldoAcumulado = parseFloat('{{ bolsaServicioEuros }}');
+                 if (saldoAcumulado > 0) {
+                     {% if is_granted('ROLE_ADMIN') %}
+                     $('#detalleServicioEUR').css("display", "none");
+                     $('#detalleGeneralEUR').css("display", "none");
+                     $('#detalleGeneralUSD').css("display", "none");
+                     $('#detalleLibroUSD').css("display", "none");
+                     $('#detalleServicioUSD').css("display", "none");
+                     $('#detalleLibroEUR').css("display", "block");
+                     {% else %}
+                     $('#upload').val('');
+                     $('#modalAddSolicitudPago').modal('show');
+                     {% endif %}
+                 }
+             });
+
+             $("#upload").on('change', function (e) {
+                 let fichero = $("#upload").val();
+                 let input = document.getElementById('upload');
+                 let file = input.files[0]; //2 000 000
+                 let allowedExtensions = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf|.jpg|.png)$/i;
+
+                 if (!allowedExtensions.exec(fichero)) {
+                     toastr["error"]('Sólo se pueden subir archivos con extensiones: .docx, .xlsx, .pptx .pdf, .jpg, .png.', "Advertencia")
+                     $("#upload").val('');
+                     return false;
+                 } else if (file.size > 2000000) {
+                     toastr["error"]('El tamano del fichero no puede ser mayor que 2 MB.', "Advertencia")
+                     $("#upload").val('');
+                     return false;
+                 } else {
+                     //aqui subo el fichero y guardo el nombre
+                     let Ruta = Routing.generate('app_solicitar_pago_royal_acumulado_fichero');
+                     let form = document.getElementById("myform");
+                     siFichero = 1;
+
+                     $.ajax({
+                         url: Ruta,
+                         type: "post",
+                         dataType: "json",
+                         data: new FormData(form),
+                         contentType: false,
+                         processData: false,
+                         cache: false
+                     }).done(function (data) {
+                         fichero = data['fichero'];
+                     });
+                 }
+             });
+
+             $("#uploadAdjunto").on('change', function (e) {
+                 let fichero = $("#uploadAdjunto").val();
+                 let input = document.getElementById('uploadAdjunto');
+                 let file = input.files[0]; //2 000 000
+                 let allowedExtensions = /(.doc|.docx|.xls|.xlsx|.ppt|.pptx|.pdf|.jpg|.png)$/i;
+
+                 if (!allowedExtensions.exec(fichero)) {
+                     toastr["error"]('Sólo se pueden subir archivos con extensiones: .docx, .xlsx, .pptx .pdf, .jpg, .png.', "Advertencia")
+                     $("#uploadAdjunto").val('');
+                     return false;
+                 } else if (file.size > 2000000) {
+                     toastr["error"]('El tamano del fichero no puede ser mayor que 2 MB.', "Advertencia")
+                     $("#uploadAdjunto").val('');
+                     return false;
+                 } else {
+                     //aqui subo el fichero y guardo el nombre
+                     let Ruta = Routing.generate('app_solicitar_pago_royal_acumulado_adjunto');
+                     let form = document.getElementById("myformAdjunto");
+                     siFichero = 1;
+
+                     $.ajax({
+                         url: Ruta,
+                         type: "post",
+                         dataType: "json",
+                         data: new FormData(form),
+                         contentType: false,
+                         processData: false,
+                         cache: false
+                     }).done(function (data) {
+                         fichero = data['fichero'];
+                     });
+                 }
+             });
+
+             $('#btnAddGuardar').on('click', function () {
+
+                 //Validaciones
+                 if ($("#addMetodo").val() === '0') {
+                     toastr["error"]('Seleccione un método de pago', "Advertencia")
+                     return false;
+                 }
+
+                 if ($("#addRoyaltie").val() === '') {
+                     toastr["error"]('Teclee la cantidad de royaltie', "Advertencia")
+                     return false;
+                 }
+
+                 {% if app.user.emitirfactura == true %}
+                 if ($("#upload").val() === '') {
+                     toastr["error"]('Seleccione la factura', "Advertencia")
+                     return false;
+                 }
+                 {% endif %}
+
+                 let Ruta = Routing.generate('app_solicitar_pago_royal_acumulado_new');
+
+                 $('#modalAddSolicitudPago').modal('hide');
+
+                 $(".preload").removeClass('hidden');
+
+                 if (siFichero === 0) {
+                     fichero = '';
+                 } else {
+                     fichero = document.getElementById('upload').files[0].name;
+                 }
+
+                 let mat_datos = {
+                     fichero: fichero,
+                     royaltie: parseFloat($("#addRoyaltie").val().replace(',', '.')),
+                     metodo: $("#addMetodo").val(),
+                     tipoPago: tipoPago,
+                     saldoAcumulado: saldoAcumulado,
+                 };
+
+                 $.ajax({
+                     url: Ruta,
+                     type: "post",
+                     dataType: "html",
+                     data: mat_datos,
+                 }).done(function (data) {
+                     $(".preload").addClass('hidden');
+                     if (data === 'ok') {
+                         $('#modalAddSolicitudPago input').each(function () {
+                             $(this).val('');
+                         });
+                         toastr["success"]('Solicitud enviada al administrador', "Notificación")
+                         window.location.href = "{{ path('app_solicitar_pago_royal_acumulado_index') }}";
+                     } else {
+                         toastr["error"](data, "Notificación")
+                     }
+                 });
+             });
+
+             $('table.display tbody').on('click', '.rechazar', function () {
+                 let row = $(this).parents('tr');
+                 idSolicitud = parseInt(row.data('id'));
+                 $("#addMotivo").val('');
+                 $('#modalAddMotivoRechazo').modal('show');
+             });
+
+             $('table.display tbody').on('click', '.aprobar', function () {
+
+                 let row = $(this).parents('tr');
+                 idSolicitud = parseInt(row.data('id'));
+
+                 //obtener el metodo de pago seleccionado
+                 {
+                     let idSolicitudSeleccionada;
+                     {% for solicitar in  solicitar_pago_royal_acumulados %}
+                     idSolicitudSeleccionada = parseInt('{{ solicitar.id }}');
+                     if (idSolicitud === idSolicitudSeleccionada) {
+                         {% if solicitar.metododepago == 'WesterUnion' %}
+                         metodo = 1;
+                         $('#mostrarCodigo').css("display", "block");
+                         $("#addInfo").val('');
+                         $("#addInfo").attr("placeholder", "Teclee el código MTCN");
+                         $('#modalAddAprobarPago').modal('show');
+                         {% elseif solicitar.metododepago == 'Paypal' %}
+                         metodo = 0;
+                         $('#mostrarCodigo').css("display", "block");
+                         $("#addInfo").val('');
+                         $("#addInfo").attr("placeholder", "No. Transacción");
+                         $('#modalAddAprobarPago').modal('show');
+                         {% elseif solicitar.metododepago == 'Voucher' %}
+                         metodo = 0;
+                         $('#mostrarCodigo').css("display", "block");
+                         $("#addInfo").val('');
+                         $("#addInfo").attr("placeholder", "Cupón de Descuento");
+                         $('#modalAddAprobarPago').modal('show');
+                         {% elseif solicitar.metododepago == 'Transferencia' %}
+                         metodo = 0;
+                         $('#mostrarCodigo').css("display", "none");
+                         $("#addInfo").val('');
+                         $('#modalAddAprobarPago').modal('show');
+                         {% else %}
+                         metodo = 0;
+                         $("#btnAddAbrobarGuardar").trigger("click");
+                         {% endif %}
+                     }
+                     {% endfor %}
+                 }
+
+             });
+
+             $('#btnAddRechazoGuardar').on('click', function () {
+
+                 let Ruta = Routing.generate('app_solicitar_pago_royal_acumulado_rechazar');
+
+                 $('#modalAddMotivoRechazo').modal('hide');
+
+                 let mat_datos = {
+                     idSolicitud: idSolicitud,
+                     motivo: $("#addMotivo").val(),
+                 };
+
+                 $.ajax({
+                     url: Ruta,
+                     type: "post",
+                     dataType: "html",
+                     data: mat_datos,
+                 }).done(function (data) {
+                     if (data === 'ok') {
+                         toastr["success"]('Rechazo de pago enviado al usuario', "Notificación")
+                         window.location.href = "{{ path('app_solicitar_pago_royal_acumulado_index') }}";
+                     } else {
+                         toastr["error"](data, "Notificación")
+                     }
+                 });
+             });
+
+             $('#btnAddAbrobarGuardar').on('click', function () {
+
+                 //Validaciones
+                 if (metodo === 1 && $("#addInfo").val() === '') {
+                     toastr["error"]('Teclee el código MTCN', "Advertencia")
+                     return false;
+                 }
+
+                 let Ruta = Routing.generate('app_solicitar_pago_royal_acumulado_aprobar');
+
+                 $('#modalAddAprobarPago').modal('hide');
+
+                 $(".preload").removeClass('hidden');
+
+                 if (siFichero === 0) {
+                     fichero = '';
+                 } else {
+                     fichero = document.getElementById('uploadAdjunto').files[0].name;
+                 }
+
+                 let mat_datos = {
+                     idSolicitud: idSolicitud,
+                     fichero: fichero,
+                     info: $("#addInfo").val(),
+                 };
+
+                 $.ajax({
+                     url: Ruta,
+                     type: "post",
+                     dataType: "html",
+                     data: mat_datos,
+                 }).done(function (data) {
+                     $(".preload").addClass('hidden');
+                     if (data === 'ok') {
+                         toastr["success"]('Aprobación de pago enviado al usuario', "Notificación")
+                         window.location.href = "{{ path('app_solicitar_pago_royal_acumulado_index') }}";
+                     } else {
+                         toastr["error"](data, "Notificación")
+                     }
+                 });
+             });
+
+         });
+     </script>
+ {% endblock %}

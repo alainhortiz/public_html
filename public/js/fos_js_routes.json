@@ -1,0 +1,1 @@
+{"base_url":"","routes":{"productos_obtusuarios":{"tokens":[["text","\/productos_obtusuarios"]],"defaults":[],"requirements":[],"hosttokens":[],"methods":["GET","POST"],"schemes":[]}},"prefix":"","host":"localhost","port":"","scheme":"http","locale":""}

@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Productos Asignados{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}"/>
+{% endblock %}
+
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header" style="background-color: #343a40">
+                        <div class="card-title text-white">
+                            <h3>Productos Asignados</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="table-responsive" style="padding-left: 5px">
+                                <table class="table table-bordered table-striped" id="dataProductos">
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th>Imagen del Producto</th>
+                                        <th>Tipo de Producto</th>
+                                        <th>I.D.D</th>
+                                        <th>Nombre</th>
+                                        <th>Vendidos</th>
+                                        <th>Beneficio por Venta</th>
+                                        <th>Stock</th>
+                                        <th>Amortización</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for producto in productos %}
+                                        {% set vendidos = 0 %}
+                                        {% for venta in producto.ventas() %}
+                                            {% set vendidos = vendidos + venta.cantidad %}
+                                        {% endfor %}
+                                        <tr class="text-center">
+                                            {% if producto.imagen %}
+                                                <td><img width="80" height="80"
+                                                         src="{{ asset('uploads/' ~ producto.imagen) }}"
+                                                         alt="Foto Producto"></td>
+                                            {% else %}
+                                                <td>-</td>
+                                            {% endif %}
+                                            {% if producto.tipoProducto == 1 %}
+                                                <td>General</td>
+                                            {% elseif producto.tipoProducto == 2 %}
+                                                <td>Libro</td>
+                                            {% endif %}
+                                            <td>{{ producto.idd }}</td>
+                                            <td>{{ producto.nombre }}</td>
+                                            <td>{{ vendidos }}</td>
+                                            <td>{{ producto.beneficioxventa ~ ' ' ~ producto.tipodemoneda }}</td>
+                                            <td>{{ producto.Stock }}</td>
+                                            {% if producto.amortizaciones|length > 0 %}
+                                                <td>Si</td>
+                                            {% else %}
+                                                <td>No</td>
+                                            {% endif %}
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="7">No se encontraron productos asignados</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- DataTables -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script>
+        $(function () {
+
+            $('#dataProductos').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "lengthMenu": [[10], [10]],
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+{% endblock %}
