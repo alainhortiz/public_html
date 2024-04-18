@@ -1,0 +1,136 @@
+[13-May-2022 16:19:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[13-May-2022 16:19:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[13-May-2022 16:19:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[13-May-2022 16:19:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[14-May-2022 20:54:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[14-May-2022 20:54:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[14-May-2022 20:55:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[14-May-2022 21:33:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[14-May-2022 21:33:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[14-May-2022 21:33:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[16-May-2022 16:26:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[16-May-2022 16:26:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[16-May-2022 16:26:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[16-May-2022 16:26:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[17-May-2022 22:08:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[17-May-2022 22:08:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[17-May-2022 22:08:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[17-May-2022 22:08:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[03-Jun-2022 03:19:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[03-Jun-2022 03:20:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[03-Jun-2022 03:20:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[03-Jun-2022 03:21:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[04-Jun-2022 23:44:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[04-Jun-2022 23:44:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[04-Jun-2022 23:44:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[04-Jun-2022 23:44:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[06-Jun-2022 04:32:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[06-Jun-2022 04:32:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractDriverMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Driver.php on line 23
+[06-Jun-2022 04:32:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23
+[06-Jun-2022 04:32:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[10-Jun-2022 17:44:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractConnectionMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Connection.php on line 25
+[11-Jun-2022 01:21:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[14-Jun-2022 16:23:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Statement.php on line 24
+[16-Jun-2022 08:49:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\DBAL\Driver\Middleware' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Middleware/Debug/Middleware.php on line 23

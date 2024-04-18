@@ -1,0 +1,132 @@
+[11-May-2022 13:51:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[11-May-2022 13:51:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[11-May-2022 13:51:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[11-May-2022 13:51:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[14-May-2022 16:05:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[14-May-2022 16:06:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[14-May-2022 16:06:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[14-May-2022 16:06:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[15-May-2022 18:48:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[15-May-2022 18:48:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[15-May-2022 18:48:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[15-May-2022 18:48:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[30-May-2022 21:21:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[30-May-2022 21:21:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[30-May-2022 21:21:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[30-May-2022 21:21:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[03-Jun-2022 11:56:28 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[03-Jun-2022 11:56:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[03-Jun-2022 11:56:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[03-Jun-2022 11:56:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[05-Jun-2022 01:22:00 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[05-Jun-2022 01:22:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[05-Jun-2022 01:22:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[05-Jun-2022 01:22:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[07-Jun-2022 16:32:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[08-Jun-2022 06:04:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[11-Jun-2022 10:07:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25
+[11-Jun-2022 10:07:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\SecurityBundle\Security\FirewallContext' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LazyFirewallContext.php on line 26
+[11-Jun-2022 10:07:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[11-Jun-2022 10:07:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[12-Jun-2022 07:49:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/UserAuthenticator.php on line 30
+[12-Jun-2022 12:14:45 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/LegacyLogoutHandlerListener.php on line 24
+[15-Jun-2022 11:54:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\FirewallMapInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/Security/FirewallMap.php on line 25

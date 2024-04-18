@@ -1,0 +1,36 @@
+[11-May-2022 14:43:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[12-May-2022 06:23:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[12-May-2022 06:23:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[14-May-2022 02:32:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[14-May-2022 02:32:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[30-May-2022 19:19:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[03-Jun-2022 03:37:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[04-Jun-2022 21:15:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24
+[04-Jun-2022 23:45:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\ORM\Repository\RepositoryFactory' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Test/TestRepositoryFactory.php on line 24

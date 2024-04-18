@@ -1,0 +1,32 @@
+[11-May-2022 14:43:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32
+[12-May-2022 21:34:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32
+[12-May-2022 21:34:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32
+[30-May-2022 19:18:28 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32
+[03-Jun-2022 03:24:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32
+[04-Jun-2022 23:44:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32
+[06-Jun-2022 06:41:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32
+[09-Jun-2022 20:29:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyListExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/PropertyInfo/DoctrineExtractor.php on line 32

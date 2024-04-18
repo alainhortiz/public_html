@@ -1,0 +1,184 @@
+[15-May-2022 13:13:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[15-May-2022 13:13:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[15-May-2022 13:13:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php on line 35
+[15-May-2022 13:13:55 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php on line 35
+[15-May-2022 13:13:57 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php on line 29
+[15-May-2022 13:13:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php on line 29
+[15-May-2022 13:14:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[15-May-2022 13:14:15 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[15-May-2022 13:14:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[15-May-2022 13:14:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[15-May-2022 13:14:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php on line 34
+[15-May-2022 13:14:30 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php on line 34
+[15-May-2022 16:49:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[15-May-2022 16:49:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php on line 35
+[15-May-2022 16:49:57 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php on line 29
+[15-May-2022 16:50:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[15-May-2022 16:50:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[15-May-2022 16:50:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php on line 34
+[26-May-2022 05:49:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[27-May-2022 12:23:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[27-May-2022 17:53:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[03-Jun-2022 13:20:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[03-Jun-2022 13:20:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php on line 35
+[03-Jun-2022 13:20:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php on line 29
+[03-Jun-2022 13:20:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[03-Jun-2022 13:20:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[03-Jun-2022 13:20:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php on line 34
+[05-Jun-2022 02:27:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[05-Jun-2022 02:27:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php on line 35
+[05-Jun-2022 02:27:57 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php on line 29
+[05-Jun-2022 02:28:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[05-Jun-2022 02:28:08 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[05-Jun-2022 02:28:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php on line 34
+[06-Jun-2022 05:39:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[06-Jun-2022 05:39:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php on line 35
+[06-Jun-2022 05:39:28 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php on line 29
+[06-Jun-2022 05:39:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[06-Jun-2022 05:39:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[06-Jun-2022 05:39:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php on line 34
+[06-Jun-2022 18:32:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SandboxNodeVisitor.php on line 34
+[07-Jun-2022 00:38:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/MacroAutoImportNodeVisitor.php on line 29
+[07-Jun-2022 03:09:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/AbstractNodeVisitor.php on line 24
+[07-Jun-2022 14:03:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/SafeAnalysisNodeVisitor.php on line 29
+[08-Jun-2022 07:48:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40
+[08-Jun-2022 08:41:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/EscaperNodeVisitor.php on line 35
+[11-Jun-2022 22:02:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Twig\NodeVisitor\NodeVisitorInterface' not found in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/NodeVisitor/OptimizerNodeVisitor.php on line 40

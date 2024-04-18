@@ -1,0 +1,52 @@
+[14-May-2022 05:38:42 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\StoppableEventInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[14-May-2022 05:38:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\EventDispatcherInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19
+[29-May-2022 07:12:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\StoppableEventInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[29-May-2022 07:12:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\EventDispatcherInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19
+[30-May-2022 19:25:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\StoppableEventInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[30-May-2022 19:25:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\EventDispatcherInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19
+[03-Jun-2022 04:18:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\StoppableEventInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[03-Jun-2022 04:19:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\EventDispatcherInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19
+[04-Jun-2022 11:44:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\EventDispatcherInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19
+[05-Jun-2022 16:49:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\StoppableEventInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[09-Jun-2022 06:44:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\StoppableEventInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[11-Jun-2022 09:25:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\StoppableEventInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[11-Jun-2022 09:25:42 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\EventDispatcher\EventDispatcherInterface' not found in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19

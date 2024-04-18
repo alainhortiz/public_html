@@ -1,0 +1,1404 @@
+[04-Jun-2022 21:29:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Acos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Acos.php on line 8
+[04-Jun-2022 21:29:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AddTime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AddTime.php on line 11
+[04-Jun-2022 21:29:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesDecrypt.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesDecrypt.php on line 8
+[04-Jun-2022 21:29:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesEncrypt.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesEncrypt.php on line 8
+[04-Jun-2022 21:29:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php on line 8
+[04-Jun-2022 21:29:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ascii.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ascii.php on line 8
+[04-Jun-2022 21:29:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Asin.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Asin.php on line 8
+[04-Jun-2022 21:29:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan.php on line 9
+[04-Jun-2022 21:29:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan2.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan2.php on line 8
+[04-Jun-2022 21:30:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Binary.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Binary.php on line 11
+[04-Jun-2022 21:30:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitCount.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitCount.php on line 8
+[04-Jun-2022 21:30:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitXor.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitXor.php on line 11
+[04-Jun-2022 21:30:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cast.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cast.php on line 20
+[04-Jun-2022 21:30:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ceil.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ceil.php on line 8
+[04-Jun-2022 21:30:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CharLength.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CharLength.php on line 11
+[04-Jun-2022 21:30:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Collate.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Collate.php on line 12
+[04-Jun-2022 21:30:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConcatWs.php on line 11
+[04-Jun-2022 21:30:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConvertTz.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConvertTz.php on line 13
+[04-Jun-2022 21:30:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cos.php on line 8
+[04-Jun-2022 21:30:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cot.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cot.php on line 8
+[04-Jun-2022 21:30:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CountIf.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CountIf.php on line 11
+[04-Jun-2022 21:30:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Crc32.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Crc32.php on line 11
+[04-Jun-2022 21:30:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Date.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Date.php on line 11
+[04-Jun-2022 21:30:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateAdd.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateAdd.php on line 9
+[04-Jun-2022 21:30:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateDiff.php on line 8
+[04-Jun-2022 21:30:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateFormat.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateFormat.php on line 11
+[04-Jun-2022 21:31:02 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Mysql\DateAdd' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateSub.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateSub.php on line 10
+[04-Jun-2022 21:31:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Day.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Day.php on line 12
+[04-Jun-2022 21:31:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayName.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayName.php on line 11
+[04-Jun-2022 21:31:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfWeek.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfWeek.php on line 8
+[04-Jun-2022 21:31:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfYear.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfYear.php on line 10
+[04-Jun-2022 21:31:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Degrees.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Degrees.php on line 8
+[04-Jun-2022 21:31:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Div.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Div.php on line 13
+[04-Jun-2022 21:31:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php on line 8
+[04-Jun-2022 21:31:28 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Mysql\DateAdd' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Extract.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Extract.php on line 11
+[04-Jun-2022 21:31:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php on line 11
+[04-Jun-2022 21:31:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FindInSet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FindInSet.php on line 8
+[04-Jun-2022 21:31:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Floor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Floor.php on line 8
+[04-Jun-2022 21:31:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Format.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Format.php on line 11
+[04-Jun-2022 21:31:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromBase64.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromBase64.php on line 17
+[04-Jun-2022 21:31:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php on line 11
+[04-Jun-2022 21:31:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Greatest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Greatest.php on line 14
+[04-Jun-2022 21:31:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/GroupConcat.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/GroupConcat.php on line 8
+[04-Jun-2022 21:31:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hex.php on line 8
+[04-Jun-2022 21:31:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php on line 11
+[04-Jun-2022 21:32:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfElse.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfElse.php on line 11
+[04-Jun-2022 21:32:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfNull.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfNull.php on line 11
+[04-Jun-2022 21:32:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Aton.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Aton.php on line 12
+[04-Jun-2022 21:32:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Ntoa.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Ntoa.php on line 12
+[04-Jun-2022 21:32:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetAton.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetAton.php on line 12
+[04-Jun-2022 21:32:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetNtoa.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetNtoa.php on line 12
+[04-Jun-2022 21:32:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Instr.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Instr.php on line 10
+[04-Jun-2022 21:32:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4.php on line 12
+[04-Jun-2022 21:32:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Compat.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Compat.php on line 12
+[04-Jun-2022 21:32:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Mapped.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Mapped.php on line 12
+[04-Jun-2022 21:32:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv6.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv6.php on line 12
+[04-Jun-2022 21:32:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php on line 10
+[04-Jun-2022 21:32:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonDepth.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonDepth.php on line 10
+[04-Jun-2022 21:32:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonLength.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonLength.php on line 10
+[04-Jun-2022 21:32:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lag.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lag.php on line 13
+[04-Jun-2022 21:32:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/LastDay.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/LastDay.php on line 12
+[04-Jun-2022 21:32:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lead.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lead.php on line 13
+[04-Jun-2022 21:32:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Least.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Least.php on line 13
+[04-Jun-2022 21:33:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log.php on line 8
+[04-Jun-2022 21:33:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log10.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log10.php on line 8
+[04-Jun-2022 21:33:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log2.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log2.php on line 8
+[04-Jun-2022 21:33:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lpad.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lpad.php on line 11
+[04-Jun-2022 21:33:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php on line 8
+[04-Jun-2022 21:33:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MatchAgainst.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MatchAgainst.php on line 8
+[04-Jun-2022 21:33:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Md5.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Md5.php on line 11
+[04-Jun-2022 21:33:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Minute.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Minute.php on line 11
+[04-Jun-2022 21:33:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Month.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Month.php on line 12
+[04-Jun-2022 21:33:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MonthName.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MonthName.php on line 11
+[04-Jun-2022 21:33:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Now.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Now.php on line 8
+[04-Jun-2022 21:33:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/NullIf.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/NullIf.php on line 11
+[04-Jun-2022 21:33:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Over.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Over.php on line 12
+[04-Jun-2022 21:33:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/PeriodDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/PeriodDiff.php on line 8
+[04-Jun-2022 21:33:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Pi.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Pi.php on line 8
+[04-Jun-2022 21:33:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Power.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Power.php on line 8
+[04-Jun-2022 21:33:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Quarter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Quarter.php on line 11
+[04-Jun-2022 21:33:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Radians.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Radians.php on line 8
+[04-Jun-2022 21:33:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rand.php on line 9
+[04-Jun-2022 21:33:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Regexp.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Regexp.php on line 8
+[04-Jun-2022 21:33:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Replace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Replace.php on line 11
+[04-Jun-2022 21:33:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Round.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Round.php on line 8
+[04-Jun-2022 21:33:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rpad.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rpad.php on line 11
+[04-Jun-2022 21:34:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SecToTime.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SecToTime.php on line 13
+[04-Jun-2022 21:34:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php on line 11
+[04-Jun-2022 21:34:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha1.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha1.php on line 11
+[04-Jun-2022 21:34:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php on line 11
+[04-Jun-2022 21:34:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sin.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sin.php on line 8
+[04-Jun-2022 21:34:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Soundex.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Soundex.php on line 11
+[04-Jun-2022 21:34:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Std.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Std.php on line 11
+[04-Jun-2022 21:34:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StdDev.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StdDev.php on line 11
+[04-Jun-2022 21:34:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StrToDate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StrToDate.php on line 8
+[04-Jun-2022 21:34:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SubstringIndex.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SubstringIndex.php on line 10
+[04-Jun-2022 21:34:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php on line 8
+[04-Jun-2022 21:34:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Time.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Time.php on line 12
+[04-Jun-2022 21:34:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeDiff.php on line 8
+[04-Jun-2022 21:34:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeToSec.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeToSec.php on line 13
+[04-Jun-2022 21:34:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampAdd.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampAdd.php on line 11
+[04-Jun-2022 21:34:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampDiff.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampDiff.php on line 11
+[04-Jun-2022 21:34:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Truncate.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Truncate.php on line 11
+[04-Jun-2022 21:35:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Unhex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Unhex.php on line 8
+[04-Jun-2022 21:35:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UnixTimestamp.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UnixTimestamp.php on line 12
+[04-Jun-2022 21:35:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UtcTimestamp.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UtcTimestamp.php on line 11
+[04-Jun-2022 21:35:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UuidShort.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UuidShort.php on line 8
+[04-Jun-2022 21:35:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php on line 11
+[04-Jun-2022 21:35:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Week.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Week.php on line 13
+[04-Jun-2022 21:35:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/WeekDay.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/WeekDay.php on line 11
+[04-Jun-2022 21:35:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Year.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Year.php on line 11
+[04-Jun-2022 21:35:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearMonth.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearMonth.php on line 8
+[04-Jun-2022 21:35:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php on line 11
+[06-Jun-2022 02:21:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Acos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Acos.php on line 8
+[06-Jun-2022 02:22:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AddTime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AddTime.php on line 11
+[06-Jun-2022 02:22:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesDecrypt.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesDecrypt.php on line 8
+[06-Jun-2022 02:22:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesEncrypt.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesEncrypt.php on line 8
+[06-Jun-2022 02:22:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php on line 8
+[06-Jun-2022 02:22:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ascii.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ascii.php on line 8
+[06-Jun-2022 02:22:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Asin.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Asin.php on line 8
+[06-Jun-2022 02:22:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan.php on line 9
+[06-Jun-2022 02:22:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan2.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan2.php on line 8
+[06-Jun-2022 02:22:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Binary.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Binary.php on line 11
+[06-Jun-2022 02:22:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitCount.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitCount.php on line 8
+[06-Jun-2022 02:22:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitXor.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitXor.php on line 11
+[06-Jun-2022 02:22:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cast.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cast.php on line 20
+[06-Jun-2022 02:22:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ceil.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ceil.php on line 8
+[06-Jun-2022 02:22:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CharLength.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CharLength.php on line 11
+[06-Jun-2022 02:22:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Collate.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Collate.php on line 12
+[06-Jun-2022 02:22:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConcatWs.php on line 11
+[06-Jun-2022 02:22:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConvertTz.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConvertTz.php on line 13
+[06-Jun-2022 02:22:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cos.php on line 8
+[06-Jun-2022 02:23:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cot.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cot.php on line 8
+[06-Jun-2022 02:23:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CountIf.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CountIf.php on line 11
+[06-Jun-2022 02:23:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Crc32.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Crc32.php on line 11
+[06-Jun-2022 02:23:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Date.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Date.php on line 11
+[06-Jun-2022 02:23:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateAdd.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateAdd.php on line 9
+[06-Jun-2022 02:23:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateDiff.php on line 8
+[06-Jun-2022 02:23:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateFormat.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateFormat.php on line 11
+[06-Jun-2022 02:23:26 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Mysql\DateAdd' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateSub.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateSub.php on line 10
+[06-Jun-2022 02:23:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Day.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Day.php on line 12
+[06-Jun-2022 02:23:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayName.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayName.php on line 11
+[06-Jun-2022 02:23:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfWeek.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfWeek.php on line 8
+[06-Jun-2022 02:23:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfYear.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfYear.php on line 10
+[06-Jun-2022 02:23:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Degrees.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Degrees.php on line 8
+[06-Jun-2022 02:23:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Div.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Div.php on line 13
+[06-Jun-2022 02:23:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php on line 8
+[06-Jun-2022 02:23:57 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Mysql\DateAdd' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Extract.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Extract.php on line 11
+[06-Jun-2022 02:24:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php on line 11
+[06-Jun-2022 02:24:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FindInSet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FindInSet.php on line 8
+[06-Jun-2022 02:24:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Floor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Floor.php on line 8
+[06-Jun-2022 02:24:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Format.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Format.php on line 11
+[06-Jun-2022 02:24:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromBase64.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromBase64.php on line 17
+[06-Jun-2022 02:24:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php on line 11
+[06-Jun-2022 02:24:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Greatest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Greatest.php on line 14
+[06-Jun-2022 02:24:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/GroupConcat.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/GroupConcat.php on line 8
+[06-Jun-2022 02:24:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hex.php on line 8
+[06-Jun-2022 02:24:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php on line 11
+[06-Jun-2022 02:24:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfElse.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfElse.php on line 11
+[06-Jun-2022 02:24:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfNull.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfNull.php on line 11
+[06-Jun-2022 02:24:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Aton.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Aton.php on line 12
+[06-Jun-2022 02:24:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Ntoa.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Ntoa.php on line 12
+[06-Jun-2022 02:24:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetAton.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetAton.php on line 12
+[06-Jun-2022 02:24:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetNtoa.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetNtoa.php on line 12
+[06-Jun-2022 02:24:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Instr.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Instr.php on line 10
+[06-Jun-2022 02:24:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4.php on line 12
+[06-Jun-2022 02:24:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Compat.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Compat.php on line 12
+[06-Jun-2022 02:25:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Mapped.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Mapped.php on line 12
+[06-Jun-2022 02:25:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv6.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv6.php on line 12
+[06-Jun-2022 02:25:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php on line 10
+[06-Jun-2022 02:25:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonDepth.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonDepth.php on line 10
+[06-Jun-2022 02:25:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonLength.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonLength.php on line 10
+[06-Jun-2022 02:25:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lag.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lag.php on line 13
+[06-Jun-2022 02:25:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/LastDay.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/LastDay.php on line 12
+[06-Jun-2022 02:25:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lead.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lead.php on line 13
+[06-Jun-2022 02:25:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Least.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Least.php on line 13
+[06-Jun-2022 02:25:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log.php on line 8
+[06-Jun-2022 02:25:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log10.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log10.php on line 8
+[06-Jun-2022 02:25:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log2.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log2.php on line 8
+[06-Jun-2022 02:25:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lpad.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lpad.php on line 11
+[06-Jun-2022 02:25:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php on line 8
+[06-Jun-2022 02:25:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MatchAgainst.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MatchAgainst.php on line 8
+[06-Jun-2022 02:25:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Md5.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Md5.php on line 11
+[06-Jun-2022 02:25:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Minute.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Minute.php on line 11
+[06-Jun-2022 02:25:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Month.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Month.php on line 12
+[06-Jun-2022 02:25:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MonthName.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MonthName.php on line 11
+[06-Jun-2022 02:25:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Now.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Now.php on line 8
+[06-Jun-2022 02:26:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/NullIf.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/NullIf.php on line 11
+[06-Jun-2022 02:26:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Over.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Over.php on line 12
+[06-Jun-2022 02:26:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/PeriodDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/PeriodDiff.php on line 8
+[06-Jun-2022 02:26:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Pi.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Pi.php on line 8
+[06-Jun-2022 02:26:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Power.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Power.php on line 8
+[06-Jun-2022 02:26:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Quarter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Quarter.php on line 11
+[06-Jun-2022 02:26:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Radians.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Radians.php on line 8
+[06-Jun-2022 02:26:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rand.php on line 9
+[06-Jun-2022 02:26:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Regexp.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Regexp.php on line 8
+[06-Jun-2022 02:26:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Replace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Replace.php on line 11
+[06-Jun-2022 02:26:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Round.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Round.php on line 8
+[06-Jun-2022 02:26:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rpad.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rpad.php on line 11
+[06-Jun-2022 02:26:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SecToTime.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SecToTime.php on line 13
+[06-Jun-2022 02:26:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php on line 11
+[06-Jun-2022 02:26:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha1.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha1.php on line 11
+[06-Jun-2022 02:26:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php on line 11
+[06-Jun-2022 02:26:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sin.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sin.php on line 8
+[06-Jun-2022 02:26:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Soundex.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Soundex.php on line 11
+[06-Jun-2022 02:26:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Std.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Std.php on line 11
+[06-Jun-2022 02:27:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StdDev.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StdDev.php on line 11
+[06-Jun-2022 02:27:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StrToDate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StrToDate.php on line 8
+[06-Jun-2022 02:27:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SubstringIndex.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SubstringIndex.php on line 10
+[06-Jun-2022 02:27:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php on line 8
+[06-Jun-2022 02:27:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Time.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Time.php on line 12
+[06-Jun-2022 02:27:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeDiff.php on line 8
+[06-Jun-2022 02:27:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeToSec.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeToSec.php on line 13
+[06-Jun-2022 02:27:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampAdd.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampAdd.php on line 11
+[06-Jun-2022 02:27:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampDiff.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampDiff.php on line 11
+[06-Jun-2022 02:27:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Truncate.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Truncate.php on line 11
+[06-Jun-2022 02:27:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Unhex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Unhex.php on line 8
+[06-Jun-2022 02:27:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UnixTimestamp.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UnixTimestamp.php on line 12
+[06-Jun-2022 02:27:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UtcTimestamp.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UtcTimestamp.php on line 11
+[06-Jun-2022 02:27:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UuidShort.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UuidShort.php on line 8
+[06-Jun-2022 02:27:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php on line 11
+[06-Jun-2022 02:27:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Week.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Week.php on line 13
+[06-Jun-2022 02:28:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/WeekDay.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/WeekDay.php on line 11
+[06-Jun-2022 02:28:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Year.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Year.php on line 11
+[06-Jun-2022 02:28:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearMonth.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearMonth.php on line 8
+[06-Jun-2022 02:28:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php on line 11
+[07-Jun-2022 06:09:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Acos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Acos.php on line 8
+[07-Jun-2022 06:09:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AddTime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AddTime.php on line 11
+[07-Jun-2022 06:09:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesDecrypt.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesDecrypt.php on line 8
+[07-Jun-2022 06:09:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesEncrypt.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AesEncrypt.php on line 8
+[07-Jun-2022 06:09:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php on line 8
+[07-Jun-2022 06:09:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ascii.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ascii.php on line 8
+[07-Jun-2022 06:09:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Asin.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Asin.php on line 8
+[07-Jun-2022 06:09:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan.php on line 9
+[07-Jun-2022 06:09:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan2.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Atan2.php on line 8
+[07-Jun-2022 06:09:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Binary.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Binary.php on line 11
+[07-Jun-2022 06:09:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitCount.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitCount.php on line 8
+[07-Jun-2022 06:09:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitXor.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/BitXor.php on line 11
+[07-Jun-2022 06:10:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cast.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cast.php on line 20
+[07-Jun-2022 06:10:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ceil.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Ceil.php on line 8
+[07-Jun-2022 06:10:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CharLength.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CharLength.php on line 11
+[07-Jun-2022 06:10:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Collate.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Collate.php on line 12
+[07-Jun-2022 06:10:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConcatWs.php on line 11
+[07-Jun-2022 06:10:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConvertTz.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/ConvertTz.php on line 13
+[07-Jun-2022 06:10:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cos.php on line 8
+[07-Jun-2022 06:10:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cot.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Cot.php on line 8
+[07-Jun-2022 06:10:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CountIf.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/CountIf.php on line 11
+[07-Jun-2022 06:10:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Crc32.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Crc32.php on line 11
+[07-Jun-2022 06:10:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Date.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Date.php on line 11
+[07-Jun-2022 06:10:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateAdd.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateAdd.php on line 9
+[07-Jun-2022 06:10:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateDiff.php on line 8
+[07-Jun-2022 06:11:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateFormat.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateFormat.php on line 11
+[07-Jun-2022 06:11:06 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Mysql\DateAdd' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateSub.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DateSub.php on line 10
+[07-Jun-2022 06:11:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Day.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Day.php on line 12
+[07-Jun-2022 06:11:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayName.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayName.php on line 11
+[07-Jun-2022 06:11:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfWeek.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfWeek.php on line 8
+[07-Jun-2022 06:11:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfYear.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/DayOfYear.php on line 10
+[07-Jun-2022 06:11:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Degrees.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Degrees.php on line 8
+[07-Jun-2022 06:11:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Div.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Div.php on line 13
+[07-Jun-2022 06:11:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php on line 8
+[07-Jun-2022 06:11:42 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Mysql\DateAdd' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Extract.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Extract.php on line 11
+[07-Jun-2022 06:11:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php on line 11
+[07-Jun-2022 06:11:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FindInSet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FindInSet.php on line 8
+[07-Jun-2022 06:11:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Floor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Floor.php on line 8
+[07-Jun-2022 06:11:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Format.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Format.php on line 11
+[07-Jun-2022 06:12:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromBase64.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromBase64.php on line 17
+[07-Jun-2022 06:12:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php on line 11
+[07-Jun-2022 06:12:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Greatest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Greatest.php on line 14
+[07-Jun-2022 06:12:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/GroupConcat.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/GroupConcat.php on line 8
+[07-Jun-2022 06:12:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hex.php on line 8
+[07-Jun-2022 06:12:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php on line 11
+[07-Jun-2022 06:12:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfElse.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfElse.php on line 11
+[07-Jun-2022 06:12:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfNull.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IfNull.php on line 11
+[07-Jun-2022 06:12:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Aton.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Aton.php on line 12
+[07-Jun-2022 06:12:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Ntoa.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Inet6Ntoa.php on line 12
+[07-Jun-2022 06:12:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetAton.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetAton.php on line 12
+[07-Jun-2022 06:12:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetNtoa.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/InetNtoa.php on line 12
+[07-Jun-2022 06:12:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Instr.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Instr.php on line 10
+[07-Jun-2022 06:13:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4.php on line 12
+[07-Jun-2022 06:13:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Compat.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Compat.php on line 12
+[07-Jun-2022 06:13:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Mapped.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv4Mapped.php on line 12
+[07-Jun-2022 06:13:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv6.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/IsIpv6.php on line 12
+[07-Jun-2022 06:13:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php on line 10
+[07-Jun-2022 06:13:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonDepth.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonDepth.php on line 10
+[07-Jun-2022 06:13:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonLength.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonLength.php on line 10
+[07-Jun-2022 06:13:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lag.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lag.php on line 13
+[07-Jun-2022 06:13:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/LastDay.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/LastDay.php on line 12
+[07-Jun-2022 06:13:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lead.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lead.php on line 13
+[07-Jun-2022 06:13:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Least.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Least.php on line 13
+[07-Jun-2022 06:13:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log.php on line 8
+[07-Jun-2022 06:13:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log10.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log10.php on line 8
+[07-Jun-2022 06:14:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log2.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Log2.php on line 8
+[07-Jun-2022 06:14:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lpad.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Lpad.php on line 11
+[07-Jun-2022 06:14:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php on line 8
+[07-Jun-2022 06:14:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MatchAgainst.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MatchAgainst.php on line 8
+[07-Jun-2022 06:14:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Md5.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Md5.php on line 11
+[07-Jun-2022 06:14:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Minute.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Minute.php on line 11
+[07-Jun-2022 06:14:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Month.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Month.php on line 12
+[07-Jun-2022 06:14:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MonthName.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MonthName.php on line 11
+[07-Jun-2022 06:14:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Now.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Now.php on line 8
+[07-Jun-2022 06:14:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/NullIf.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/NullIf.php on line 11
+[07-Jun-2022 06:14:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Over.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Over.php on line 12
+[07-Jun-2022 06:14:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/PeriodDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/PeriodDiff.php on line 8
+[07-Jun-2022 06:14:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Pi.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Pi.php on line 8
+[07-Jun-2022 06:15:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Power.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Power.php on line 8
+[07-Jun-2022 06:15:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Quarter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Quarter.php on line 11
+[07-Jun-2022 06:15:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Radians.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Radians.php on line 8
+[07-Jun-2022 06:15:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rand.php on line 9
+[07-Jun-2022 06:15:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Regexp.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Regexp.php on line 8
+[07-Jun-2022 06:15:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Replace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Replace.php on line 11
+[07-Jun-2022 06:15:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Round.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Round.php on line 8
+[07-Jun-2022 06:15:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rpad.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Rpad.php on line 11
+[07-Jun-2022 06:15:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SecToTime.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SecToTime.php on line 13
+[07-Jun-2022 06:15:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php on line 11
+[07-Jun-2022 06:15:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha1.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha1.php on line 11
+[07-Jun-2022 06:15:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php on line 11
+[07-Jun-2022 06:15:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sin.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sin.php on line 8
+[07-Jun-2022 06:15:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Soundex.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Soundex.php on line 11
+[07-Jun-2022 06:15:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Std.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Std.php on line 11
+[07-Jun-2022 06:16:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StdDev.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StdDev.php on line 11
+[07-Jun-2022 06:16:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StrToDate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/StrToDate.php on line 8
+[07-Jun-2022 06:16:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SubstringIndex.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/SubstringIndex.php on line 10
+[07-Jun-2022 06:16:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php on line 8
+[07-Jun-2022 06:16:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Time.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Time.php on line 12
+[07-Jun-2022 06:16:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeDiff.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeDiff.php on line 8
+[07-Jun-2022 06:16:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeToSec.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimeToSec.php on line 13
+[07-Jun-2022 06:16:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampAdd.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampAdd.php on line 11
+[07-Jun-2022 06:16:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampDiff.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/TimestampDiff.php on line 11
+[07-Jun-2022 06:16:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Truncate.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Truncate.php on line 11
+[07-Jun-2022 06:16:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Unhex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Unhex.php on line 8
+[07-Jun-2022 06:16:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UnixTimestamp.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UnixTimestamp.php on line 12
+[07-Jun-2022 06:17:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UtcTimestamp.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UtcTimestamp.php on line 11
+[07-Jun-2022 06:17:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UuidShort.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/UuidShort.php on line 8
+[07-Jun-2022 06:17:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php on line 11
+[07-Jun-2022 06:17:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Week.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Week.php on line 13
+[07-Jun-2022 06:17:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/WeekDay.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/WeekDay.php on line 11
+[07-Jun-2022 06:17:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Year.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Year.php on line 11
+[07-Jun-2022 06:17:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearMonth.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearMonth.php on line 8
+[07-Jun-2022 06:17:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php on line 11
+[22-Jun-2022 11:02:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/YearWeek.php on line 11
+[22-Jun-2022 11:46:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Exp.php on line 8
+[23-Jun-2022 09:13:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/AnyValue.php on line 8
+[23-Jun-2022 10:59:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Variance.php on line 11
+[23-Jun-2022 13:41:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Field.php on line 11
+[23-Jun-2022 13:41:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/MakeDate.php on line 8
+[23-Jun-2022 14:38:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/FromUnixtime.php on line 11
+[23-Jun-2022 14:38:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/JsonContains.php on line 10
+[23-Jun-2022 17:20:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Second.php on line 11
+[26-Jun-2022 14:48:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Hour.php on line 11
+[26-Jun-2022 17:36:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Sha2.php on line 11
+[26-Jun-2022 17:36:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Mysql/Tan.php on line 8

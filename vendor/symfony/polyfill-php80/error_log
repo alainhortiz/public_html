@@ -1,0 +1,28 @@
+[14-May-2022 03:42:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Stringable' not found in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php on line 19
+[14-May-2022 03:42:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Stringable' not found in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php on line 19
+[29-May-2022 07:39:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Stringable' not found in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php on line 19
+[30-May-2022 20:44:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Stringable' not found in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php on line 19
+[01-Jun-2022 12:35:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Stringable' not found in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php on line 19
+[03-Jun-2022 11:32:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Stringable' not found in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php on line 19
+[05-Jun-2022 01:04:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Stringable' not found in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/polyfill-php80/PhpToken.php on line 19

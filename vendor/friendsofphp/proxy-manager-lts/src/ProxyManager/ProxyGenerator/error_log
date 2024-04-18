@@ -1,0 +1,120 @@
+[14-May-2022 05:49:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php on line 41
+[14-May-2022 05:49:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php on line 46
+[14-May-2022 05:49:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php on line 47
+[14-May-2022 05:49:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php on line 51
+[14-May-2022 05:49:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php on line 24
+[14-May-2022 05:49:42 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php on line 34
+[24-May-2022 22:03:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php on line 46
+[25-May-2022 21:01:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php on line 24
+[25-May-2022 22:07:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php on line 51
+[30-May-2022 07:39:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php on line 34
+[02-Jun-2022 06:47:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php on line 24
+[04-Jun-2022 22:50:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php on line 41
+[04-Jun-2022 22:51:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php on line 46
+[04-Jun-2022 22:51:14 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php on line 47
+[04-Jun-2022 22:51:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php on line 51
+[04-Jun-2022 22:51:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php on line 24
+[04-Jun-2022 22:51:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php on line 34
+[06-Jun-2022 03:52:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php on line 41
+[06-Jun-2022 03:52:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php on line 46
+[06-Jun-2022 03:53:42 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php on line 47
+[06-Jun-2022 03:54:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php on line 51
+[06-Jun-2022 03:54:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php on line 24
+[06-Jun-2022 03:55:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php on line 34
+[07-Jun-2022 07:16:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php on line 41
+[07-Jun-2022 07:17:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php on line 46
+[07-Jun-2022 07:18:55 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php on line 47
+[07-Jun-2022 07:19:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php on line 51
+[07-Jun-2022 07:20:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php on line 24
+[07-Jun-2022 07:21:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObjectGenerator.php on line 34
+[13-Jun-2022 04:59:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\ProxyGenerator\ProxyGeneratorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php on line 24

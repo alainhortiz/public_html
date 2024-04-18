@@ -1,0 +1,20 @@
+[14-May-2022 21:32:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php on line 28
+[14-May-2022 21:32:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php on line 28
+[03-Jun-2022 03:01:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php on line 28
+[04-Jun-2022 23:43:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php on line 28
+[06-Jun-2022 04:32:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/EventListener/MergeDoctrineCollectionListener.php on line 28

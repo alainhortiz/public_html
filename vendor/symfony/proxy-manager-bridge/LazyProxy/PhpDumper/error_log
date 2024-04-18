@@ -1,0 +1,60 @@
+[14-May-2022 05:50:32 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21
+[14-May-2022 05:50:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php on line 26
+[15-May-2022 19:19:57 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21
+[15-May-2022 19:19:59 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21
+[15-May-2022 19:20:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php on line 26
+[15-May-2022 19:20:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php on line 26
+[03-Jun-2022 11:39:22 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21
+[03-Jun-2022 11:39:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php on line 26
+[04-Jun-2022 19:47:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php on line 26
+[05-Jun-2022 01:07:02 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21
+[05-Jun-2022 01:07:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php on line 26
+[05-Jun-2022 14:09:39 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21
+[06-Jun-2022 05:08:55 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21
+[06-Jun-2022 05:08:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/ProxyDumper.php on line 26
+[09-Jun-2022 04:12:24 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\ProxyGenerator\LazyLoadingValueHolderGenerator' not found in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/proxy-manager-bridge/LazyProxy/PhpDumper/LazyLoadingValueHolderGenerator.php on line 21

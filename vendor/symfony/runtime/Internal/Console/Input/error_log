@@ -1,0 +1,24 @@
+[17-May-2022 12:39:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Runtime\SymfonyRuntime' not found in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php on line 19
+[17-May-2022 12:39:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Runtime\SymfonyRuntime' not found in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php on line 19
+[19-May-2022 20:01:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Runtime\SymfonyRuntime' not found in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php on line 19
+[05-Jun-2022 01:13:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Runtime\SymfonyRuntime' not found in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php on line 19
+[06-Jun-2022 05:12:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Runtime\SymfonyRuntime' not found in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php on line 19
+[07-Jun-2022 07:51:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Runtime\SymfonyRuntime' not found in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/runtime/Internal/Console/Input/InputInterfaceRuntime.php on line 19

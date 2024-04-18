@@ -1,0 +1,24 @@
+[17-May-2022 20:36:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Node\Expression\FilterExpression' not found in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php on line 30
+[17-May-2022 20:36:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Node\Expression\FilterExpression' not found in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php on line 30
+[19-May-2022 20:04:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Node\Expression\FilterExpression' not found in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php on line 30
+[06-Jun-2022 05:36:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Node\Expression\FilterExpression' not found in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php on line 30
+[07-Jun-2022 07:56:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Node\Expression\FilterExpression' not found in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php on line 30
+[08-Jun-2022 04:06:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Node\Expression\FilterExpression' not found in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Node/Expression/Filter/DefaultFilter.php on line 30

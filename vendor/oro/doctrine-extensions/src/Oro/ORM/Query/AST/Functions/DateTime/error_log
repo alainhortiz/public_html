@@ -1,0 +1,12 @@
+[08-Jun-2022 18:54:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Functions\AbstractPlatformAwareFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Functions/DateTime/ConvertTz.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Functions/DateTime/ConvertTz.php on line 10
+[09-Jun-2022 09:59:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Functions\AbstractPlatformAwareFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Functions/DateTime/ConvertTz.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Functions/DateTime/ConvertTz.php on line 10
+[10-Jun-2022 00:25:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Functions\AbstractPlatformAwareFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Functions/DateTime/ConvertTz.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Functions/DateTime/ConvertTz.php on line 10

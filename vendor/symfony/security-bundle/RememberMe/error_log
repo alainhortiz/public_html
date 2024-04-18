@@ -1,0 +1,76 @@
+[11-May-2022 13:50:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[11-May-2022 13:50:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[13-May-2022 22:31:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[13-May-2022 22:31:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[15-May-2022 18:47:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[15-May-2022 18:47:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[30-May-2022 21:19:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[30-May-2022 21:19:45 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[02-Jun-2022 17:59:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[03-Jun-2022 11:54:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[03-Jun-2022 11:54:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[03-Jun-2022 18:10:30 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[03-Jun-2022 19:45:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[05-Jun-2022 01:20:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[05-Jun-2022 01:20:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[11-Jun-2022 10:05:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[11-Jun-2022 10:05:57 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/FirewallAwareRememberMeHandler.php on line 27
+[13-Jun-2022 03:48:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25
+[20-Jun-2022 22:00:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/RememberMe/DecoratedRememberMeHandler.php on line 25

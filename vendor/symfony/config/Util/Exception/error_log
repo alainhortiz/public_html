@@ -1,0 +1,24 @@
+[13-May-2022 16:17:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Util\Exception\XmlParsingException' not found in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php on line 20
+[16-May-2022 16:25:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Util\Exception\XmlParsingException' not found in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php on line 20
+[02-Jun-2022 23:38:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Util\Exception\XmlParsingException' not found in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php on line 20
+[03-Jun-2022 10:06:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Util\Exception\XmlParsingException' not found in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php on line 20
+[04-Jun-2022 23:28:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Util\Exception\XmlParsingException' not found in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php on line 20
+[06-Jun-2022 04:29:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Util\Exception\XmlParsingException' not found in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Util/Exception/InvalidXmlException.php on line 20

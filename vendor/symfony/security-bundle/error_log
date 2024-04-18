@@ -1,0 +1,32 @@
+[13-May-2022 13:28:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54
+[13-May-2022 13:28:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54
+[14-May-2022 05:53:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54
+[29-May-2022 07:46:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54
+[30-May-2022 21:21:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54
+[31-May-2022 10:44:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54
+[03-Jun-2022 11:56:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54
+[11-Jun-2022 10:07:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Bundle\Bundle' not found in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-bundle/SecurityBundle.php on line 54

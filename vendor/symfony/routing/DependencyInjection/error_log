@@ -1,0 +1,32 @@
+[14-May-2022 00:21:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[14-May-2022 00:21:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[15-May-2022 03:35:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[30-May-2022 21:00:30 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[05-Jun-2022 01:07:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[05-Jun-2022 15:02:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[09-Jun-2022 05:05:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[11-Jun-2022 09:54:48 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24

@@ -1,0 +1,64 @@
+[12-May-2022 22:13:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20
+[12-May-2022 22:13:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20
+[12-May-2022 22:13:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[12-May-2022 22:13:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[13-May-2022 08:26:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20
+[13-May-2022 08:26:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[30-May-2022 19:16:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20
+[30-May-2022 19:16:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[03-Jun-2022 03:06:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20
+[03-Jun-2022 03:06:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[04-Jun-2022 23:43:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20
+[04-Jun-2022 23:43:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[05-Jun-2022 14:56:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[05-Jun-2022 18:36:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20
+[09-Jun-2022 04:51:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UuidGenerator.php on line 20
+[09-Jun-2022 08:21:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Id\AbstractIdGenerator' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/IdGenerator/UlidGenerator.php on line 20

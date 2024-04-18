@@ -1,0 +1,48 @@
+[07-Jun-2022 07:37:07 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ArrayTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ArrayTypeTest.php on line 13
+[07-Jun-2022 07:37:09 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/MoneyTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/MoneyTypeTest.php on line 13
+[07-Jun-2022 07:37:12 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ObjectTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ObjectTypeTest.php on line 13
+[07-Jun-2022 07:37:14 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/PercentTypeTest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/PercentTypeTest.php on line 14
+[08-Jun-2022 03:53:59 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ArrayTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ArrayTypeTest.php on line 13
+[08-Jun-2022 03:54:02 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/MoneyTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/MoneyTypeTest.php on line 13
+[08-Jun-2022 03:54:06 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ObjectTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ObjectTypeTest.php on line 13
+[08-Jun-2022 03:54:14 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/PercentTypeTest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/PercentTypeTest.php on line 14
+[08-Jun-2022 18:58:30 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ArrayTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ArrayTypeTest.php on line 13
+[08-Jun-2022 18:58:32 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/MoneyTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/MoneyTypeTest.php on line 13
+[08-Jun-2022 18:58:34 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ObjectTypeTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/ObjectTypeTest.php on line 13
+[08-Jun-2022 18:58:38 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/PercentTypeTest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/DBAL/Types/PercentTypeTest.php on line 14

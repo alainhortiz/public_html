@@ -1,0 +1,68 @@
+[15-May-2022 10:23:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[15-May-2022 10:23:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[15-May-2022 10:24:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24
+[15-May-2022 10:24:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24
+[21-May-2022 05:13:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[30-May-2022 22:42:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[30-May-2022 22:42:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24
+[03-Jun-2022 13:12:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[03-Jun-2022 13:13:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24
+[05-Jun-2022 02:21:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[05-Jun-2022 02:21:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24
+[05-Jun-2022 14:59:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[05-Jun-2022 15:57:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24
+[09-Jun-2022 04:56:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[09-Jun-2022 05:51:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24
+[11-Jun-2022 11:14:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Config\Definition\ConfigurationInterface' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/Configuration.php on line 18
+[11-Jun-2022 11:14:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DependencyInjection\Extension' not found in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/extra-bundle/DependencyInjection/TwigExtraExtension.php on line 24

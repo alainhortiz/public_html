@@ -1,0 +1,48 @@
+[11-May-2022 18:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[22-May-2022 03:43:00 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[27-May-2022 18:45:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[30-May-2022 18:06:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[02-Jun-2022 21:08:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[03-Jun-2022 17:10:44 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[04-Jun-2022 23:15:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[06-Jun-2022 16:04:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[09-Jun-2022 17:32:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[11-Jun-2022 09:06:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[18-Jun-2022 08:53:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[18-Jun-2022 13:41:48 UTC] PHP Fatal error:  Uncaught Error: Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8

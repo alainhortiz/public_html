@@ -1,0 +1,260 @@
+[11-May-2022 13:52:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[11-May-2022 13:52:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[11-May-2022 13:52:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[11-May-2022 13:52:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[11-May-2022 13:52:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[11-May-2022 13:52:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[11-May-2022 13:52:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[11-May-2022 13:53:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[15-May-2022 06:32:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[15-May-2022 06:32:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[15-May-2022 06:32:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[15-May-2022 06:32:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[15-May-2022 06:32:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[15-May-2022 06:32:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[15-May-2022 06:32:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[15-May-2022 06:32:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[15-May-2022 06:32:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[15-May-2022 06:32:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[15-May-2022 06:32:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[15-May-2022 06:32:45 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[15-May-2022 06:32:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[15-May-2022 06:32:55 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[15-May-2022 06:32:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[15-May-2022 06:32:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[30-May-2022 21:34:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[30-May-2022 21:34:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[30-May-2022 21:34:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[30-May-2022 21:35:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[30-May-2022 21:35:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[30-May-2022 21:35:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[30-May-2022 21:35:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[30-May-2022 21:35:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[03-Jun-2022 12:05:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[03-Jun-2022 12:05:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[03-Jun-2022 12:05:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[03-Jun-2022 12:05:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[03-Jun-2022 12:05:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[03-Jun-2022 12:05:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[03-Jun-2022 12:05:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[03-Jun-2022 12:05:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[05-Jun-2022 01:32:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[05-Jun-2022 01:32:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[05-Jun-2022 01:32:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[05-Jun-2022 01:32:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[05-Jun-2022 01:32:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[05-Jun-2022 01:32:28 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[05-Jun-2022 01:32:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[05-Jun-2022 01:32:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[06-Jun-2022 21:06:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[07-Jun-2022 01:27:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[07-Jun-2022 12:19:15 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[07-Jun-2022 13:09:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[07-Jun-2022 22:25:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[08-Jun-2022 01:56:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[08-Jun-2022 13:01:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[09-Jun-2022 02:30:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[11-Jun-2022 10:16:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/ChainUserProvider.php on line 25
+[11-Jun-2022 10:16:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Security\Core\User\User' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUser.php on line 22
+[11-Jun-2022 10:16:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24
+[11-Jun-2022 10:16:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserProvider.php on line 25
+[11-Jun-2022 10:17:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/LegacyPasswordAuthenticatedUserInterface.php on line 22
+[11-Jun-2022 10:17:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserProviderInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/MissingUserProvider.php on line 22
+[11-Jun-2022 10:17:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/User.php on line 23
+[11-Jun-2022 10:17:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\User\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/UserChecker.php on line 14
+[11-Jun-2022 15:56:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\User\UserCheckerInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/User/InMemoryUserChecker.php on line 24

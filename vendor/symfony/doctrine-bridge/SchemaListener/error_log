@@ -1,0 +1,128 @@
+[11-May-2022 14:43:30 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php on line 25
+[11-May-2022 14:43:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php on line 27
+[11-May-2022 14:43:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[11-May-2022 14:43:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[12-May-2022 06:21:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[12-May-2022 06:21:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[12-May-2022 15:38:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php on line 25
+[12-May-2022 15:38:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php on line 27
+[12-May-2022 15:38:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[12-May-2022 15:39:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[12-May-2022 21:35:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php on line 25
+[12-May-2022 21:35:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php on line 27
+[14-May-2022 02:31:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[14-May-2022 02:31:33 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[30-May-2022 19:18:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php on line 25
+[30-May-2022 19:18:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php on line 27
+[30-May-2022 19:19:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[30-May-2022 19:19:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[03-Jun-2022 03:26:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php on line 25
+[03-Jun-2022 03:27:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php on line 27
+[03-Jun-2022 03:27:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[03-Jun-2022 03:28:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[03-Jun-2022 17:35:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php on line 27
+[04-Jun-2022 22:54:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php on line 25
+[04-Jun-2022 23:44:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/DoctrineDbalCacheAdapterSchemaSubscriber.php on line 25
+[04-Jun-2022 23:44:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/MessengerTransportDoctrineSchemaSubscriber.php on line 27
+[04-Jun-2022 23:44:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[04-Jun-2022 23:44:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[05-Jun-2022 15:02:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[05-Jun-2022 20:32:57 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26
+[09-Jun-2022 05:04:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/PdoCacheAdapterDoctrineSchemaSubscriber.php on line 26
+[09-Jun-2022 10:19:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\EventSubscriber' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/SchemaListener/RememberMeTokenProviderDoctrineSchemaSubscriber.php on line 26

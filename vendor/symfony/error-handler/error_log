@@ -1,0 +1,24 @@
+[14-May-2022 05:35:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Psr\Log\AbstractLogger' not found in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php on line 21
+[29-May-2022 07:11:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Psr\Log\AbstractLogger' not found in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php on line 21
+[30-May-2022 19:22:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Psr\Log\AbstractLogger' not found in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php on line 21
+[31-May-2022 16:25:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Psr\Log\AbstractLogger' not found in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php on line 21
+[03-Jun-2022 03:52:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Psr\Log\AbstractLogger' not found in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php on line 21
+[11-Jun-2022 09:24:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Psr\Log\AbstractLogger' not found in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/BufferingLogger.php on line 21

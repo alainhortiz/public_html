@@ -1,0 +1,264 @@
+[14-May-2022 05:49:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[14-May-2022 05:49:08 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\AccessInterceptorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php on line 14
+[14-May-2022 05:49:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php on line 12
+[14-May-2022 05:49:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[14-May-2022 05:49:14 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php on line 14
+[14-May-2022 05:49:15 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[14-May-2022 05:49:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php on line 10
+[14-May-2022 05:49:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php on line 12
+[14-May-2022 05:49:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[14-May-2022 05:49:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php on line 10
+[25-May-2022 08:51:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php on line 14
+[25-May-2022 19:06:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[26-May-2022 02:00:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[26-May-2022 09:38:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[28-May-2022 00:28:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php on line 12
+[29-May-2022 03:02:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[31-May-2022 15:28:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[01-Jun-2022 03:32:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[03-Jun-2022 08:44:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[03-Jun-2022 12:00:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[04-Jun-2022 22:48:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[04-Jun-2022 22:48:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\AccessInterceptorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php on line 14
+[04-Jun-2022 22:48:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php on line 12
+[04-Jun-2022 22:49:00 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[04-Jun-2022 22:49:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php on line 14
+[04-Jun-2022 22:49:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[04-Jun-2022 22:49:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php on line 10
+[04-Jun-2022 22:49:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php on line 12
+[04-Jun-2022 22:49:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[04-Jun-2022 22:49:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php on line 10
+[06-Jun-2022 03:49:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[06-Jun-2022 03:49:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\AccessInterceptorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php on line 14
+[06-Jun-2022 03:49:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php on line 12
+[06-Jun-2022 03:49:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[06-Jun-2022 03:49:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php on line 14
+[06-Jun-2022 03:50:00 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[06-Jun-2022 03:50:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php on line 10
+[06-Jun-2022 03:50:05 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php on line 12
+[06-Jun-2022 03:50:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[06-Jun-2022 03:50:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php on line 10
+[06-Jun-2022 12:47:08 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[06-Jun-2022 21:13:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[07-Jun-2022 07:15:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[07-Jun-2022 07:15:03 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\AccessInterceptorInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorValueHolderInterface.php on line 14
+[07-Jun-2022 07:15:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/FallbackValueHolderInterface.php on line 12
+[07-Jun-2022 07:15:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[07-Jun-2022 07:15:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/LazyLoadingInterface.php on line 14
+[07-Jun-2022 07:15:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[07-Jun-2022 07:15:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/RemoteObjectInterface.php on line 10
+[07-Jun-2022 07:15:28 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/SmartReferenceInterface.php on line 12
+[07-Jun-2022 07:15:30 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[07-Jun-2022 07:15:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/VirtualProxyInterface.php on line 10
+[08-Jun-2022 17:46:14 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[09-Jun-2022 03:23:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[12-Jun-2022 00:51:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[13-Jun-2022 23:30:15 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[14-Jun-2022 01:08:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[15-Jun-2022 05:42:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[19-Jun-2022 03:20:05 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[19-Jun-2022 12:10:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[20-Jun-2022 05:49:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[20-Jun-2022 18:15:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10
+[21-Jun-2022 08:33:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\LazyLoadingInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/GhostObjectInterface.php on line 14
+[24-Jun-2022 08:33:45 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/ValueHolderInterface.php on line 12
+[26-Jun-2022 08:15:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/AccessInterceptorInterface.php on line 14
+[28-Jun-2022 05:34:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Proxy\ProxyInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Proxy/NullObjectInterface.php on line 10

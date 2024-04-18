@@ -1,0 +1,116 @@
+[19-May-2022 15:45:09 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php on line 18
+[19-May-2022 15:45:12 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php on line 18
+[19-May-2022 15:45:15 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php on line 18
+[19-May-2022 15:45:18 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php on line 18
+[19-May-2022 15:45:21 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php on line 21
+[19-May-2022 15:45:25 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php on line 18
+[30-May-2022 00:40:46 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php on line 18
+[03-Jun-2022 18:06:19 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php on line 18
+[07-Jun-2022 07:20:48 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php on line 18
+[07-Jun-2022 07:20:50 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php on line 18
+[07-Jun-2022 07:20:52 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php on line 18
+[07-Jun-2022 07:20:54 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php on line 18
+[07-Jun-2022 07:20:57 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php on line 21
+[07-Jun-2022 07:21:00 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php on line 18
+[08-Jun-2022 03:26:07 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php on line 18
+[08-Jun-2022 03:26:12 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php on line 18
+[08-Jun-2022 03:26:15 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php on line 18
+[08-Jun-2022 03:26:24 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php on line 18
+[08-Jun-2022 03:26:27 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php on line 21
+[08-Jun-2022 03:26:30 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php on line 18
+[08-Jun-2022 18:34:06 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php on line 18
+[08-Jun-2022 18:34:12 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php on line 18
+[08-Jun-2022 18:34:22 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php on line 18
+[08-Jun-2022 18:34:29 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php on line 18
+[08-Jun-2022 18:34:36 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php on line 21
+[08-Jun-2022 18:34:38 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php on line 18
+[12-Jun-2022 06:22:43 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MagicMethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php on line 18
+[12-Jun-2022 07:57:12 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php on line 18
+[20-Jun-2022 06:35:10 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Generator\MethodGenerator' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/StaticProxyConstructor.php on line 18

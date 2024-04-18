@@ -1,0 +1,24 @@
+[04-Jun-2022 22:09:38 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/DeprecationTest.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/DeprecationTest.php on line 21
+[04-Jun-2022 22:09:42 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/VerifyDeprecationsTest.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/VerifyDeprecationsTest.php on line 12
+[06-Jun-2022 03:06:55 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/DeprecationTest.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/DeprecationTest.php on line 21
+[06-Jun-2022 03:07:00 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/VerifyDeprecationsTest.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/VerifyDeprecationsTest.php on line 12
+[07-Jun-2022 06:39:58 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/DeprecationTest.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/DeprecationTest.php on line 21
+[07-Jun-2022 06:40:03 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/VerifyDeprecationsTest.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/deprecations/tests/Doctrine/Deprecations/VerifyDeprecationsTest.php on line 12

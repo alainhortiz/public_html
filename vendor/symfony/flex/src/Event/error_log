@@ -1,0 +1,20 @@
+[14-May-2022 05:41:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Script\Event' not found in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php on line 17
+[03-Jun-2022 04:57:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Script\Event' not found in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php on line 17
+[04-Jun-2022 23:52:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Script\Event' not found in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php on line 17
+[06-Jun-2022 04:34:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Script\Event' not found in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php on line 17
+[06-Jun-2022 19:22:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Script\Event' not found in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/flex/src/Event/UpdateEvent.php on line 17

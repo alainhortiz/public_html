@@ -1,0 +1,68 @@
+[15-May-2022 03:51:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[15-May-2022 03:51:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23
+[15-May-2022 18:48:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[15-May-2022 18:48:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[15-May-2022 18:48:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23
+[15-May-2022 18:48:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23
+[30-May-2022 21:22:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[30-May-2022 21:22:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23
+[03-Jun-2022 11:57:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[03-Jun-2022 11:57:08 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23
+[03-Jun-2022 12:15:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23
+[05-Jun-2022 01:22:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[05-Jun-2022 01:22:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23
+[05-Jun-2022 10:24:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[09-Jun-2022 00:32:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[11-Jun-2022 10:07:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Security\Core\Authentication\trigger_deprecation() in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationProviderManager.php on line 27
+[11-Jun-2022 10:07:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolverInterface' not found in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/security-core/Authentication/AuthenticationTrustResolver.php on line 23

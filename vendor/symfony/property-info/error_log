@@ -1,0 +1,92 @@
+[12-May-2022 23:38:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php on line 23
+[12-May-2022 23:38:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[12-May-2022 23:38:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21
+[14-May-2022 05:48:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[14-May-2022 05:48:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21
+[29-May-2022 07:42:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php on line 23
+[29-May-2022 07:42:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[29-May-2022 07:42:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21
+[30-May-2022 20:57:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php on line 23
+[30-May-2022 20:57:44 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[30-May-2022 20:57:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21
+[31-May-2022 18:51:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21
+[01-Jun-2022 23:14:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[02-Jun-2022 15:52:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php on line 23
+[03-Jun-2022 11:37:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php on line 23
+[03-Jun-2022 11:38:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[03-Jun-2022 11:38:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21
+[11-Jun-2022 02:47:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php on line 23
+[11-Jun-2022 02:48:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[11-Jun-2022 02:48:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21
+[11-Jun-2022 09:52:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoCacheExtractor.php on line 23
+[11-Jun-2022 09:52:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyInfoExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractor.php on line 21
+[11-Jun-2022 09:52:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyInfo\PropertyTypeExtractorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-info/PropertyInfoExtractorInterface.php on line 21

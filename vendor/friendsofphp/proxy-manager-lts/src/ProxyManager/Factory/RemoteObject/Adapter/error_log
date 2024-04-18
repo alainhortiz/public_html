@@ -1,0 +1,64 @@
+[19-May-2022 16:16:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Factory\RemoteObject\AdapterInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php on line 15
+[19-May-2022 16:16:42 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php on line 10
+[19-May-2022 16:16:44 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php on line 10
+[19-May-2022 16:16:47 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php on line 10
+[07-Jun-2022 07:14:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Factory\RemoteObject\AdapterInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php on line 15
+[07-Jun-2022 07:14:16 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php on line 10
+[07-Jun-2022 07:14:18 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php on line 10
+[07-Jun-2022 07:14:20 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php on line 10
+[08-Jun-2022 03:14:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Factory\RemoteObject\AdapterInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php on line 15
+[08-Jun-2022 03:14:53 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php on line 10
+[08-Jun-2022 03:15:13 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php on line 10
+[08-Jun-2022 03:15:17 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php on line 10
+[08-Jun-2022 18:24:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'ProxyManager\Factory\RemoteObject\AdapterInterface' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php on line 15
+[08-Jun-2022 18:24:18 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php on line 10
+[08-Jun-2022 18:24:27 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php on line 10
+[08-Jun-2022 18:24:35 UTC] PHP Fatal error:  Uncaught Error: Class 'ProxyManager\Factory\RemoteObject\Adapter\BaseAdapter' not found in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/friendsofphp/proxy-manager-lts/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php on line 10

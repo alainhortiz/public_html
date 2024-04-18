@@ -1,0 +1,228 @@
+[11-May-2022 13:35:17 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php on line 20
+[11-May-2022 13:35:42 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php on line 19
+[11-May-2022 13:35:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php on line 21
+[11-May-2022 13:36:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php on line 21
+[11-May-2022 13:36:24 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php on line 24
+[11-May-2022 13:36:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24
+[11-May-2022 13:36:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php on line 19
+[11-May-2022 13:37:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php on line 22
+[11-May-2022 21:37:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php on line 20
+[11-May-2022 21:37:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php on line 20
+[13-May-2022 08:22:00 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php on line 19
+[13-May-2022 08:22:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php on line 19
+[13-May-2022 08:22:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php on line 21
+[13-May-2022 08:22:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php on line 21
+[13-May-2022 08:22:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php on line 21
+[13-May-2022 08:22:08 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php on line 24
+[13-May-2022 08:22:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php on line 24
+[13-May-2022 08:22:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24
+[13-May-2022 08:22:14 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24
+[13-May-2022 08:22:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php on line 19
+[13-May-2022 08:22:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php on line 19
+[13-May-2022 08:22:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php on line 22
+[13-May-2022 08:22:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php on line 22
+[14-May-2022 03:39:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php on line 21
+[30-May-2022 20:32:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php on line 20
+[30-May-2022 20:32:28 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php on line 19
+[30-May-2022 20:32:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php on line 21
+[30-May-2022 20:32:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php on line 21
+[30-May-2022 20:32:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php on line 24
+[30-May-2022 20:32:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24
+[30-May-2022 20:32:54 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php on line 19
+[30-May-2022 20:32:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php on line 22
+[03-Jun-2022 04:21:42 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php on line 20
+[03-Jun-2022 11:18:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php on line 20
+[03-Jun-2022 11:18:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php on line 19
+[03-Jun-2022 11:18:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php on line 21
+[03-Jun-2022 11:19:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php on line 21
+[03-Jun-2022 11:19:14 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php on line 24
+[03-Jun-2022 11:19:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24
+[04-Jun-2022 02:27:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php on line 19
+[04-Jun-2022 06:40:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php on line 21
+[04-Jun-2022 10:48:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php on line 24
+[04-Jun-2022 19:00:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php on line 21
+[05-Jun-2022 00:59:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/AccessException.php on line 20
+[05-Jun-2022 00:59:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidArgumentException.php on line 19
+[05-Jun-2022 00:59:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/InvalidOptionsException.php on line 21
+[05-Jun-2022 00:59:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/MissingOptionsException.php on line 21
+[05-Jun-2022 00:59:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoConfigurationException.php on line 24
+[05-Jun-2022 00:59:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24
+[05-Jun-2022 00:59:55 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php on line 19
+[05-Jun-2022 01:00:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php on line 22
+[05-Jun-2022 02:20:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php on line 22
+[05-Jun-2022 04:03:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php on line 19
+[05-Jun-2022 23:54:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24
+[08-Jun-2022 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\OptionsResolver\Exception\InvalidArgumentException' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/UndefinedOptionsException.php on line 22
+[08-Jun-2022 18:26:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/OptionDefinitionException.php on line 19
+[09-Jun-2022 13:46:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\OptionsResolver\Exception\ExceptionInterface' not found in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/options-resolver/Exception/NoSuchOptionException.php on line 24

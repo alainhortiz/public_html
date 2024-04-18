@@ -1,0 +1,48 @@
+[19-May-2022 16:13:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Migrations\Finder\MigrationFinder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php on line 22
+[19-May-2022 16:13:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php on line 13
+[19-May-2022 16:13:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php on line 19
+[06-Jun-2022 03:16:14 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Migrations\Finder\MigrationFinder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php on line 22
+[06-Jun-2022 03:16:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php on line 13
+[06-Jun-2022 03:16:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php on line 19
+[07-Jun-2022 06:50:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Migrations\Finder\MigrationFinder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php on line 22
+[07-Jun-2022 06:50:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php on line 13
+[07-Jun-2022 06:50:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php on line 19
+[08-Jun-2022 02:28:48 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Migrations\Finder\MigrationFinder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/Finder.php on line 22
+[08-Jun-2022 02:28:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/GlobFinder.php on line 13
+[08-Jun-2022 02:28:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\Migrations\Finder\Finder' not found in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/migrations/lib/Doctrine/Migrations/Finder/RecursiveRegexFinder.php on line 19

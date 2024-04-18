@@ -1,0 +1,32 @@
+[13-May-2022 03:33:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24
+[13-May-2022 03:33:10 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24
+[29-May-2022 07:54:22 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24
+[30-May-2022 22:06:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24
+[03-Jun-2022 12:31:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24
+[03-Jun-2022 15:12:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24
+[11-Jun-2022 03:03:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24
+[11-Jun-2022 10:41:11 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/stopwatch/Stopwatch.php on line 24

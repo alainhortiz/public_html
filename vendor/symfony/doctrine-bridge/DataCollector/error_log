@@ -1,0 +1,28 @@
+[12-May-2022 22:12:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DataCollector\DataCollector' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php on line 30
+[12-May-2022 22:12:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DataCollector\DataCollector' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php on line 30
+[30-May-2022 19:14:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DataCollector\DataCollector' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php on line 30
+[03-Jun-2022 02:37:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DataCollector\DataCollector' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php on line 30
+[04-Jun-2022 23:40:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DataCollector\DataCollector' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php on line 30
+[05-Jun-2022 23:44:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DataCollector\DataCollector' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php on line 30
+[09-Jun-2022 13:36:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\DataCollector\DataCollector' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/DataCollector/DoctrineDataCollector.php on line 30

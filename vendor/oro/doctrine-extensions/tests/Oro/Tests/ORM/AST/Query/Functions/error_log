@@ -1,0 +1,12 @@
+[08-Jun-2022 18:59:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\Tests\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/ORM/AST/Query/Functions/FunctionsTest.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/ORM/AST/Query/Functions/FunctionsTest.php on line 15
+[09-Jun-2022 10:03:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\Tests\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/ORM/AST/Query/Functions/FunctionsTest.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/ORM/AST/Query/Functions/FunctionsTest.php on line 15
+[10-Jun-2022 00:29:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\Tests\TestCase' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/ORM/AST/Query/Functions/FunctionsTest.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/tests/Oro/Tests/ORM/AST/Query/Functions/FunctionsTest.php on line 15

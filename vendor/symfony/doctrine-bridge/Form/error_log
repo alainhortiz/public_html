@@ -1,0 +1,48 @@
+[12-May-2022 22:13:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractExtension' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php on line 18
+[12-May-2022 22:13:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractExtension' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php on line 18
+[12-May-2022 22:13:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Form\FormTypeGuesserInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php on line 25
+[12-May-2022 22:13:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Form\FormTypeGuesserInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php on line 25
+[30-May-2022 19:15:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractExtension' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php on line 18
+[30-May-2022 19:15:55 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Form\FormTypeGuesserInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php on line 25
+[03-Jun-2022 02:58:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractExtension' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php on line 18
+[03-Jun-2022 02:58:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Form\FormTypeGuesserInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php on line 25
+[03-Jun-2022 04:18:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractExtension' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php on line 18
+[03-Jun-2022 23:55:06 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Form\FormTypeGuesserInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php on line 25
+[04-Jun-2022 23:42:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractExtension' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmExtension.php on line 18
+[04-Jun-2022 23:42:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\Form\FormTypeGuesserInterface' not found in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/doctrine-bridge/Form/DoctrineOrmTypeGuesser.php on line 25

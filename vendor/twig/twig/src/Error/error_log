@@ -1,0 +1,108 @@
+[15-May-2022 10:25:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php on line 19
+[15-May-2022 10:25:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php on line 19
+[15-May-2022 10:25:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[15-May-2022 10:25:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[15-May-2022 10:25:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[15-May-2022 10:25:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[15-May-2022 13:57:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php on line 19
+[15-May-2022 13:57:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[15-May-2022 13:57:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[25-May-2022 11:57:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[27-May-2022 18:40:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[03-Jun-2022 13:15:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php on line 19
+[03-Jun-2022 13:15:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[03-Jun-2022 13:16:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[04-Jun-2022 12:15:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[05-Jun-2022 02:22:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php on line 19
+[05-Jun-2022 02:22:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[05-Jun-2022 02:22:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[06-Jun-2022 05:30:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php on line 19
+[06-Jun-2022 05:30:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[06-Jun-2022 05:30:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[07-Jun-2022 09:08:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/RuntimeError.php on line 20
+[07-Jun-2022 17:24:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/LoaderError.php on line 19
+[13-Jun-2022 12:03:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[16-Jun-2022 05:33:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[21-Jun-2022 19:18:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20
+[28-Jun-2022 10:07:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Twig\Error\Error' not found in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/twig/twig/src/Error/SyntaxError.php on line 20

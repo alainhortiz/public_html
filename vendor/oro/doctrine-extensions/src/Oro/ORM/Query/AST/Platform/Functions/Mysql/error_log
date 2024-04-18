@@ -1,0 +1,208 @@
+[09-Jun-2022 10:00:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Cast.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Cast.php on line 11
+[09-Jun-2022 10:00:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Ceil.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Ceil.php on line 10
+[09-Jun-2022 10:00:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConcatWs.php on line 11
+[09-Jun-2022 10:01:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConvertTz.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConvertTz.php on line 11
+[09-Jun-2022 10:01:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Date.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Date.php on line 11
+[09-Jun-2022 10:01:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/DateFormat.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/DateFormat.php on line 11
+[09-Jun-2022 10:01:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Day.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Day.php on line 11
+[09-Jun-2022 10:01:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofmonth.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofmonth.php on line 11
+[09-Jun-2022 10:01:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofweek.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofweek.php on line 11
+[09-Jun-2022 10:01:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofyear.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofyear.php on line 11
+[09-Jun-2022 10:01:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/GroupConcat.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/GroupConcat.php on line 11
+[09-Jun-2022 10:01:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Hour.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Hour.php on line 11
+[09-Jun-2022 10:01:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Md5.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Md5.php on line 11
+[09-Jun-2022 10:01:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Minute.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Minute.php on line 11
+[09-Jun-2022 10:01:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Month.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Month.php on line 11
+[09-Jun-2022 10:01:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Pow.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Pow.php on line 11
+[09-Jun-2022 10:01:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Quarter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Quarter.php on line 11
+[09-Jun-2022 10:01:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Replace.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Replace.php on line 10
+[09-Jun-2022 10:01:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Round.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Round.php on line 10
+[09-Jun-2022 10:01:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Second.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Second.php on line 11
+[09-Jun-2022 10:01:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Sign.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Sign.php on line 11
+[09-Jun-2022 10:01:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Time.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Time.php on line 11
+[09-Jun-2022 10:01:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestamp.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestamp.php on line 11
+[09-Jun-2022 10:01:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestampdiff.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestampdiff.php on line 11
+[09-Jun-2022 10:02:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Week.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Week.php on line 11
+[09-Jun-2022 10:02:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Year.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Year.php on line 11
+[10-Jun-2022 00:26:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Cast.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Cast.php on line 11
+[10-Jun-2022 00:26:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Ceil.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Ceil.php on line 10
+[10-Jun-2022 00:26:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConcatWs.php on line 11
+[10-Jun-2022 00:26:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConvertTz.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/ConvertTz.php on line 11
+[10-Jun-2022 00:26:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Date.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Date.php on line 11
+[10-Jun-2022 00:26:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/DateFormat.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/DateFormat.php on line 11
+[10-Jun-2022 00:26:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Day.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Day.php on line 11
+[10-Jun-2022 00:26:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofmonth.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofmonth.php on line 11
+[10-Jun-2022 00:26:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofweek.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofweek.php on line 11
+[10-Jun-2022 00:26:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofyear.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Dayofyear.php on line 11
+[10-Jun-2022 00:26:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/GroupConcat.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/GroupConcat.php on line 11
+[10-Jun-2022 00:26:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Hour.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Hour.php on line 11
+[10-Jun-2022 00:27:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Md5.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Md5.php on line 11
+[10-Jun-2022 00:27:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Minute.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Minute.php on line 11
+[10-Jun-2022 00:27:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Month.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Month.php on line 11
+[10-Jun-2022 00:27:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Pow.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Pow.php on line 11
+[10-Jun-2022 00:27:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Quarter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Quarter.php on line 11
+[10-Jun-2022 00:27:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Replace.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Replace.php on line 10
+[10-Jun-2022 00:27:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Round.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Round.php on line 10
+[10-Jun-2022 00:27:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Second.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Second.php on line 11
+[10-Jun-2022 00:27:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Sign.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Sign.php on line 11
+[10-Jun-2022 00:27:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Time.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Time.php on line 11
+[10-Jun-2022 00:27:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestamp.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestamp.php on line 11
+[10-Jun-2022 00:27:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestampdiff.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Timestampdiff.php on line 11
+[10-Jun-2022 00:27:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Week.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Week.php on line 11
+[10-Jun-2022 00:27:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Oro\ORM\Query\AST\Platform\Functions\PlatformFunctionNode' not found in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Year.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/oro/doctrine-extensions/src/Oro/ORM/Query/AST/Platform/Functions/Mysql/Year.php on line 11

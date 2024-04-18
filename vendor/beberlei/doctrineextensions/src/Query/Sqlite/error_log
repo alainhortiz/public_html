@@ -1,0 +1,292 @@
+[04-Jun-2022 21:37:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/AbstractStrfTime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/AbstractStrfTime.php on line 11
+[04-Jun-2022 21:37:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php on line 11
+[04-Jun-2022 21:37:43 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\AbstractStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Date.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Date.php on line 8
+[04-Jun-2022 21:37:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/DateFormat.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/DateFormat.php on line 15
+[04-Jun-2022 21:37:48 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Day.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Day.php on line 8
+[04-Jun-2022 21:37:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Greatest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Greatest.php on line 14
+[04-Jun-2022 21:37:53 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Hour.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Hour.php on line 8
+[04-Jun-2022 21:37:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php on line 11
+[04-Jun-2022 21:37:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php on line 11
+[04-Jun-2022 21:38:01 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/JulianDay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/JulianDay.php on line 8
+[04-Jun-2022 21:38:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php on line 13
+[04-Jun-2022 21:38:07 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Minute.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Minute.php on line 8
+[04-Jun-2022 21:38:09 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Month.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Month.php on line 8
+[04-Jun-2022 21:38:11 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\AbstractStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php on line 5
+[04-Jun-2022 21:38:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Random.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Random.php on line 8
+[04-Jun-2022 21:38:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Replace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Replace.php on line 11
+[04-Jun-2022 21:38:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Round.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Round.php on line 11
+[04-Jun-2022 21:38:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Second.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Second.php on line 5
+[04-Jun-2022 21:38:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/StrfTime.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/StrfTime.php on line 13
+[04-Jun-2022 21:38:31 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php on line 10
+[04-Jun-2022 21:38:35 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/WeekDay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/WeekDay.php on line 8
+[04-Jun-2022 21:38:37 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php on line 8
+[06-Jun-2022 02:30:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/AbstractStrfTime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/AbstractStrfTime.php on line 11
+[06-Jun-2022 02:30:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php on line 11
+[06-Jun-2022 02:30:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\AbstractStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Date.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Date.php on line 8
+[06-Jun-2022 02:30:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/DateFormat.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/DateFormat.php on line 15
+[06-Jun-2022 02:30:33 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Day.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Day.php on line 8
+[06-Jun-2022 02:30:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Greatest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Greatest.php on line 14
+[06-Jun-2022 02:30:40 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Hour.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Hour.php on line 8
+[06-Jun-2022 02:30:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php on line 11
+[06-Jun-2022 02:30:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php on line 11
+[06-Jun-2022 02:30:53 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/JulianDay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/JulianDay.php on line 8
+[06-Jun-2022 02:30:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php on line 13
+[06-Jun-2022 02:31:00 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Minute.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Minute.php on line 8
+[06-Jun-2022 02:31:02 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Month.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Month.php on line 8
+[06-Jun-2022 02:31:05 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\AbstractStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php on line 5
+[06-Jun-2022 02:31:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Random.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Random.php on line 8
+[06-Jun-2022 02:31:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Replace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Replace.php on line 11
+[06-Jun-2022 02:31:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Round.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Round.php on line 11
+[06-Jun-2022 02:31:21 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Second.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Second.php on line 5
+[06-Jun-2022 02:31:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/StrfTime.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/StrfTime.php on line 13
+[06-Jun-2022 02:31:25 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php on line 10
+[06-Jun-2022 02:31:28 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/WeekDay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/WeekDay.php on line 8
+[06-Jun-2022 02:31:30 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php on line 8
+[07-Jun-2022 06:19:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/AbstractStrfTime.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/AbstractStrfTime.php on line 11
+[07-Jun-2022 06:20:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php on line 11
+[07-Jun-2022 06:20:07 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\AbstractStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Date.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Date.php on line 8
+[07-Jun-2022 06:20:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/DateFormat.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/DateFormat.php on line 15
+[07-Jun-2022 06:20:17 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Day.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Day.php on line 8
+[07-Jun-2022 06:20:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Greatest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Greatest.php on line 14
+[07-Jun-2022 06:20:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Hour.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Hour.php on line 8
+[07-Jun-2022 06:20:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php on line 11
+[07-Jun-2022 06:20:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php on line 11
+[07-Jun-2022 06:20:43 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/JulianDay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/JulianDay.php on line 8
+[07-Jun-2022 06:20:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php on line 13
+[07-Jun-2022 06:20:52 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Minute.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Minute.php on line 8
+[07-Jun-2022 06:20:55 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Month.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Month.php on line 8
+[07-Jun-2022 06:21:01 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\AbstractStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php on line 5
+[07-Jun-2022 06:21:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Random.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Random.php on line 8
+[07-Jun-2022 06:21:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Replace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Replace.php on line 11
+[07-Jun-2022 06:21:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Round.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Round.php on line 11
+[07-Jun-2022 06:21:19 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Second.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Second.php on line 5
+[07-Jun-2022 06:21:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/StrfTime.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/StrfTime.php on line 13
+[07-Jun-2022 06:21:30 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php on line 10
+[07-Jun-2022 06:21:34 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/WeekDay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/WeekDay.php on line 8
+[07-Jun-2022 06:21:42 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php on line 8
+[19-Jun-2022 00:18:09 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\AbstractStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/NumberFromStrfTime.php on line 5
+[20-Jun-2022 03:03:58 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Week.php on line 10
+[20-Jun-2022 04:52:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Least.php on line 13
+[20-Jun-2022 12:54:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/ConcatWs.php on line 11
+[23-Jun-2022 09:13:35 UTC] PHP Fatal error:  Uncaught Error: Class 'DoctrineExtensions\Query\Sqlite\NumberFromStrfTime' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/Year.php on line 8
+[23-Jun-2022 10:08:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfElse.php on line 11
+[26-Jun-2022 14:52:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Doctrine\ORM\Query\AST\Functions\FunctionNode' not found in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/beberlei/doctrineextensions/src/Query/Sqlite/IfNull.php on line 11

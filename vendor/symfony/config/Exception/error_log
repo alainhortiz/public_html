@@ -1,0 +1,24 @@
+[11-May-2022 17:47:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Exception\LoaderLoadException' not found in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php on line 19
+[30-May-2022 18:24:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Exception\LoaderLoadException' not found in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php on line 19
+[02-Jun-2022 23:21:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Exception\LoaderLoadException' not found in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php on line 19
+[04-Jun-2022 00:48:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Exception\LoaderLoadException' not found in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php on line 19
+[04-Jun-2022 23:27:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Exception\LoaderLoadException' not found in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php on line 19
+[11-Jun-2022 09:17:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Config\Exception\LoaderLoadException' not found in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/config/Exception/FileLoaderImportCircularReferenceException.php on line 19

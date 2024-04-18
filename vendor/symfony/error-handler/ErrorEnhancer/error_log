@@ -1,0 +1,108 @@
+[11-May-2022 15:27:55 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[11-May-2022 15:28:00 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[11-May-2022 15:28:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[12-May-2022 06:28:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[12-May-2022 06:28:19 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[12-May-2022 06:28:37 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[12-May-2022 06:28:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[12-May-2022 06:28:44 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[12-May-2022 06:28:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[14-May-2022 02:34:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[14-May-2022 02:34:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[14-May-2022 02:34:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[14-May-2022 02:34:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[14-May-2022 02:34:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[14-May-2022 02:34:23 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[30-May-2022 19:23:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[30-May-2022 19:23:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[30-May-2022 19:23:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[03-Jun-2022 03:57:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[03-Jun-2022 03:57:59 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[03-Jun-2022 03:58:27 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[04-Jun-2022 23:46:29 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[04-Jun-2022 23:46:31 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[04-Jun-2022 23:46:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[07-Jun-2022 15:41:32 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[08-Jun-2022 16:42:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[09-Jun-2022 01:34:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface' not found in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20

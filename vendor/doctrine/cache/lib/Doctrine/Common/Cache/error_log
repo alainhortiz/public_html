@@ -1,0 +1,32 @@
+[19-May-2022 16:08:47 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\Cache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php on line 13
+[19-May-2022 16:08:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\MultiGetCache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php on line 10
+[06-Jun-2022 02:33:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\Cache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php on line 13
+[06-Jun-2022 02:34:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\MultiGetCache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php on line 10
+[07-Jun-2022 06:23:40 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\Cache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php on line 13
+[07-Jun-2022 06:23:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\MultiGetCache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php on line 10
+[08-Jun-2022 02:02:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\Cache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php on line 13
+[08-Jun-2022 02:02:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'Doctrine\Common\Cache\MultiGetCache' not found in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php on line 10

@@ -1,0 +1,80 @@
+[12-May-2022 23:35:04 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyAccessorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php on line 39
+[12-May-2022 23:37:43 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php on line 25
+[12-May-2022 23:37:52 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathIteratorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php on line 22
+[28-May-2022 07:52:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyAccessorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php on line 39
+[28-May-2022 13:19:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php on line 25
+[29-May-2022 07:40:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyAccessorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php on line 39
+[29-May-2022 07:40:48 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php on line 25
+[29-May-2022 07:41:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathIteratorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php on line 22
+[30-May-2022 18:39:30 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathIteratorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php on line 22
+[30-May-2022 20:52:44 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyAccessorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php on line 39
+[30-May-2022 20:53:18 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php on line 25
+[30-May-2022 20:53:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathIteratorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php on line 22
+[03-Jun-2022 11:34:58 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyAccessorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php on line 39
+[03-Jun-2022 11:35:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php on line 25
+[03-Jun-2022 11:35:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathIteratorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php on line 22
+[11-Jun-2022 02:46:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyAccessorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php on line 39
+[11-Jun-2022 02:47:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathIteratorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php on line 22
+[11-Jun-2022 09:49:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyAccessorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyAccessor.php on line 39
+[11-Jun-2022 09:49:42 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPath.php on line 25
+[11-Jun-2022 09:49:44 UTC] PHP Fatal error:  Uncaught Error: Interface 'Symfony\Component\PropertyAccess\PropertyPathIteratorInterface' not found in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/camilopic/public_html/vendor/symfony/property-access/PropertyPathIterator.php on line 22
