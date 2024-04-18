@@ -50,3 +50,6 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Configuraciones de base de datos
+/.env
