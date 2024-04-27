@@ -4,7 +4,6 @@ namespace Symfony\Config\Doctrine\Dbal;
 
 require_once __DIR__.\DIRECTORY_SEPARATOR.'ConnectionConfig'.\DIRECTORY_SEPARATOR.'SlaveConfig.php';
 require_once __DIR__.\DIRECTORY_SEPARATOR.'ConnectionConfig'.\DIRECTORY_SEPARATOR.'ReplicaConfig.php';
-require_once __DIR__.\DIRECTORY_SEPARATOR.'ConnectionConfig'.\DIRECTORY_SEPARATOR.'ShardConfig.php';
 
 use Symfony\Component\Config\Loader\ParamConfigurator;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
@@ -52,20 +51,19 @@ class ConnectionConfig
     private $profiling;
     private $profilingCollectBacktrace;
     private $profilingCollectSchemaErrors;
+    private $disableTypeComments;
     private $serverVersion;
     private $driverClass;
     private $wrapperClass;
-    private $shardManagerClass;
-    private $shardChoser;
-    private $shardChoserService;
     private $keepSlave;
     private $keepReplica;
     private $options;
     private $mappingTypes;
     private $defaultTableOptions;
+    private $schemaManagerFactory;
+    private $resultCache;
     private $slaves;
     private $replicas;
-    private $shards;
     private $_usedProperties = [];
 
     /**
@@ -498,6 +496,7 @@ class ConnectionConfig
     /**
      * @default null
      * @param ParamConfigurator|mixed $value
+     * @deprecated The "platform_service" configuration key is deprecated since doctrine-bundle 2.9. DBAL 4 will not support setting a custom platform via connection params anymore.
      * @return $this
      */
     public function platformService($value): self
@@ -590,6 +589,19 @@ class ConnectionConfig
 
     /**
      * @default null
+     * @param ParamConfigurator|bool $value
+     * @return $this
+     */
+    public function disableTypeComments($value): self
+    {
+        $this->_usedProperties['disableTypeComments'] = true;
+        $this->disableTypeComments = $value;
+
+        return $this;
+    }
+
+    /**
+     * @default null
      * @param ParamConfigurator|mixed $value
      * @return $this
      */
@@ -623,48 +635,6 @@ class ConnectionConfig
     {
         $this->_usedProperties['wrapperClass'] = true;
         $this->wrapperClass = $value;
-
-        return $this;
-    }
-
-    /**
-     * @default null
-     * @param ParamConfigurator|mixed $value
-     * @deprecated The "shard_manager_class" configuration is deprecated and not supported anymore using DBAL 3.
-     * @return $this
-     */
-    public function shardManagerClass($value): self
-    {
-        $this->_usedProperties['shardManagerClass'] = true;
-        $this->shardManagerClass = $value;
-
-        return $this;
-    }
-
-    /**
-     * @default null
-     * @param ParamConfigurator|mixed $value
-     * @deprecated The "shard_choser" configuration is deprecated and not supported anymore using DBAL 3.
-     * @return $this
-     */
-    public function shardChoser($value): self
-    {
-        $this->_usedProperties['shardChoser'] = true;
-        $this->shardChoser = $value;
-
-        return $this;
-    }
-
-    /**
-     * @default null
-     * @param ParamConfigurator|mixed $value
-     * @deprecated The "shard_choser_service" configuration is deprecated and not supported anymore using DBAL 3.
-     * @return $this
-     */
-    public function shardChoserService($value): self
-    {
-        $this->_usedProperties['shardChoserService'] = true;
-        $this->shardChoserService = $value;
 
         return $this;
     }
@@ -733,6 +703,32 @@ class ConnectionConfig
     }
 
     /**
+     * @default 'doctrine.dbal.legacy_schema_manager_factory'
+     * @param ParamConfigurator|mixed $value
+     * @return $this
+     */
+    public function schemaManagerFactory($value): self
+    {
+        $this->_usedProperties['schemaManagerFactory'] = true;
+        $this->schemaManagerFactory = $value;
+
+        return $this;
+    }
+
+    /**
+     * @default null
+     * @param ParamConfigurator|mixed $value
+     * @return $this
+     */
+    public function resultCache($value): self
+    {
+        $this->_usedProperties['resultCache'] = true;
+        $this->resultCache = $value;
+
+        return $this;
+    }
+
+    /**
      * @return \Symfony\Config\Doctrine\Dbal\ConnectionConfig\SlaveConfig|$this
      */
     public function slave(string $name, $value = [])
@@ -774,21 +770,6 @@ class ConnectionConfig
         }
 
         return $this->replicas[$name];
-    }
-
-    /**
-     * @return \Symfony\Config\Doctrine\Dbal\ConnectionConfig\ShardConfig|$this
-     */
-    public function shard($value = [])
-    {
-        $this->_usedProperties['shards'] = true;
-        if (!\is_array($value)) {
-            $this->shards[] = $value;
-
-            return $this;
-        }
-
-        return $this->shards[] = new \Symfony\Config\Doctrine\Dbal\ConnectionConfig\ShardConfig($value);
     }
 
     public function __construct(array $value = [])
@@ -1021,6 +1002,12 @@ class ConnectionConfig
             unset($value['profiling_collect_schema_errors']);
         }
 
+        if (array_key_exists('disable_type_comments', $value)) {
+            $this->_usedProperties['disableTypeComments'] = true;
+            $this->disableTypeComments = $value['disable_type_comments'];
+            unset($value['disable_type_comments']);
+        }
+
         if (array_key_exists('server_version', $value)) {
             $this->_usedProperties['serverVersion'] = true;
             $this->serverVersion = $value['server_version'];
@@ -1037,24 +1024,6 @@ class ConnectionConfig
             $this->_usedProperties['wrapperClass'] = true;
             $this->wrapperClass = $value['wrapper_class'];
             unset($value['wrapper_class']);
-        }
-
-        if (array_key_exists('shard_manager_class', $value)) {
-            $this->_usedProperties['shardManagerClass'] = true;
-            $this->shardManagerClass = $value['shard_manager_class'];
-            unset($value['shard_manager_class']);
-        }
-
-        if (array_key_exists('shard_choser', $value)) {
-            $this->_usedProperties['shardChoser'] = true;
-            $this->shardChoser = $value['shard_choser'];
-            unset($value['shard_choser']);
-        }
-
-        if (array_key_exists('shard_choser_service', $value)) {
-            $this->_usedProperties['shardChoserService'] = true;
-            $this->shardChoserService = $value['shard_choser_service'];
-            unset($value['shard_choser_service']);
         }
 
         if (array_key_exists('keep_slave', $value)) {
@@ -1087,6 +1056,18 @@ class ConnectionConfig
             unset($value['default_table_options']);
         }
 
+        if (array_key_exists('schema_manager_factory', $value)) {
+            $this->_usedProperties['schemaManagerFactory'] = true;
+            $this->schemaManagerFactory = $value['schema_manager_factory'];
+            unset($value['schema_manager_factory']);
+        }
+
+        if (array_key_exists('result_cache', $value)) {
+            $this->_usedProperties['resultCache'] = true;
+            $this->resultCache = $value['result_cache'];
+            unset($value['result_cache']);
+        }
+
         if (array_key_exists('slaves', $value)) {
             $this->_usedProperties['slaves'] = true;
             $this->slaves = array_map(function ($v) { return \is_array($v) ? new \Symfony\Config\Doctrine\Dbal\ConnectionConfig\SlaveConfig($v) : $v; }, $value['slaves']);
@@ -1097,12 +1078,6 @@ class ConnectionConfig
             $this->_usedProperties['replicas'] = true;
             $this->replicas = array_map(function ($v) { return \is_array($v) ? new \Symfony\Config\Doctrine\Dbal\ConnectionConfig\ReplicaConfig($v) : $v; }, $value['replicas']);
             unset($value['replicas']);
-        }
-
-        if (array_key_exists('shards', $value)) {
-            $this->_usedProperties['shards'] = true;
-            $this->shards = array_map(function ($v) { return \is_array($v) ? new \Symfony\Config\Doctrine\Dbal\ConnectionConfig\ShardConfig($v) : $v; }, $value['shards']);
-            unset($value['shards']);
         }
 
         if ([] !== $value) {
@@ -1227,6 +1202,9 @@ class ConnectionConfig
         if (isset($this->_usedProperties['profilingCollectSchemaErrors'])) {
             $output['profiling_collect_schema_errors'] = $this->profilingCollectSchemaErrors;
         }
+        if (isset($this->_usedProperties['disableTypeComments'])) {
+            $output['disable_type_comments'] = $this->disableTypeComments;
+        }
         if (isset($this->_usedProperties['serverVersion'])) {
             $output['server_version'] = $this->serverVersion;
         }
@@ -1235,15 +1213,6 @@ class ConnectionConfig
         }
         if (isset($this->_usedProperties['wrapperClass'])) {
             $output['wrapper_class'] = $this->wrapperClass;
-        }
-        if (isset($this->_usedProperties['shardManagerClass'])) {
-            $output['shard_manager_class'] = $this->shardManagerClass;
-        }
-        if (isset($this->_usedProperties['shardChoser'])) {
-            $output['shard_choser'] = $this->shardChoser;
-        }
-        if (isset($this->_usedProperties['shardChoserService'])) {
-            $output['shard_choser_service'] = $this->shardChoserService;
         }
         if (isset($this->_usedProperties['keepSlave'])) {
             $output['keep_slave'] = $this->keepSlave;
@@ -1260,14 +1229,17 @@ class ConnectionConfig
         if (isset($this->_usedProperties['defaultTableOptions'])) {
             $output['default_table_options'] = $this->defaultTableOptions;
         }
+        if (isset($this->_usedProperties['schemaManagerFactory'])) {
+            $output['schema_manager_factory'] = $this->schemaManagerFactory;
+        }
+        if (isset($this->_usedProperties['resultCache'])) {
+            $output['result_cache'] = $this->resultCache;
+        }
         if (isset($this->_usedProperties['slaves'])) {
             $output['slaves'] = array_map(function ($v) { return $v instanceof \Symfony\Config\Doctrine\Dbal\ConnectionConfig\SlaveConfig ? $v->toArray() : $v; }, $this->slaves);
         }
         if (isset($this->_usedProperties['replicas'])) {
             $output['replicas'] = array_map(function ($v) { return $v instanceof \Symfony\Config\Doctrine\Dbal\ConnectionConfig\ReplicaConfig ? $v->toArray() : $v; }, $this->replicas);
-        }
-        if (isset($this->_usedProperties['shards'])) {
-            $output['shards'] = array_map(function ($v) { return $v instanceof \Symfony\Config\Doctrine\Dbal\ConnectionConfig\ShardConfig ? $v->toArray() : $v; }, $this->shards);
         }
 
         return $output;

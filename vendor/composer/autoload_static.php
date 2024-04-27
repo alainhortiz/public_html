@@ -111,6 +111,8 @@ class ComposerStaticInit062c04e2b205a3d47d5a71d82fefa32c
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'ProxyManager\\' => 13,
+            'Pontedilana\\WeasyprintBundle\\' => 29,
+            'Pontedilana\\PhpWeasyPrint\\' => 26,
             'PhpParser\\' => 10,
         ),
         'O' => 
@@ -466,6 +468,14 @@ class ComposerStaticInit062c04e2b205a3d47d5a71d82fefa32c
         array (
             0 => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager',
         ),
+        'Pontedilana\\WeasyprintBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pontedilana/weasyprint-bundle/src',
+        ),
+        'Pontedilana\\PhpWeasyPrint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -564,8 +574,8 @@ class ComposerStaticInit062c04e2b205a3d47d5a71d82fefa32c
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/event-manager/src',
-            1 => __DIR__ . '/..' . '/doctrine/common/src',
+            0 => __DIR__ . '/..' . '/doctrine/common/src',
+            1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
@@ -2763,6 +2773,18 @@ class ComposerStaticInit062c04e2b205a3d47d5a71d82fefa32c
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'Pontedilana\\PhpWeasyPrint\\AbstractGenerator' => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src/AbstractGenerator.php',
+        'Pontedilana\\PhpWeasyPrint\\Exception\\CouldNotReadFileContentException' => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src/Exception/CouldNotReadFileContentException.php',
+        'Pontedilana\\PhpWeasyPrint\\Exception\\CouldNotReadFileSizeException' => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src/Exception/CouldNotReadFileSizeException.php',
+        'Pontedilana\\PhpWeasyPrint\\Exception\\FileAlreadyExistsException' => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src/Exception/FileAlreadyExistsException.php',
+        'Pontedilana\\PhpWeasyPrint\\Exception\\UnsupportedWeasyPrintVersionException' => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src/Exception/UnsupportedWeasyPrintVersionException.php',
+        'Pontedilana\\PhpWeasyPrint\\GeneratorInterface' => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src/GeneratorInterface.php',
+        'Pontedilana\\PhpWeasyPrint\\Pdf' => __DIR__ . '/..' . '/pontedilana/php-weasyprint/src/Pdf.php',
+        'Pontedilana\\WeasyprintBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/pontedilana/weasyprint-bundle/src/DependencyInjection/Configuration.php',
+        'Pontedilana\\WeasyprintBundle\\DependencyInjection\\WeasyprintExtension' => __DIR__ . '/..' . '/pontedilana/weasyprint-bundle/src/DependencyInjection/WeasyprintExtension.php',
+        'Pontedilana\\WeasyprintBundle\\WeasyPrint\\Response\\PdfResponse' => __DIR__ . '/..' . '/pontedilana/weasyprint-bundle/src/WeasyPrint/Response/PdfResponse.php',
+        'Pontedilana\\WeasyprintBundle\\WeasyPrint\\Response\\WeasyPrintResponse' => __DIR__ . '/..' . '/pontedilana/weasyprint-bundle/src/WeasyPrint/Response/WeasyPrintResponse.php',
+        'Pontedilana\\WeasyprintBundle\\WeasyprintBundle' => __DIR__ . '/..' . '/pontedilana/weasyprint-bundle/src/WeasyprintBundle.php',
         'ProxyManager\\Autoloader\\Autoloader' => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager/Autoloader/Autoloader.php',
         'ProxyManager\\Autoloader\\AutoloaderInterface' => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager/Autoloader/AutoloaderInterface.php',
         'ProxyManager\\Configuration' => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager/Configuration.php',

@@ -19,6 +19,7 @@
       <parameter key="TwigExtraBundle">Twig\Extra\TwigExtraBundle\TwigExtraBundle</parameter>
       <parameter key="FOSJsRoutingBundle">FOS\JsRoutingBundle\FOSJsRoutingBundle</parameter>
       <parameter key="GregwarCaptchaBundle">Gregwar\CaptchaBundle\GregwarCaptchaBundle</parameter>
+      <parameter key="WeasyprintBundle">Pontedilana\WeasyprintBundle\WeasyprintBundle</parameter>
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
@@ -60,6 +61,10 @@
       <parameter key="GregwarCaptchaBundle" type="collection">
         <parameter key="path">D:\SOAINT\ESPAÑA\Symfony\public_html\vendor\gregwar\captcha-bundle</parameter>
         <parameter key="namespace">Gregwar\CaptchaBundle</parameter>
+      </parameter>
+      <parameter key="WeasyprintBundle" type="collection">
+        <parameter key="path">D:/SOAINT/ESPAÑA/Symfony/public_html/vendor/pontedilana/weasyprint-bundle/src</parameter>
+        <parameter key="namespace">Pontedilana\WeasyprintBundle</parameter>
       </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
@@ -269,6 +274,9 @@
     <parameter key="gregwar_captcha.config.gc_freq">100</parameter>
     <parameter key="gregwar_captcha.config.expiration">60</parameter>
     <parameter key="gregwar_captcha.config.whitelist_key">captcha_whitelist_key</parameter>
+    <parameter key="weasyprint.pdf.binary">weasyprint</parameter>
+    <parameter key="weasyprint.pdf.options" type="collection"/>
+    <parameter key="weasyprint.pdf.env" type="collection"/>
     <parameter key="console.command.ids" type="collection"/>
   </parameters>
   <services>
@@ -2135,6 +2143,7 @@
           <argument>D:\SOAINT\ESPAÑA\Symfony\public_html\vendor\sensio\framework-extra-bundle\src/translations</argument>
           <argument>D:\SOAINT\ESPAÑA\Symfony\public_html\vendor\twig\extra-bundle/translations</argument>
           <argument>D:\SOAINT\ESPAÑA\Symfony\public_html\vendor\friendsofsymfony\jsrouting-bundle/translations</argument>
+          <argument>D:/SOAINT/ESPAÑA/Symfony/public_html/vendor/pontedilana/weasyprint-bundle/src/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
@@ -2152,6 +2161,7 @@
             <argument>D:\SOAINT\ESPAÑA\Symfony\public_html\vendor\sensio\framework-extra-bundle\src/translations</argument>
             <argument>D:\SOAINT\ESPAÑA\Symfony\public_html\vendor\twig\extra-bundle/translations</argument>
             <argument>D:\SOAINT\ESPAÑA\Symfony\public_html\vendor\friendsofsymfony\jsrouting-bundle/translations</argument>
+            <argument>D:/SOAINT/ESPAÑA/Symfony/public_html/vendor/pontedilana/weasyprint-bundle/src/translations</argument>
           </argument>
         </argument>
       </argument>
@@ -5540,6 +5550,15 @@
     </service>
     <service id="gregwar_captcha.captcha_builder" class="Gregwar\Captcha\CaptchaBuilder" public="true"/>
     <service id="gregwar_captcha.phrase_builder" class="Gregwar\Captcha\PhraseBuilder" public="true"/>
+    <service id="weasyprint.pdf" class="Pontedilana\PhpWeasyPrint\Pdf" public="true">
+      <tag name="monolog.logger" channel="weasyprint"/>
+      <argument>weasyprint</argument>
+      <argument type="collection"/>
+      <argument type="collection"/>
+      <call method="setLogger">
+        <argument type="service" id="logger" on-invalid="ignore"/>
+      </call>
+    </service>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\AmortizacionController" class="App\Controller\AmortizacionController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\AmortizacionController" class="App\Controller\AmortizacionController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\AmortizacionController" class="App\Controller\AmortizacionController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -7972,6 +7991,7 @@
     <service id="SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface" alias="symfonycasts.reset_password.helper"/>
     <service id="fos_js_routing.router" alias="router.default"/>
     <service id="Gregwar\CaptchaBundle\Controller\CaptchaController" alias="gregwar_captcha.controller" public="true"/>
+    <service id="Pontedilana\PhpWeasyPrint\Pdf" alias="weasyprint.pdf"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
     <service id="argument_resolver.controller_locator" alias=".service_locator.rNwT02t"/>

@@ -22,7 +22,7 @@ require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'Prop
 require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'PropertyInfoConfig.php';
 require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'CacheConfig.php';
 require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'PhpErrorsConfig.php';
-require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'ExceptionsConfig.php';
+require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'ExceptionConfig.php';
 require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'WebLinkConfig.php';
 require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'LockConfig.php';
 require_once __DIR__.\DIRECTORY_SEPARATOR.'Framework'.\DIRECTORY_SEPARATOR.'MessengerConfig.php';
@@ -573,18 +573,25 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
     }
 
     /**
-     * @return \Symfony\Config\Framework\ExceptionsConfig|$this
+     * @return \Symfony\Config\Framework\ExceptionConfig|$this
      */
-    public function exceptions($value = [])
+    public function exception(string $class, $value = [])
     {
-        $this->_usedProperties['exceptions'] = true;
         if (!\is_array($value)) {
-            $this->exceptions[] = $value;
+            $this->_usedProperties['exceptions'] = true;
+            $this->exceptions[$class] = $value;
 
             return $this;
         }
 
-        return $this->exceptions[] = new \Symfony\Config\Framework\ExceptionsConfig($value);
+        if (!isset($this->exceptions[$class]) || !$this->exceptions[$class] instanceof \Symfony\Config\Framework\ExceptionConfig) {
+            $this->_usedProperties['exceptions'] = true;
+            $this->exceptions[$class] = new \Symfony\Config\Framework\ExceptionConfig($value);
+        } elseif (1 < \func_num_args()) {
+            throw new InvalidConfigurationException('The node created by "exception()" has already been initialized. You cannot pass values the second time you call exception().');
+        }
+
+        return $this->exceptions[$class];
     }
 
     /**
@@ -970,7 +977,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
 
         if (array_key_exists('exceptions', $value)) {
             $this->_usedProperties['exceptions'] = true;
-            $this->exceptions = array_map(function ($v) { return \is_array($v) ? new \Symfony\Config\Framework\ExceptionsConfig($v) : $v; }, $value['exceptions']);
+            $this->exceptions = array_map(function ($v) { return \is_array($v) ? new \Symfony\Config\Framework\ExceptionConfig($v) : $v; }, $value['exceptions']);
             unset($value['exceptions']);
         }
 
@@ -1139,7 +1146,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
             $output['php_errors'] = $this->phpErrors->toArray();
         }
         if (isset($this->_usedProperties['exceptions'])) {
-            $output['exceptions'] = array_map(function ($v) { return $v instanceof \Symfony\Config\Framework\ExceptionsConfig ? $v->toArray() : $v; }, $this->exceptions);
+            $output['exceptions'] = array_map(function ($v) { return $v instanceof \Symfony\Config\Framework\ExceptionConfig ? $v->toArray() : $v; }, $this->exceptions);
         }
         if (isset($this->_usedProperties['webLink'])) {
             $output['web_link'] = $this->webLink instanceof \Symfony\Config\Framework\WebLinkConfig ? $this->webLink->toArray() : $this->webLink;
