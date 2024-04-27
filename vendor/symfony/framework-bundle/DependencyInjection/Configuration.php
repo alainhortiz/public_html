@@ -123,7 +123,7 @@ class Configuration implements ConfigurationInterface
             ->end()
         ;
 
-        $willBeAvailable = static function (string $package, string $class, string $parentPackage = null) {
+        $willBeAvailable = static function (string $package, string $class, ?string $parentPackage = null) {
             $parentPackages = (array) $parentPackage;
             $parentPackages[] = 'symfony/framework-bundle';
 
@@ -350,7 +350,7 @@ class Configuration implements ConfigurationInterface
 
                                 foreach ($workflows as $key => $workflow) {
                                     if (isset($workflow['enabled']) && false === $workflow['enabled']) {
-                                        throw new LogicException(sprintf('Cannot disable a single workflow. Remove the configuration for the workflow "%s" instead.', $workflow['name']));
+                                        throw new LogicException(sprintf('Cannot disable a single workflow. Remove the configuration for the workflow "%s" instead.', $key));
                                     }
 
                                     unset($workflows[$key]['enabled']);
@@ -446,6 +446,10 @@ class Configuration implements ConfigurationInterface
                                         ->beforeNormalization()
                                             ->always()
                                             ->then(function ($places) {
+                                                if (!\is_array($places)) {
+                                                    throw new InvalidConfigurationException('The "places" option must be an array in workflow configuration.');
+                                                }
+
                                                 // It's an indexed array of shape  ['place1', 'place2']
                                                 if (isset($places[0]) && \is_string($places[0])) {
                                                     return array_map(function (string $place) {
@@ -491,6 +495,10 @@ class Configuration implements ConfigurationInterface
                                         ->beforeNormalization()
                                             ->always()
                                             ->then(function ($transitions) {
+                                                if (!\is_array($transitions)) {
+                                                    throw new InvalidConfigurationException('The "transitions" option must be an array in workflow configuration.');
+                                                }
+
                                                 // It's an indexed array, we let the validation occur
                                                 if (isset($transitions[0]) && \is_array($transitions[0])) {
                                                     return $transitions;
@@ -1121,7 +1129,7 @@ class Configuration implements ConfigurationInterface
                                     ->booleanNode('public')->defaultFalse()->end()
                                     ->scalarNode('default_lifetime')
                                         ->info('Default lifetime of the pool')
-                                        ->example('"600" for 5 minutes expressed in seconds, "PT5M" for five minutes expressed as ISO 8601 time interval, or "5 minutes" as a date expression')
+                                        ->example('"300" for 5 minutes expressed in seconds, "PT5M" for five minutes expressed as ISO 8601 time interval, or "5 minutes" as a date expression')
                                     ->end()
                                     ->scalarNode('provider')
                                         ->info('Overwrite the setting from the default provider for this adapter.')
@@ -1194,48 +1202,48 @@ class Configuration implements ConfigurationInterface
         $logLevels = (new \ReflectionClass(LogLevel::class))->getConstants();
 
         $rootNode
+            ->fixXmlConfig('exception')
             ->children()
                 ->arrayNode('exceptions')
                     ->info('Exception handling configuration')
+                    ->useAttributeAsKey('class')
                     ->beforeNormalization()
+                        // Handle legacy XML configuration
                         ->ifArray()
                         ->then(function (array $v): array {
                             if (!\array_key_exists('exception', $v)) {
                                 return $v;
                             }
 
-                            // Fix XML normalization
-                            $data = isset($v['exception'][0]) ? $v['exception'] : [$v['exception']];
-                            $exceptions = [];
-                            foreach ($data as $exception) {
-                                $config = [];
-                                if (\array_key_exists('log-level', $exception)) {
-                                    $config['log_level'] = $exception['log-level'];
-                                }
-                                if (\array_key_exists('status-code', $exception)) {
-                                    $config['status_code'] = $exception['status-code'];
-                                }
-                                $exceptions[$exception['name']] = $config;
+                            $v = $v['exception'];
+                            unset($v['exception']);
+
+                            foreach ($v as &$exception) {
+                                $exception['class'] = $exception['name'];
+                                unset($exception['name']);
                             }
 
-                            return $exceptions;
+                            return $v;
                         })
                     ->end()
                     ->prototype('array')
-                        ->fixXmlConfig('exception')
                         ->children()
                             ->scalarNode('log_level')
                                 ->info('The level of log message. Null to let Symfony decide.')
                                 ->validate()
-                                    ->ifTrue(function ($v) use ($logLevels) { return !\in_array($v, $logLevels); })
+                                    ->ifTrue(function ($v) use ($logLevels) { return null !== $v && !\in_array($v, $logLevels, true); })
                                     ->thenInvalid(sprintf('The log level is not valid. Pick one among "%s".', implode('", "', $logLevels)))
                                 ->end()
                                 ->defaultNull()
                             ->end()
                             ->scalarNode('status_code')
-                                ->info('The status code of the response. Null to let Symfony decide.')
+                                ->info('The status code of the response. Null or 0 to let Symfony decide.')
+                                ->beforeNormalization()
+                                    ->ifTrue(function ($v) { return 0 === $v; })
+                                    ->then(function ($v) { return null; })
+                                ->end()
                                 ->validate()
-                                    ->ifTrue(function ($v) { return $v < 100 || $v > 599; })
+                                    ->ifTrue(function ($v) { return null !== $v && ($v < 100 || $v > 599); })
                                     ->thenInvalid('The status code is not valid. Pick a value between 100 and 599.')
                                 ->end()
                                 ->defaultNull()
@@ -1271,12 +1279,15 @@ class Configuration implements ConfigurationInterface
                         })
                     ->end()
                     ->addDefaultsIfNotSet()
+                    ->validate()
+                        ->ifTrue(static function (array $config) { return $config['enabled'] && !$config['resources']; })
+                        ->thenInvalid('At least one resource must be defined.')
+                    ->end()
                     ->fixXmlConfig('resource')
                     ->children()
                         ->arrayNode('resources')
                             ->normalizeKeys(false)
                             ->useAttributeAsKey('name')
-                            ->requiresAtLeastOneElement()
                             ->defaultValue(['default' => [class_exists(SemaphoreStore::class) && SemaphoreStore::isSupported() ? 'semaphore' : 'flock']])
                             ->beforeNormalization()
                                 ->ifString()->then(function ($v) { return ['default' => $v]; })
@@ -1548,7 +1559,7 @@ class Configuration implements ConfigurationInterface
                                     continue;
                                 }
                                 if (\is_array($scopedConfig['retry_failed'])) {
-                                    $scopedConfig['retry_failed'] = $scopedConfig['retry_failed'] + $config['default_options']['retry_failed'];
+                                    $scopedConfig['retry_failed'] += $config['default_options']['retry_failed'];
                                 }
                             }
 
@@ -1886,6 +1897,7 @@ class Configuration implements ConfigurationInterface
                         ->end()
                         ->arrayNode('envelope')
                             ->info('Mailer Envelope configuration')
+                            ->fixXmlConfig('recipient')
                             ->children()
                                 ->scalarNode('sender')->end()
                                 ->arrayNode('recipients')

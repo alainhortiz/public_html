@@ -1,5 +1,28 @@
 # Changelog
 
+## v3.5.0 - 2024-01-23
+- Fix TypeScript error when verbatimModuleSyntax is enabled ([#476](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/476))
+- Define RoutesResponse as a Service ([#474](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/474))
+- Ignore session in stateless requests ([#468](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/468))
+- Add option to skip registering compile hooks ([#462](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/462))
+
+## v3.4.1 - 2023-12-15
+- fix: do not use BannerPlugin but newer webpack-inject-plugin instead to fix vulnerability
+
+## v3.4.0 - 2023-12-12
+- Allow Symfony 7.0 ([#471](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/471))
+- fix: remove webpack-inject-plugin dependency ([#464](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/464))
+- Docs only: remove $ so gitclip works ([#472](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/472))
+- Docs only: Update console note ([#463](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/463))
+
+## v3.3.0 - 2023-07-04
+- add support for Windows when using the webpack plugin ([#444](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/444))
+- Add PHP 8.2 tests ([#449](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/449))
+- Phpunit config file migration ([#450](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/450)))
+- Deprecation fixes (PHP 8 ([#451](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/451)) and Symfony 6.3 ([#460](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/460)))
+- JSON Callback validator static call instead of new object ([#458](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/458))
+- Optimize package size by excluding tests ([#457](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/457))
+
 ## v3.2.1 - 2022-07-01
 - fix for webpack plugin: fosRoute.json dir created at root ([#443](https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/pull/443))
 

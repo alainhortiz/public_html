@@ -13,6 +13,7 @@ use App\Repository\ProductoAmortizacionRepository;
 use App\Repository\ProductoRepository;
 use App\Repository\TipoNotificacionRepository;
 use App\Repository\UserRepository;
+use App\Service\PdfService;
 use DateTime;
 use Doctrine\ORM\EntityManagerInterface;
 use Exception;
@@ -53,7 +54,7 @@ class ProductoController extends AbstractController
 
         return $this->render('producto/index.html.twig', [
             'totalNotificacionesAdmin' => count($notificacionRepository->findBy(array('estado' => false, 'tipo' => array('1', '2', '3', '6')))),
-            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12','13')))),
+            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12', '13')))),
             'notificacionesAdmin' => $notificacionRepository->notificacionesAdmin(),
             'notificacionesUser' => $notificacionRepository->notificacionesUser($id),
             'productos' => $productoRepository->findBy(['tipoProducto' => array('1', '2'), 'isActive' => true]),
@@ -92,6 +93,29 @@ class ProductoController extends AbstractController
     }
 
     /**
+     * @IsGranted("ROLE_ADMIN")
+     * @Route("/pdf", name="app_producto_list_pdf", methods={"GET"})
+     * @param ProductoRepository $productoRepository
+     * @param PdfService $pdf
+     * @return Response
+     */
+    public function generatePdfListProduct(ProductoRepository $productoRepository, PdfService $pdf): Response
+    {
+        /**
+         * Asegurarse que el usuario esta autenticado
+         */
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
+        $html = $this->render('producto/detail_index.html.twig', [
+            'productos' => $productoRepository->findBy(['tipoProducto' => array('1', '2'), 'isActive' => true])
+        ]);
+
+        //return $html;
+
+        $pdf->showPdfFile($html);
+    }
+
+    /**
      * @Route("/misProductos", name="app_mis_productos", methods={"GET"})
      * @param UserRepository $userRepository
      * @param ProductoRepository $productoRepository
@@ -110,7 +134,7 @@ class ProductoController extends AbstractController
 
         return $this->render('asignar_producto/index.html.twig', [
             'totalNotificacionesAdmin' => count($notificacionRepository->findBy(array('estado' => false, 'tipo' => array('1', '2', '3', '6')))),
-            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12','13')))),
+            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12', '13')))),
             'notificacionesAdmin' => $notificacionRepository->notificacionesAdmin(),
             'notificacionesUser' => $notificacionRepository->notificacionesUser($id),
             'productos' => $productoRepository->findBy(array('user' => $user, 'tipoProducto' => array('1', '2'))),
@@ -161,7 +185,7 @@ class ProductoController extends AbstractController
 
         return $this->renderForm('producto/addProducto.html.twig', [
             'totalNotificacionesAdmin' => count($notificacionRepository->findBy(array('estado' => false, 'tipo' => array('1', '2', '3', '6')))),
-            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12','13')))),
+            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12', '13')))),
             'notificacionesAdmin' => $notificacionRepository->notificacionesAdmin(),
             'notificacionesUser' => $notificacionRepository->notificacionesUser($id),
             'users' => $userRepository->productoNombreApellido(),
@@ -214,7 +238,7 @@ class ProductoController extends AbstractController
             // If a file was uploaded
             if (!is_null($file)) {
                 // generar un nombre aleatorio para el archivo pero mantener la extensión
-//                $filename = uniqid('', true) . "." . $file->getClientOriginalExtension();
+                //                $filename = uniqid('', true) . "." . $file->getClientOriginalExtension();
                 $filename = $file->getClientOriginalName();
                 $file->move($this->getParameter('brochures_directory'), $filename); // mover el archivo a una ruta
                 $status = array('status' => "success", 'fichero' => $filename, "fileUploaded" => true);
@@ -278,13 +302,13 @@ class ProductoController extends AbstractController
             }
 
             //notificar por el correo al administrador producto agotado
-            $tipoNotificacion = $tipoNotificacionRepository->findOneBy(['codigo'=>7]);
+            $tipoNotificacion = $tipoNotificacionRepository->findOneBy(['codigo' => 7]);
             if ($tipoNotificacion !== null && $tipoNotificacion->getMensaje() !== null) {
                 $mensaje = $tipoNotificacion->getMensaje();
-            }else{
+            } else {
                 $mensaje = "A usted se le asignó el producto " . $producto->getNombre() . " en el Sistema de Royalties";
             }
-            $notificarCorreo = $this->notificarCorreo($mailer, $producto, $user->getEmail(),$mensaje);
+            $notificarCorreo = $this->notificarCorreo($mailer, $producto, $user->getEmail(), $mensaje);
             if ($notificarCorreo === null) {
                 return new Response('Error enviando correo al usuario');
             }
@@ -293,12 +317,10 @@ class ProductoController extends AbstractController
             $entityManager->commit();
 
             return new Response('ok');
-
         } catch (Exception) {
             $entityManager->rollback();
             return new Response('Error registrando el producto');
         }
-
     }
 
     /**
@@ -321,7 +343,7 @@ class ProductoController extends AbstractController
 
         return $this->render('producto/show.html.twig', [
             'totalNotificacionesAdmin' => count($notificacionRepository->findBy(array('estado' => false, 'tipo' => array('1', '2', '3', '6')))),
-            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12','13')))),
+            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12', '13')))),
             'notificacionesAdmin' => $notificacionRepository->notificacionesAdmin(),
             'notificacionesUser' => $notificacionRepository->notificacionesUser($id),
             'productos' => $productoRepository->findAll(),
@@ -361,6 +383,30 @@ class ProductoController extends AbstractController
     }
 
     /**
+     * @Route("/pdf/{id}", name="app_producto_pdf", methods={"GET"})
+     * @param ProductoRepository $productoRepository
+     * @param Producto $producto
+     * @param PdfService $pdf
+     * @return Response
+     */
+    public function generatePdfProduct(ProductoRepository $productoRepository, Producto $producto, PdfService $pdf): Response
+    {
+        /**
+         * Asegurarse que el usuario esta autenticado
+         */
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
+        $html = $this->render('producto/details_show.html.twig', [
+            'productos' => $productoRepository->findAll(),
+            'producto' => $producto
+        ]);
+
+        //return $html;
+
+        $pdf->showPdfFile($html);
+    }
+
+    /**
      * @Route("/{id}/edit", name="app_producto_form_edit", methods={"GET", "POST"})
      * @param UserRepository $userRepository
      * @param Producto $producto
@@ -380,7 +426,7 @@ class ProductoController extends AbstractController
         return $this->renderForm('producto/editProducto.html.twig', [
             'producto' => $producto,
             'totalNotificacionesAdmin' => count($notificacionRepository->findBy(array('estado' => false, 'tipo' => array('1', '2', '3', '6')))),
-            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12','13')))),
+            'totalNotificacionesUser' => count($notificacionRepository->findBy(array('user' => $user, 'estado' => false, 'tipo' => array('4', '5', '7', '8', '9', '10', '11', '12', '13')))),
             'notificacionesAdmin' => $notificacionRepository->notificacionesAdmin(),
             'notificacionesUser' => $notificacionRepository->notificacionesUser($id),
             'users' => $userRepository->productoNombreApellido(),
@@ -476,12 +522,10 @@ class ProductoController extends AbstractController
             $entityManager->commit();
 
             return new Response('ok');
-
         } catch (Exception) {
             $entityManager->rollback();
             return new Response('Error registrando el producto');
         }
-
     }
 
     /**
@@ -521,11 +565,11 @@ class ProductoController extends AbstractController
                         $restante = $beneficioPack - $beneficioProducto;
                         $packs->setBeneficioxventa($restante);
                         $entityManager->flush();
-                    }else {
+                    } else {
                         $entityManager->rollback();
                         return new Response('Error localizando  el pack al que pertenece el producto');
                     }
-                }else {
+                } else {
                     $entityManager->rollback();
                     return new Response('Error localizando el producto en un pack');
                 }
@@ -538,7 +582,6 @@ class ProductoController extends AbstractController
         $entityManager->commit();
 
         return new Response('ok');
-
     }
 
     //Funciones para registrar un producto
@@ -572,11 +615,9 @@ class ProductoController extends AbstractController
             $entityManager->persist($producto);
             $entityManager->flush();
             return $producto;
-
         } catch (Exception) {
             return null;
         }
-
     }
 
     private function registrarAmortizacionProducto(EntityManagerInterface $entityManager, Request $request, $producto, $user)
@@ -613,11 +654,9 @@ class ProductoController extends AbstractController
             $entityManager->persist($notificacion);
             $entityManager->flush();
             return 'ok';
-
         } catch (Exception) {
             return null;
         }
-
     }
 
     private function notificarCorreo(MailerInterface $mailer, $producto, $correo, $mensaje)
@@ -634,11 +673,9 @@ class ProductoController extends AbstractController
 
             $mailer->send($email);
             return 'ok';
-
         } catch (TransportExceptionInterface) {
             return 'ok';
         }
-
     }
 
     //Funciones para actualizar un producto
@@ -659,11 +696,9 @@ class ProductoController extends AbstractController
 
             $entityManager->flush();
             return $producto;
-
         } catch (Exception) {
             return null;
         }
-
     }
 
     private function verificarUsuarioProducto(EntityManagerInterface $entityManager, NotificacionRepository $notificacionRepository, Request $request, $producto, $user)
@@ -681,7 +716,6 @@ class ProductoController extends AbstractController
             }
         }
         return 'ok';
-
     }
 
     private function verificarAmortizacionProducto(EntityManagerInterface $entityManager, ProductoAmortizacionRepository $productoAmortizacionRepository, Request $request, $producto, $user)
@@ -703,7 +737,6 @@ class ProductoController extends AbstractController
             }
         }
         return 'ok';
-
     }
 
     private function modificarAmortizacionProducto(EntityManagerInterface $entityManager, Request $request, $amortizacion, $producto, $user)
@@ -735,10 +768,8 @@ class ProductoController extends AbstractController
                 return null;
             }
             return 'ok';
-
         } catch (Exception) {
             return null;
         }
     }
-
 }

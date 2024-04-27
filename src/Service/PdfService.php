@@ -16,15 +16,17 @@ class PdfService
         $this->dompdf->setOptions($pdfOptions);
     }
 
-    public function showPdfFile($html){
-        $this->dompdf->loadHtml($html);
+    public function showPdfFile($html): void
+    {
+        $this->dompdf->loadHtml(utf8_decode($html));
         $this->dompdf->setPaper('A4', 'portrait');
         $this->dompdf->render();
         $this->dompdf->stream("details.pdf", array("Attachment" => false));
     }
 
-    public function generateBinaryPDF($html){
-        $this->dompdf->loadHtml($html);
+    public function generateBinaryPDF($html): void
+    {
+        $this->dompdf->loadHtml(utf8_decode($html));
         $this->dompdf->render();
         $this->dompdf->output();
     }

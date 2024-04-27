@@ -24,110 +24,117 @@
             <div class="container-fluid">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">
-                            <h3>Listado de Productos</h3>
+                        <h3 class="card-title">Listado de Productos</h3>
+                        <div class="card-tools">
+                            <a href="{{ path('app_producto_list_pdf') }}">
+                                <button class="btn btn-dark" data-toggle="tooltip"
+                                        title="exportar a pdf listado de productos"><i
+                                            class="fas fa-file-pdf"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="{{ path('app_producto_form_new') }}">
-                                    <button type="button" class="btn btn-block bg-gradient-success">Crear Nuevo Producto
-                                    </button>
-                                </a>
-                            </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="{{ path('app_producto_form_new') }}">
+                                <button type="button" class="btn btn-block bg-gradient-success">Crear Nuevo Producto
+                                </button>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="table-responsive" style="padding-left: 5px">
-                                <table class="table table-bordered table-striped" id="dataProductos">
-                                    <thead class="text-center">
-                                    <tr>
-                                        <th>Tipo de Producto</th>
-                                        <th>ID</th>
-                                        <th>Nombre</th>
-                                        <th>Imagen del Producto</th>
-                                        <th>Stock</th>
-                                        <th>Amortización</th>
-                                        <th>Vendidos</th>
-                                        <th>Beneficio por Venta</th>
-                                        <th>Usuario Asignado</th>
-                                        <th>Producto Agotado</th>
-                                        <th class="text-center">Acciones</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody class="text-center">
-                                    {% for producto in productos %}
-                                        {% set vendidos = 0 %}
-                                        {% for venta in producto.ventas() %}
-                                            {% set vendidos = vendidos + venta.cantidad %}
-                                        {% endfor %}
-                                        {% set disponible = 0 %}
-                                        {% if producto.stock <= producto.stockAdvertencia %}
-                                            {% set disponible = 1 %}
+                    </div>
+                    <div class="row">
+                        <div class="table-responsive" style="padding-left: 5px">
+                            <table class="table table-bordered table-striped" id="dataProductos">
+                                <thead class="text-center">
+                                <tr>
+                                    <th>Tipo de Producto</th>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Imagen del Producto</th>
+                                    <th>Stock</th>
+                                    <th>Amortización</th>
+                                    <th>Vendidos</th>
+                                    <th>Beneficio por Venta</th>
+                                    <th>Usuario Asignado</th>
+                                    <th>Producto Agotado</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                {% for producto in productos %}
+                                    {% set vendidos = 0 %}
+                                    {% for venta in producto.ventas() %}
+                                        {% set vendidos = vendidos + venta.cantidad %}
+                                    {% endfor %}
+                                    {% set disponible = 0 %}
+                                    {% if producto.stock <= producto.stockAdvertencia %}
+                                        {% set disponible = 1 %}
+                                    {% endif %}
+                                    <tr data-id="{{ producto.id }}" class="text-center">
+                                        {% if producto.tipoProducto == 1 %}
+                                            <td>General</td>
+                                        {% elseif producto.tipoProducto == 2 %}
+                                            <td>Libro</td>
                                         {% endif %}
-                                        <tr data-id="{{ producto.id }}" class="text-center">
-                                            {% if producto.tipoProducto == 1 %}
-                                                <td>General</td>
-                                            {% elseif producto.tipoProducto == 2 %}
-                                                <td>Libro</td>
-                                            {% endif %}
-                                            <td>{{ producto.idd }}</td>
-                                            <td>{{ producto.nombre }}</td>
-                                            {% if producto.imagen %}
-                                                <td>
-                                                    <div class="product-image-thumb active"><img width="80" height="80"
-                                                                                                 src="{{ asset('uploads/' ~ producto.imagen) }}"
-                                                                                                 alt="Foto Producto">
-                                                    </div>
-                                                </td>
-                                            {% else %}
-                                                <td>-</td>
-                                            {% endif %}
-                                            <td>{{ producto.Stock }}</td>
-                                            {% if producto.amortizaciones|length > 0 %}
-                                                <td>Si</td>
-                                            {% else %}
-                                                <td>No</td>
-                                            {% endif %}
-                                            <td>{{ vendidos }}</td>
-                                            <td>{{ producto.beneficioxventa|number_format(2, '.', ',') ~ ' ' ~ producto.tipodemoneda }}</td>
-                                            <td>{{ producto.user ? producto.user.nombre ~ ' ' ~ producto.user.apellidos }}</td>
-                                            {% if disponible == 1 %}
-                                                <td>Si</td>
-                                            {% else %}
-                                                <td>No</td>
-                                            {% endif %}
-                                            <td style="margin: 0 auto;">
-                                                <a href="{{ path('app_producto_show', {'id': producto.id}) }}">
-                                                    <button class="btn btn-info" data-toggle="tooltip"
-                                                            title="ver"><i
-                                                                class="fas fa-info"></i>
+                                        <td>{{ producto.idd }}</td>
+                                        <td>{{ producto.nombre }}</td>
+                                        {% if producto.imagen %}
+                                            <td>
+                                                <div class="product-image-thumb active"><img width="80" height="80"
+                                                                                             src="{{ asset('uploads/' ~ producto.imagen) }}"
+                                                                                             alt="Foto Producto">
+                                                </div>
+                                            </td>
+                                        {% else %}
+                                            <td>-</td>
+                                        {% endif %}
+                                        <td>{{ producto.Stock }}</td>
+                                        {% if producto.amortizaciones|length > 0 %}
+                                            <td>Si</td>
+                                        {% else %}
+                                            <td>No</td>
+                                        {% endif %}
+                                        <td>{{ vendidos }}</td>
+                                        <td>{{ producto.beneficioxventa|number_format(2, '.', ',') ~ ' ' ~ producto.tipodemoneda }}</td>
+                                        <td>{{ producto.user ? producto.user.nombre ~ ' ' ~ producto.user.apellidos }}</td>
+                                        {% if disponible == 1 %}
+                                            <td>Si</td>
+                                        {% else %}
+                                            <td>No</td>
+                                        {% endif %}
+                                        <td style="margin: 0 auto;">
+                                            <a href="{{ path('app_producto_show', {'id': producto.id}) }}">
+                                                <button class="btn btn-info" data-toggle="tooltip"
+                                                        title="ver"><i
+                                                            class="fas fa-info"></i>
+                                                </button>
+                                            </a>
+                                            <a href="{{ path('app_producto_pdf', {'id': producto.id}) }}">
+                                                <button class="btn btn-dark" data-toggle="tooltip"
+                                                        title="exportar a pdf este producto"><i
+                                                            class="fas fa-file-pdf"></i>
+                                                </button>
+                                            </a>
+                                            {% if producto.cantidadVentas() == 0 %}
+                                                <a href="{{ path('app_producto_form_edit', {'id': producto.id}) }}">
+                                                    <button class="btn btn-success"
+                                                            data-toggle="tooltip"
+                                                            title="Editar"><i
+                                                                class="fas fa-edit"></i>
                                                     </button>
                                                 </a>
-                                                {% if producto.cantidadVentas() == 0 %}
-                                                    <a href="{{ path('app_producto_form_edit', {'id': producto.id}) }}">
-                                                        <button class="btn btn-success"
-                                                                data-toggle="tooltip"
-                                                                title="Editar"><i
-                                                                    class="fas fa-edit"></i>
-                                                        </button>
-                                                    </a>
-                                                {% endif %}
-                                                <button class="btn btn-danger delete"
-                                                        data-toggle="tooltip"
-                                                        title="Eliminar"><i
-                                                            class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    {% else %}
-                                        <tr>
-                                            <td colspan="9">No se encontraron registros</td>
-                                        </tr>
-                                    {% endfor %}
-                                    </tbody>
-                                </table>
-                            </div>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="9">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

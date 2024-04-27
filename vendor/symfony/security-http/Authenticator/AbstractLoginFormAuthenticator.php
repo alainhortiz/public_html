@@ -41,7 +41,7 @@ abstract class AbstractLoginFormAuthenticator extends AbstractAuthenticator impl
      */
     public function supports(Request $request): bool
     {
-        return $request->isMethod('POST') && $this->getLoginUrl($request) === $request->getPathInfo();
+        return $request->isMethod('POST') && $this->getLoginUrl($request) === $request->getBaseUrl().$request->getPathInfo();
     }
 
     /**
@@ -62,7 +62,7 @@ abstract class AbstractLoginFormAuthenticator extends AbstractAuthenticator impl
      * Override to control what happens when the user hits a secure page
      * but isn't logged in yet.
      */
-    public function start(Request $request, AuthenticationException $authException = null): Response
+    public function start(Request $request, ?AuthenticationException $authException = null): Response
     {
         $url = $this->getLoginUrl($request);
 

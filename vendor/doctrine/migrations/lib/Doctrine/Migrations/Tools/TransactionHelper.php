@@ -11,9 +11,7 @@ use PDO;
 
 use function method_exists;
 
-/**
- * @internal
- */
+/** @internal */
 final class TransactionHelper
 {
     public static function commitIfInTransaction(Connection $connection): void
@@ -27,8 +25,8 @@ Context: trying to commit a transaction
 Problem: the transaction is already committed, relying on silencing is deprecated.
 Solution: override `AbstractMigration::isTransactional()` so that it returns false.
 Automate that by setting `transactional` to false in the configuration.
-More details at https://www.doctrine-project.org/projects/doctrine-migrations/en/3.2/explanation/implicit-commits.html
-DEPRECATION
+More details at https://www.doctrine-project.org/projects/doctrine-migrations/en/stable/explanation/implicit-commits.html
+DEPRECATION,
             );
 
             return;
@@ -48,8 +46,8 @@ Context: trying to rollback a transaction
 Problem: the transaction is already rolled back, relying on silencing is deprecated.
 Solution: override `AbstractMigration::isTransactional()` so that it returns false.
 Automate that by setting `transactional` to false in the configuration.
-More details at https://www.doctrine-project.org/projects/doctrine-migrations/en/3.2/explanation/implicit-commits.html
-DEPRECATION
+More details at https://www.doctrine-project.org/projects/doctrine-migrations/en/stable/explanation/implicit-commits.html
+DEPRECATION,
             );
 
             return;
@@ -67,14 +65,12 @@ DEPRECATION
         return ! $innermostConnection instanceof PDO || $innermostConnection->inTransaction();
     }
 
-    /**
-     * @return object|resource|null
-     */
+    /** @return object|resource|null */
     private static function getInnerConnection(Connection $connection)
     {
         try {
             return $connection->getNativeConnection();
-        } catch (LogicException $e) {
+        } catch (LogicException) {
         }
 
         $innermostConnection = $connection;

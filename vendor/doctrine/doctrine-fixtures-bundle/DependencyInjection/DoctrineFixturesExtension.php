@@ -16,7 +16,9 @@ use function dirname;
 class DoctrineFixturesExtension extends Extension
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
+     *
+     * @return void
      */
     public function load(array $configs, ContainerBuilder $container)
     {

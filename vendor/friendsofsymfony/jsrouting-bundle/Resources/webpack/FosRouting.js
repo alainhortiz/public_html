@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const util = require('util');
 
-const InjectPlugin = require('webpack-inject-plugin').default;
+const InjectPlugin = require('@bpnetguy/webpack-inject-plugin').default;
 
 const execFile = util.promisify(require('child_process').execFile);
 const readFile = util.promisify(fs.readFile);
@@ -18,9 +18,10 @@ class FosRouting {
         locale: '',
         prettyPrint: false,
         domain: [],
+        php: 'php'
     };
 
-    constructor(options = {}) {
+    constructor(options = {}, registerCompileHooks = true) {
         this.options = Object.assign({target: 'var/cache/fosRoutes.json'}, this.default, options, {format: 'json'});
         this.finalTarget = path.resolve(process.cwd(), this.options.target);
         this.options.target = path.resolve(process.cwd(), this.options.target.replace(/\.json$/, '.tmp.json'));
@@ -28,6 +29,7 @@ class FosRouting {
         if (this.options.target === this.finalTarget) {
             this.options.target += '.tmp';
         }
+        this.registerCompileHooks = registerCompileHooks;
     }
 
     // Values don't need to be escaped because node already does that
@@ -62,31 +64,39 @@ class FosRouting {
                 }
                 return pass;
             }, []);
-            await execFile('bin/console', ['fos:js-routing:dump', ...args]);
-            const content = await readFile(this.options.target);
-            await rmFile(this.options.target);
-            if (!prevContent || content.compare(prevContent) !== 0) {
-                await makeDir(path.dirname(this.finalTarget), {recursive: true});
-                await writeFile(this.finalTarget, content);
-                prevContent = content;
-                if (comp.modifiedFiles && !comp.modifiedFiles.has(this.finalTarget)) {
-                    comp.modifiedFiles.add(this.finalTarget);
+            await execFile(this.options.php, ['bin/console', 'fos:js-routing:dump', ...args]);
+            try {
+                const content = await readFile(this.options.target);
+                await rmFile(this.options.target);
+                if (!prevContent || content.compare(prevContent) !== 0) {
+                    await makeDir(path.dirname(this.finalTarget), {recursive: true});
+                    await writeFile(this.finalTarget, content);
+                    prevContent = content;
+                    if (comp.modifiedFiles && !comp.modifiedFiles.has(this.finalTarget)) {
+                        comp.modifiedFiles.add(this.finalTarget);
+                    }
                 }
+            } catch (e) {
+                const logger = compiler.getInfrastructureLogger('FosRouting');
+                logger.error(e.toString());
             }
             callback();
         };
-        compiler.hooks.beforeRun.tapAsync('RouteDump', compile);
-        compiler.hooks.watchRun.tapAsync('RouteDump_Watch', (comp, callback) => {
-            if (!comp.modifiedFiles || !comp.modifiedFiles.has(this.finalTarget)) {
-                compile(comp, callback);
-            } else {
-                callback();
-            }
-        });
+        
+        if (this.registerCompileHooks === true) {
+            compiler.hooks.beforeRun.tapAsync('RouteDump', compile);
+            compiler.hooks.watchRun.tapAsync('RouteDump_Watch', (comp, callback) => {
+                if (!comp.modifiedFiles || !comp.modifiedFiles.has(this.finalTarget)) {
+                    compile(comp, callback);
+                } else {
+                    callback();
+                }
+            });
+        }
 
         new InjectPlugin(() => {
             return 'import Routing from "fos-router";' +
-                'import routes from "' + this.finalTarget + '";' +
+                'import routes from '+JSON.stringify(this.finalTarget)+';' +
                 'Routing.setRoutingData(routes);';
         }).apply(compiler);
     }

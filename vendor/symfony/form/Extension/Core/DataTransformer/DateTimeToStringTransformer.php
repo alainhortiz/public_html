@@ -49,7 +49,7 @@ class DateTimeToStringTransformer extends BaseDateTimeTransformer
      * @param string      $format         The date format
      * @param string|null $parseFormat    The parse format when different from $format
      */
-    public function __construct(string $inputTimezone = null, string $outputTimezone = null, string $format = 'Y-m-d H:i:s', string $parseFormat = null)
+    public function __construct(?string $inputTimezone = null, ?string $outputTimezone = null, string $format = 'Y-m-d H:i:s', ?string $parseFormat = null)
     {
         parent::__construct($inputTimezone, $outputTimezone);
 
@@ -118,10 +118,14 @@ class DateTimeToStringTransformer extends BaseDateTimeTransformer
             throw new TransformationFailedException('Expected a string.');
         }
 
+        if (str_contains($value, "\0")) {
+            throw new TransformationFailedException('Null bytes not allowed');
+        }
+
         $outputTz = new \DateTimeZone($this->outputTimezone);
         $dateTime = \DateTime::createFromFormat($this->parseFormat, $value, $outputTz);
 
-        $lastErrors = \DateTime::getLastErrors();
+        $lastErrors = \DateTime::getLastErrors() ?: ['error_count' => 0, 'warning_count' => 0];
 
         if (0 < $lastErrors['warning_count'] || 0 < $lastErrors['error_count']) {
             throw new TransformationFailedException(implode(', ', array_merge(array_values($lastErrors['warnings']), array_values($lastErrors['errors']))));

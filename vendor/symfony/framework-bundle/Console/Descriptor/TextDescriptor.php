@@ -39,7 +39,7 @@ class TextDescriptor extends Descriptor
 {
     private $fileLinkFormatter;
 
-    public function __construct(FileLinkFormatter $fileLinkFormatter = null)
+    public function __construct(?FileLinkFormatter $fileLinkFormatter = null)
     {
         $this->fileLinkFormatter = $fileLinkFormatter;
     }
@@ -141,7 +141,7 @@ class TextDescriptor extends Descriptor
         }
     }
 
-    protected function describeContainerService(object $service, array $options = [], ContainerBuilder $builder = null)
+    protected function describeContainerService(object $service, array $options = [], ?ContainerBuilder $builder = null)
     {
         if (!isset($options['id'])) {
             throw new \InvalidArgumentException('An "id" option must be provided.');
@@ -315,7 +315,7 @@ class TextDescriptor extends Descriptor
                 if ($factory[0] instanceof Reference) {
                     $tableRows[] = ['Factory Service', $factory[0]];
                 } elseif ($factory[0] instanceof Definition) {
-                    throw new \InvalidArgumentException('Factory is not describable.');
+                    $tableRows[] = ['Factory Service', sprintf('inline factory service (%s)', $factory[0]->getClass() ?? 'class not configured')];
                 } else {
                     $tableRows[] = ['Factory Class', $factory[0]];
                 }
@@ -389,7 +389,7 @@ class TextDescriptor extends Descriptor
         $options['output']->listing($formattedLogs);
     }
 
-    protected function describeContainerAlias(Alias $alias, array $options = [], ContainerBuilder $builder = null)
+    protected function describeContainerAlias(Alias $alias, array $options = [], ?ContainerBuilder $builder = null)
     {
         if ($alias->isPublic() && !$alias->isPrivate()) {
             $options['output']->comment(sprintf('This service is a <info>public</info> alias for the service <info>%s</info>', (string) $alias));
@@ -541,7 +541,7 @@ class TextDescriptor extends Descriptor
         return trim($configAsString);
     }
 
-    private function formatControllerLink($controller, string $anchorText, callable $getContainer = null): string
+    private function formatControllerLink($controller, string $anchorText, ?callable $getContainer = null): string
     {
         if (null === $this->fileLinkFormatter) {
             return $anchorText;
@@ -559,7 +559,7 @@ class TextDescriptor extends Descriptor
             } elseif (!\is_string($controller)) {
                 return $anchorText;
             } elseif (str_contains($controller, '::')) {
-                $r = new \ReflectionMethod($controller);
+                $r = new \ReflectionMethod(...explode('::', $controller, 2));
             } else {
                 $r = new \ReflectionFunction($controller);
             }
@@ -614,7 +614,7 @@ class TextDescriptor extends Descriptor
             if (str_contains($r->name, '{closure}')) {
                 return 'Closure()';
             }
-            if ($class = $r->getClosureScopeClass()) {
+            if ($class = \PHP_VERSION_ID >= 80111 ? $r->getClosureCalledClass() : $r->getClosureScopeClass()) {
                 return sprintf('%s::%s()', $class->name, $r->name);
             }
 

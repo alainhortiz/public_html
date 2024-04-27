@@ -1,0 +1,88 @@
+{% block page %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Listado de Productos</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table" style="padding-left: 5px">
+                            <table class="table" id="dataProductos">
+                                <thead>
+                                <tr>
+                                    <th>Tipo de Producto</th>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+{#                                    <th>Imagen del Producto</th>#}
+                                    <th>Stock</th>
+                                    <th>Amortización</th>
+                                    <th>Vendidos</th>
+                                    <th>Beneficio por Venta</th>
+                                    <th>Usuario Asignado</th>
+                                    <th>Producto Agotado</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for producto in productos %}
+                                    {% set vendidos = 0 %}
+                                    {% for venta in producto.ventas() %}
+                                        {% set vendidos = vendidos + venta.cantidad %}
+                                    {% endfor %}
+                                    {% set disponible = 0 %}
+                                    {% if producto.stock <= producto.stockAdvertencia %}
+                                        {% set disponible = 1 %}
+                                    {% endif %}
+                                    <tr data-id="{{ producto.id }}" class="text-center">
+                                        {% if producto.tipoProducto == 1 %}
+                                            <td>General</td>
+                                        {% elseif producto.tipoProducto == 2 %}
+                                            <td>Libro</td>
+                                        {% endif %}
+                                        <td>{{ producto.idd }}</td>
+                                        <td>{{ producto.nombre }}</td>
+{#                                        {% if producto.imagen %}#}
+{#                                            <td>#}
+{#                                                <div class="product-image-thumb active"><img width="80" height="80"#}
+{#                                                                                             src="{{ asset('uploads/' ~ producto.imagen) }}"#}
+{#                                                                                             alt="Foto Producto">#}
+{#                                                </div>#}
+{#                                            </td>#}
+{#                                        {% else %}#}
+{#                                            <td>-</td>#}
+{#                                        {% endif %}#}
+                                        <td>{{ producto.Stock }}</td>
+                                        {% if producto.amortizaciones|length > 0 %}
+                                            <td>Si</td>
+                                        {% else %}
+                                            <td>No</td>
+                                        {% endif %}
+                                        <td>{{ vendidos }}</td>
+                                        <td>{{ producto.beneficioxventa|number_format(2, '.', ',') ~ ' ' ~ producto.tipodemoneda }}</td>
+                                        <td>{{ producto.user ? producto.user.nombre ~ ' ' ~ producto.user.apellidos }}</td>
+                                        {% if disponible == 1 %}
+                                            <td>Si</td>
+                                        {% else %}
+                                            <td>No</td>
+                                        {% endif %}
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="9">No se encontraron registros</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

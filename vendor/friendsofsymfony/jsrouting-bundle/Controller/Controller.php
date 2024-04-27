@@ -20,7 +20,7 @@ use Symfony\Component\Config\ConfigCache;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Flash\AutoExpireFlashBag;
-use Symfony\Component\HttpKernel\Exception\HttpException;
+use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 /**
  * Controller class.
@@ -38,16 +38,21 @@ class Controller
      * @param ExposedRoutesExtractorInterface $exposedRoutesExtractor the extractor service
      * @param bool                            $debug
      */
-    public function __construct(private mixed $serializer, private ExposedRoutesExtractorInterface $exposedRoutesExtractor, array $cacheControl = [], private bool $debug = false)
-    {
+    public function __construct(
+        private RoutesResponse $routesResponse,
+        private mixed $serializer,
+        private ExposedRoutesExtractorInterface $exposedRoutesExtractor,
+        array $cacheControl = [],
+        private bool $debug = false,
+    ) {
         $this->cacheControlConfig = new CacheControlConfig($cacheControl);
     }
 
     public function indexAction(Request $request, $_format): Response
     {
-        $session = $request->hasSession() ? $request->getSession() : null;
-
-        if ($request->hasPreviousSession() && $session->getFlashBag() instanceof AutoExpireFlashBag) {
+        if (!$request->attributes->getBoolean('_stateless') && $request->hasSession()
+            && ($session = $request->getSession())->isStarted() && $session->getFlashBag() instanceof AutoExpireFlashBag
+        ) {
             // keep current flashes for one more request if using AutoExpireFlashBag
             $session->getFlashBag()->setAll($session->getFlashBag()->peekAll());
         }
@@ -68,23 +73,20 @@ class Controller
             );
         }
 
-        $routesResponse = new RoutesResponse(
-            $this->exposedRoutesExtractor->getBaseUrl(),
-            $exposedRoutes,
-            $this->exposedRoutesExtractor->getPrefix($request->getLocale()),
-            $this->exposedRoutesExtractor->getHost(),
-            $this->exposedRoutesExtractor->getPort(),
-            $this->exposedRoutesExtractor->getScheme(),
-            $request->getLocale(),
-            $request->query->has('domain') ? explode(',', $request->query->get('domain')) : []
-        );
+        $this->routesResponse->setBaseUrl($this->exposedRoutesExtractor->getBaseUrl());
+        $this->routesResponse->setRoutes($exposedRoutes);
+        $this->routesResponse->setPrefix($this->exposedRoutesExtractor->getPrefix($request->getLocale()));
+        $this->routesResponse->setHost($this->exposedRoutesExtractor->getHost());
+        $this->routesResponse->setPort($this->exposedRoutesExtractor->getPort());
+        $this->routesResponse->setScheme($this->exposedRoutesExtractor->getScheme());
+        $this->routesResponse->setLocale($request->getLocale());
+        $this->routesResponse->setDomains($request->query->has('domain') ? explode(',', $request->query->get('domain')) : []);
 
-        $content = $this->serializer->serialize($routesResponse, 'json');
+        $content = $this->serializer->serialize($this->routesResponse, 'json');
 
         if (null !== $callback = $request->query->get('callback')) {
-            $validator = new \JsonpCallbackValidator();
-            if (!$validator->validate($callback)) {
-                throw new HttpException(400, 'Invalid JSONP callback value');
+            if (!\JsonpCallbackValidator::validate($callback)) {
+                throw new BadRequestHttpException('Invalid JSONP callback value');
             }
 
             $content = '/**/'.$callback.'('.$content.');';
